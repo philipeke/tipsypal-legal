@@ -6,5 +6,7 @@ This repository hosts the legal documents for the TipsyPal mobile application.
 
 - [Privacy Policy](./privacy.html)
 - [Terms of Use](./terms.html)
+- [Delete Account Instructions](./delete-account.html)
 
 These documents are used for Google Play, App Store, and public reference.
+
