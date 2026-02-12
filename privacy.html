@@ -7,39 +7,48 @@
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 20px;
       line-height: 1.7;
       color: #111827;
       background: #ffffff;
     }
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
       color: #111827;
       margin-top: 28px;
       margin-bottom: 10px;
     }
     h1 {
-      font-size: 1.9rem;
+      font-size: 2.2rem;
       margin-top: 0;
+      border-bottom: 3px solid #111827;
+      padding-bottom: 12px;
     }
     h2 {
-      font-size: 1.3rem;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 4px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
+      margin-top: 36px;
     }
     h3 {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      margin-top: 24px;
+    }
+    h4 {
+      font-size: 1.05rem;
+      margin-top: 18px;
+      font-weight: 600;
     }
     p {
-      margin: 6px 0 10px;
+      margin: 8px 0 12px;
     }
-    ul {
-      margin: 6px 0 12px 1.5rem;
+    ul, ol {
+      margin: 8px 0 14px 1.8rem;
       padding: 0;
     }
     li {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
     strong {
       font-weight: 600;
@@ -47,343 +56,3050 @@
     code {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       background: #f3f4f6;
-      padding: 2px 4px;
+      padding: 2px 5px;
       border-radius: 3px;
       font-size: 0.9em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background: #f9fafb;
+      font-weight: 600;
+    }
+    .toc {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 20px 30px;
+      margin: 24px 0;
+    }
+    .toc h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      border: none;
+    }
+    .toc ul {
+      margin-left: 0;
+      list-style-position: inside;
+    }
+    .toc a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .toc a:hover {
+      text-decoration: underline;
+    }
+    .notice {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 4px;
+    }
+    .info-box {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 4px;
+    }
+    a {
+      color: #2563eb;
     }
   </style>
 </head>
 <body>
 
 <h1>Privacy Policy for TipsyPal</h1>
-<p><strong>Version 2.6 — Last Updated: 2025-12-16<br>
+<p><strong>Effective Date: February 12, 2026<br>
+Last Updated: February 12, 2026<br>
+Version: 3.0<br>
 Governing Entity: OakDev &amp; AI AB (Sweden)</strong></p>
 
-<h2>1. Introduction</h2>
+<div class="notice">
+  <strong>Important Notice:</strong> This Privacy Policy contains important information about how we collect, use, share, and protect your personal data. Please read this document carefully. By using TipsyPal, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy.
+</div>
+
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#section-1">Introduction and Overview</a></li>
+    <li><a href="#section-2">Definitions and Key Terms</a></li>
+    <li><a href="#section-3">Data Controller and Contact Information</a></li>
+    <li><a href="#section-4">Scope and Application</a></li>
+    <li><a href="#section-5">Categories of Personal Data We Collect</a></li>
+    <li><a href="#section-6">How and Why We Collect Your Data</a></li>
+    <li><a href="#section-7">Legal Bases for Processing (GDPR)</a></li>
+    <li><a href="#section-8">How We Use Your Personal Data</a></li>
+    <li><a href="#section-9">AI Processing and Third-Party AI Services</a></li>
+    <li><a href="#section-10">Third-Party Services and Integrations</a></li>
+    <li><a href="#section-11">Data Sharing and Disclosure</a></li>
+    <li><a href="#section-12">Data Retention and Deletion</a></li>
+    <li><a href="#section-13">International Data Transfers</a></li>
+    <li><a href="#section-14">Your Rights Under GDPR</a></li>
+    <li><a href="#section-15">California Privacy Rights (CCPA/CPRA)</a></li>
+    <li><a href="#section-16">Other U.S. State Privacy Rights</a></li>
+    <li><a href="#section-17">Your Choices and Controls</a></li>
+    <li><a href="#section-18">Account Management and Deletion</a></li>
+    <li><a href="#section-19">Marketing Communications and Consent</a></li>
+    <li><a href="#section-20">Cookies, Analytics, and Tracking Technologies</a></li>
+    <li><a href="#section-21">Push Notifications and Communications</a></li>
+    <li><a href="#section-22">Children's Privacy</a></li>
+    <li><a href="#section-23">Information Security and Data Protection</a></li>
+    <li><a href="#section-24">Data Breach Notification</a></li>
+    <li><a href="#section-25">Automated Decision-Making and Profiling</a></li>
+    <li><a href="#section-26">Business Transfers and Corporate Changes</a></li>
+    <li><a href="#section-27">Do Not Track Signals</a></li>
+    <li><a href="#section-28">Links to Third-Party Services</a></li>
+    <li><a href="#section-29">Changes to This Privacy Policy</a></li>
+    <li><a href="#section-30">How to Exercise Your Rights</a></li>
+    <li><a href="#section-31">Complaints and Supervisory Authority</a></li>
+    <li><a href="#section-32">Disclaimers and Limitations</a></li>
+    <li><a href="#section-33">Indemnification</a></li>
+    <li><a href="#section-34">Governing Law and Jurisdiction</a></li>
+    <li><a href="#section-35">Contact Information</a></li>
+  </ol>
+</div>
+
+<h2 id="section-1">1. Introduction and Overview</h2>
+
 <p>
-This Privacy Policy explains how <strong>OakDev &amp; AI AB</strong> (“Company”, “we”, “us”, “our”), a registered Swedish
-corporation, collects, uses, stores, protects, and processes data when you use the TipsyPal application (“TipsyPal”,
-“App”, “Service”).
-</p>
-<p>
-OakDev &amp; AI AB is the sole owner, operator, and data controller of TipsyPal. We take privacy extremely seriously and are
-committed to full compliance with:
-</p>
-<ul>
-  <li>GDPR (EU General Data Protection Regulation)</li>
-  <li>Swedish Data Protection Act (Dataskyddsförordningen)</li>
-  <li>ePrivacy Directive</li>
-  <li>Apple App Store and Google Play policies</li>
-  <li>Industry-leading technical and organizational security measures</li>
-</ul>
-<p>
-By accessing or using TipsyPal, you acknowledge that you have read, understood, and agreed to the terms described in this
-Privacy Policy.
+Welcome to TipsyPal. This Privacy Policy explains in detail how <strong>OakDev &amp; AI AB</strong> ("Company", "we", "us", "our"), a corporation duly organized and existing under the laws of Sweden, collects, uses, stores, processes, shares, transfers, and protects your personal data and information when you access, download, install, register for, or use the TipsyPal mobile application (the "App", "Application", "TipsyPal", "Service").
 </p>
 
-<h2>2. Data Controller Information</h2>
-<p>The entity responsible for processing your data is:</p>
+<p>
+OakDev &amp; AI AB is the sole owner, operator, developer, and data controller of TipsyPal. We are deeply committed to protecting your privacy and ensuring transparency in all our data processing activities. We recognize that your personal data is valuable and sensitive, and we have implemented comprehensive technical, organizational, and legal safeguards to protect it.
+</p>
+
+<p>
+This Privacy Policy has been designed to comply with and exceed the requirements of:
+</p>
+
+<ul>
+  <li><strong>EU General Data Protection Regulation (GDPR)</strong> – Regulation (EU) 2016/679</li>
+  <li><strong>Swedish Data Protection Act</strong> (Dataskyddslagen 2018:218)</li>
+  <li><strong>ePrivacy Directive</strong> (Directive 2002/58/EC)</li>
+  <li><strong>California Consumer Privacy Act (CCPA)</strong> and California Privacy Rights Act (CPRA)</li>
+  <li><strong>Virginia Consumer Data Protection Act (VCDPA)</strong></li>
+  <li><strong>Colorado Privacy Act (CPA)</strong></li>
+  <li><strong>Connecticut Data Privacy Act (CTDPA)</strong></li>
+  <li><strong>Utah Consumer Privacy Act (UCPA)</strong></li>
+  <li><strong>Apple App Store Review Guidelines</strong></li>
+  <li><strong>Google Play Developer Policy</strong></li>
+  <li>Industry best practices and international privacy standards</li>
+</ul>
+
+<p>
+By accessing, downloading, installing, registering for, or using TipsyPal, you explicitly acknowledge that you have read this Privacy Policy in its entirety, that you understand its contents, and that you consent to the collection, use, processing, and transfer of your personal data as described herein. If you do not agree with any part of this Privacy Policy, you must immediately cease using the Application and uninstall it from your device.
+</p>
+
+<div class="info-box">
+  <strong>Your Privacy Matters:</strong> We believe in privacy by design and privacy by default. We collect only the minimum data necessary to provide and improve our services, and we never sell your personal information to third parties.
+</div>
+
+<h2 id="section-2">2. Definitions and Key Terms</h2>
+
+<p>For purposes of this Privacy Policy, the following terms shall have the meanings set forth below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Personal Data</strong></td>
+      <td>Any information relating to an identified or identifiable natural person ("Data Subject"). An identifiable person is one who can be identified, directly or indirectly, by reference to an identifier such as a name, identification number, location data, online identifier, or other factors.</td>
+    </tr>
+    <tr>
+      <td><strong>Processing</strong></td>
+      <td>Any operation or set of operations performed on personal data, whether automated or not, including collection, recording, organization, structuring, storage, adaptation, retrieval, consultation, use, disclosure, transmission, dissemination, restriction, erasure, or destruction.</td>
+    </tr>
+    <tr>
+      <td><strong>Data Controller</strong></td>
+      <td>The natural or legal person, public authority, agency, or other body which, alone or jointly, determines the purposes and means of processing personal data. For TipsyPal, the Data Controller is OakDev &amp; AI AB.</td>
+    </tr>
+    <tr>
+      <td><strong>Data Processor</strong></td>
+      <td>A natural or legal person, public authority, agency, or other body which processes personal data on behalf of the Data Controller. Examples include Firebase (Google) and OpenAI.</td>
+    </tr>
+    <tr>
+      <td><strong>Data Subject</strong></td>
+      <td>Any individual whose personal data is being collected, held, or processed. In the context of TipsyPal, this refers to you, the user.</td>
+    </tr>
+    <tr>
+      <td><strong>User / You</strong></td>
+      <td>The individual accessing or using the TipsyPal Application.</td>
+    </tr>
+    <tr>
+      <td><strong>Service / App</strong></td>
+      <td>The TipsyPal mobile application and all associated features, functionalities, and services.</td>
+    </tr>
+    <tr>
+      <td><strong>Device</strong></td>
+      <td>Any mobile device, smartphone, tablet, or computer that can access the Service.</td>
+    </tr>
+    <tr>
+      <td><strong>Consent</strong></td>
+      <td>Any freely given, specific, informed, and unambiguous indication of a Data Subject's wishes by which they signify agreement to the processing of their personal data.</td>
+    </tr>
+    <tr>
+      <td><strong>Third Party</strong></td>
+      <td>Any natural or legal person, public authority, agency, or body other than the Data Subject, Data Controller, Data Processor, and persons authorized to process data under the direct authority of the Controller or Processor.</td>
+    </tr>
+    <tr>
+      <td><strong>Anonymization</strong></td>
+      <td>The process of removing or modifying personal data in such a way that individuals can no longer be identified directly or indirectly.</td>
+    </tr>
+    <tr>
+      <td><strong>Pseudonymization</strong></td>
+      <td>Processing personal data in such a manner that it can no longer be attributed to a specific Data Subject without the use of additional information, kept separately and subject to technical and organizational measures.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="section-3">3. Data Controller and Contact Information</h2>
+
+<p>The data controller responsible for your personal data is:</p>
+
 <p>
   <strong>OakDev &amp; AI AB</strong><br>
-  Org.nr: 5594316787<br>
-  Sweden<br>
-  Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>
+  Swedish Organization Number: 5594316787<br>
+  Registered Address: Sweden<br>
+  Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a><br>
+  Website: <a href="https://oakdev.app" target="_blank">https://oakdev.app</a>
 </p>
+
 <p>
-All references to “we”, “us”, or “our” in this policy refer exclusively to OakDev &amp; AI AB.
+OakDev &amp; AI AB is registered with the Swedish Companies Registration Office (Bolagsverket) and complies with all applicable Swedish and European Union data protection laws and regulations.
 </p>
 
-<h2>3. Scope of This Policy</h2>
-<p>This Privacy Policy applies to:</p>
-<ul>
-  <li>The TipsyPal mobile app</li>
-  <li>AI features and interactions</li>
-  <li>In-app purchases and credit-based entitlements (including Champion access)</li>
-  <li>Customer support communication</li>
-  <li>Data stored in Firebase and OpenAI systems</li>
-  <li>Marketing communication (if applicable)</li>
-  <li>Any future services integrated into TipsyPal</li>
-</ul>
-<p>This policy does not apply to:</p>
-<ul>
-  <li>Third-party websites you may link to</li>
-  <li>External platforms outside our control</li>
-</ul>
+<h3 id="section-3-1">3.1. Data Protection Officer</h3>
 
-<h2>4. Data We Collect (Extended)</h2>
-
-<h3>4.1. Account Information</h3>
-<p>We may collect the following account-related information:</p>
-<ul>
-  <li>Email address</li>
-  <li>Display name (optional)</li>
-  <li>Authentication token</li>
-  <li>Firebase User ID</li>
-  <li>Password hash (never your plain password)</li>
-</ul>
 <p>
-We do not collect payment card numbers or financial credentials.
+For privacy-related inquiries, data protection questions, or to exercise your rights under applicable data protection laws, you may contact our Data Protection Officer (DPO) at:
 </p>
 
-<h3>4.2. AI Input &amp; Output Data</h3>
 <p>
-This includes any text you submit to TipsyPal for:
+  <strong>Data Protection Officer</strong><br>
+  OakDev &amp; AI AB<br>
+  Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a><br>
+  Subject Line: "Data Protection Inquiry – TipsyPal"
 </p>
-<ul>
-  <li>Correction</li>
-  <li>Transformation</li>
-  <li>Rewriting</li>
-  <li>Idea generation</li>
-  <li>Social media message improvement</li>
-</ul>
-<p>We may also store:</p>
-<ul>
-  <li>Output generated by the AI</li>
-  <li>Metadata associated with the request</li>
-  <li>Selected tone/style options</li>
-</ul>
-<p><strong>User Content is processed solely to deliver the requested functionality.</strong></p>
 
-<h3>4.3. Purchase &amp; Credit Data</h3>
-<p>Collected via Google Play and Apple App Store:</p>
-<ul>
-  <li>Purchase tokens</li>
-  <li>Purchase status (including refunds or cancellations)</li>
-  <li>SKU identifiers (Basic / Champion / credit packs)</li>
-</ul>
-<p>We do not receive credit card numbers or bank details.</p>
-
-<h3>4.4. Device &amp; Technical Data</h3>
-<p>Automatically collected technical data may include:</p>
-<ul>
-  <li>Device model and manufacturer</li>
-  <li>Operating system version</li>
-  <li>IP address (short-term retention only)</li>
-  <li>App version</li>
-  <li>Crash logs (via Firebase Crashlytics)</li>
-  <li>Performance data (via Firebase Analytics)</li>
-  <li>Browser data (if using webview)</li>
-  <li>Time zone and locale</li>
-</ul>
-
-<h3>4.5. Diagnostic &amp; Telemetry Data</h3>
-<p>Used to improve app stability and reliability:</p>
-<ul>
-  <li>Crash stack traces</li>
-  <li>Error events</li>
-  <li>API latency metrics</li>
-  <li>Unexpected behavior reports</li>
-</ul>
-
-<h3>4.6. Optional Data</h3>
-<p>If you choose to provide it, we may process:</p>
-<ul>
-  <li>Profile information</li>
-  <li>Feedback or support messages</li>
-  <li>Uploaded content</li>
-  <li>Feature usage patterns</li>
-</ul>
-
-<h2>5. How We Use Your Data (High Detail)</h2>
-
-<h3>5.1. Service Delivery</h3>
-<p>We process your data in order to:</p>
-<ul>
-  <li>Authenticate your account</li>
-  <li>Provide AI-driven writing assistance</li>
-  <li>Maintain Basic/Champion access</li>
-  <li>Store and display chat history</li>
-  <li>Restore purchases and entitlements</li>
-</ul>
-
-<h3>5.2. Service Improvement</h3>
-<ul>
-  <li>Understand which features are used</li>
-  <li>Identify bugs or crashes</li>
-  <li>Enhance AI accuracy</li>
-  <li>Optimize performance and stability</li>
-</ul>
-
-<h3>5.3. Legal &amp; Compliance</h3>
-<ul>
-  <li>Implement anti-fraud measures</li>
-  <li>Maintain tax documentation for purchases</li>
-  <li>Respond to lawful requests from authorities</li>
-  <li>Verify purchases/entitlements when required</li>
-</ul>
-
-<h3>5.4. Security</h3>
-<ul>
-  <li>Monitor unauthorized access attempts</li>
-  <li>Prevent misuse or abuse of the App</li>
-  <li>Ensure compliance with app store policies</li>
-</ul>
-
-<h2>6. Legal Basis Under GDPR</h2>
-<p>We process your personal data under the following legal bases:</p>
-<ul>
-  <li><strong>Art. 6(1)(b) – Contractual necessity</strong>: to provide the App and its core features.</li>
-  <li><strong>Art. 6(1)(c) – Legal obligations</strong>: for tax and regulatory compliance.</li>
-  <li><strong>Art. 6(1)(f) – Legitimate interests</strong>: to prevent abuse, ensure security, and improve the service.</li>
-  <li><strong>Art. 6(1)(a) – Consent</strong>: for optional marketing and certain processing activities.</li>
-</ul>
-<p>You may withdraw consent at any time.</p>
-
-<h2>7. OpenAI &amp; AI Processing Disclosure</h2>
 <p>
-Your text may be transmitted securely to our AI provider (e.g., OpenAI) for the purpose of generating responses and
-transformations.
+We are committed to responding to all legitimate privacy and data protection inquiries within the timeframes required by applicable law (typically within 30 days of receipt).
 </p>
-<p>We ensure that:</p>
+
+<h2 id="section-4">4. Scope and Application</h2>
+
+<h3 id="section-4-1">4.1. Services Covered</h3>
+
+<p>This Privacy Policy applies comprehensively to:</p>
+
 <ul>
-  <li>Data is sent over encrypted channels (HTTPS/TLS)</li>
-  <li>Data is <strong>not</strong> used to train AI models</li>
-  <li>Data is deleted according to retention policies</li>
-  <li>Only the minimum necessary data is transmitted</li>
-</ul>
-<p>We do not transmit passwords, payment details, or unnecessary device identifiers.</p>
-
-<h2>8. Data Retention</h2>
-<p>We retain data for the following periods:</p>
-<ul>
-  <li><strong>User accounts</strong>: until account deletion is requested.</li>
-  <li><strong>Chat history</strong>: until deleted by the user or account removal.</li>
-  <li><strong>Purchase/billing records</strong>: as required by law (up to 7 years for tax records).</li>
-  <li><strong>Crash logs</strong>: typically up to 90 days (via Crashlytics).</li>
-  <li><strong>Analytics data</strong>: anonymized or aggregated after approximately 14 months.</li>
-</ul>
-<p>After these periods, data is deleted or irreversibly anonymized.</p>
-
-<h2>9. Marketing &amp; Partner Communication (With Consent)</h2>
-<p>
-We may use your email address to send marketing messages, service updates, promotions, and partner offers – but only if
-you have explicitly given your consent in accordance with GDPR Article 6(1)(a).
-</p>
-<p>
-We may also send sponsored content or partner-related communication directly from OakDev &amp; AI AB without sharing your email
-with the partner. Your personal data is never sold, rented, transferred, or disclosed to external partners without your
-explicit consent.
-</p>
-<p>
-You may withdraw your marketing consent at any time through account settings or by contacting us at
-<a href="mailto:hello@oakdev.app">hello@oakdev.app</a>.
-</p>
-
-<h2>10. Cookies and Tracking Technologies</h2>
-<p>
-The App itself does not use traditional browser cookies. However, third-party services such as Firebase may use device
-identifiers, analytics, and crash reporting tools that behave similarly for diagnostic and performance purposes.
-</p>
-<p>
-These tools comply with platform policies and do not track your general web browsing behavior outside the App.
-</p>
-
-<h2>11. International Transfers</h2>
-<p>
-Data may be processed in the EU, USA, or other regions supported by Firebase and OpenAI. All such transfers are carried
-out in compliance with GDPR through mechanisms such as:
-</p>
-<ul>
-  <li>Standard Contractual Clauses (SCCs)</li>
-  <li>Additional contractual protections</li>
-  <li>Data minimization principles</li>
+  <li>The TipsyPal mobile application available on iOS (Apple App Store) and Android (Google Play Store)</li>
+  <li>All features and functionalities within the App, including but not limited to:
+    <ul>
+      <li>AI-powered text correction, transformation, and generation</li>
+      <li>Writing assistance and style improvement features</li>
+      <li>Social media message enhancement</li>
+      <li>Chat history and conversation storage</li>
+      <li>User account creation and authentication</li>
+      <li>In-app purchase functionality</li>
+      <li>Credit-based access systems (Basic and Champion tiers)</li>
+      <li>Customer support and help features</li>
+    </ul>
+  </li>
+  <li>Any web interfaces, dashboards, or portals associated with TipsyPal</li>
+  <li>Communications sent by us, including email, push notifications, and in-app messages</li>
+  <li>Customer support interactions through email or in-app support channels</li>
+  <li>Any future features, services, or products we may introduce under the TipsyPal brand</li>
 </ul>
 
-<h2>12. User Rights</h2>
-<p>Under GDPR, you have the right to:</p>
-<ul>
-  <li>Access your personal data</li>
-  <li>Request correction of inaccurate data</li>
-  <li>Request deletion (“right to be forgotten”)</li>
-  <li>Request restriction of processing</li>
-  <li>Object to certain types of processing</li>
-  <li>Request data portability</li>
-  <li>Withdraw consent where processing is based on consent</li>
-</ul>
-<p>
-To exercise these rights, contact us at <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>. We aim to respond within
-30 days.
-</p>
+<h3 id="section-4-2">4.2. Services Not Covered</h3>
 
-<h2>13. Account Deletion</h2>
-<p>
-When you delete your account, we will remove or anonymize your personal data, including:
-</p>
-<ul>
-  <li>Account details</li>
-  <li>Chat history</li>
-  <li>AI-generated content tied to your profile</li>
-  <li>Notification tokens</li>
-</ul>
-<p>
-Some data (such as purchase and billing records) may be retained where required by law, for example for tax or fraud
-prevention.
-</p>
+<p>This Privacy Policy does not apply to:</p>
 
-<h2>14. Children’s Privacy</h2>
-<p>
-The App is not intended for children under 13. We do not knowingly collect personal data from children under 13. If we
-become aware that we have collected such data, we will delete it promptly.
-</p>
-
-<h2>15. Security Measures</h2>
-<p>We apply a range of technical and organizational measures to protect your data, including:</p>
 <ul>
-  <li>AES encryption at rest (via Firebase/Google Cloud infrastructure)</li>
-  <li>HTTPS/TLS encryption in transit</li>
-  <li>Strict access controls and least-privilege principles</li>
-  <li>Rate limiting and abuse detection mechanisms</li>
-  <li>Secure password hashing (e.g., bcrypt or equivalent)</li>
-  <li>Regular audits and security assessments</li>
+  <li>Third-party websites, applications, or services that you may access through links provided in TipsyPal</li>
+  <li>Third-party services that you independently choose to integrate with TipsyPal</li>
+  <li>Employment or job application data (which is governed by separate policies)</li>
+  <li>Data processing activities conducted by third parties independently of TipsyPal</li>
+  <li>Anonymous or aggregated data that cannot be used to identify you</li>
 </ul>
 
-<h2>16. No Warranty</h2>
+<h3 id="section-4-3">4.3. Geographic Scope</h3>
+
 <p>
-The Service is provided on an “AS IS” and “AS AVAILABLE” basis, without warranties of any kind, whether express or
-implied. We do not guarantee:
+This Privacy Policy applies to all users of TipsyPal regardless of their geographic location. However, specific rights and protections may vary based on your jurisdiction. We provide enhanced rights to users in:
 </p>
+
 <ul>
-  <li>Accuracy of AI responses</li>
-  <li>Availability or uptime of the Service</li>
-  <li>That content generated by the AI will be suitable for any specific purpose</li>
-  <li>That the Service will be error-free or uninterrupted</li>
+  <li>The European Economic Area (EEA)</li>
+  <li>The United Kingdom</li>
+  <li>Switzerland</li>
+  <li>California (United States)</li>
+  <li>Virginia, Colorado, Connecticut, and Utah (United States)</li>
+  <li>Other jurisdictions with comprehensive data protection laws</li>
 </ul>
 
-<h2>17. Limitation of Liability</h2>
+<h2 id="section-5">5. Categories of Personal Data We Collect</h2>
+
 <p>
-To the maximum extent permitted by law:
+We collect various categories of personal data to provide, maintain, protect, and improve TipsyPal. The specific data we collect depends on how you interact with our Service and the features you choose to use.
 </p>
+
+<h3 id="section-5-1">5.1. Account and Identity Information</h3>
+
+<p>When you create an account with TipsyPal, we collect:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Examples</th>
+      <th>Purpose</th>
+      <th>Required/Optional</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Email Address</td>
+      <td>user@example.com</td>
+      <td>Account creation, authentication, communication</td>
+      <td>Required</td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td>Hashed/encrypted only</td>
+      <td>Account security and authentication</td>
+      <td>Required</td>
+    </tr>
+    <tr>
+      <td>Display Name</td>
+      <td>John Doe, JD, etc.</td>
+      <td>Personalization, user identification</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>User ID</td>
+      <td>Firebase UID, internal identifiers</td>
+      <td>Account management, data association</td>
+      <td>Auto-generated</td>
+    </tr>
+    <tr>
+      <td>Profile Picture</td>
+      <td>Avatar image or photo</td>
+      <td>Personalization</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>Account Creation Date</td>
+      <td>Timestamp</td>
+      <td>Account management, analytics</td>
+      <td>Auto-collected</td>
+    </tr>
+    <tr>
+      <td>Last Login Date</td>
+      <td>Timestamp</td>
+      <td>Security, account activity monitoring</td>
+      <td>Auto-collected</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Important:</strong> We never store your password in plain text. All passwords are hashed using industry-standard cryptographic algorithms before storage.</p>
+
+<h3 id="section-5-2">5.2. User-Generated Content and AI Interaction Data</h3>
+
+<p>TipsyPal is an AI-powered writing assistant. To provide this service, we process the following user-generated content:</p>
+
 <ul>
-  <li>We are not liable for indirect, incidental, special, consequential, or punitive damages.</li>
-  <li>We are not liable for losses caused by AI output or your reliance on it.</li>
-  <li>Your sole remedy in case of dissatisfaction with the Service is to stop using the App.</li>
+  <li><strong>Input Text:</strong> Any text you submit to TipsyPal for processing, including:
+    <ul>
+      <li>Messages to be corrected or improved</li>
+      <li>Text for transformation or style adjustment</li>
+      <li>Prompts for AI-generated content</li>
+      <li>Social media messages for enhancement</li>
+      <li>Any other textual input you provide</li>
+    </ul>
+  </li>
+  <li><strong>AI Output:</strong> Text generated by our AI systems in response to your input</li>
+  <li><strong>Conversation History:</strong> Previous interactions, prompts, and responses stored for your convenience</li>
+  <li><strong>Interaction Metadata:</strong> Including:
+    <ul>
+      <li>Timestamps of when requests were made</li>
+      <li>Selected tone, style, or transformation options</li>
+      <li>Language settings</li>
+      <li>Feature usage patterns</li>
+      <li>Session duration and frequency</li>
+    </ul>
+  </li>
+  <li><strong>Saved Items:</strong> Content you choose to save, favorite, or bookmark within the App</li>
+  <li><strong>Feedback and Ratings:</strong> Your ratings of AI responses, thumbs up/down, or other feedback mechanisms</li>
 </ul>
 
-<h2>18. Indemnification</h2>
-<p>
-By using the App, you agree to indemnify, defend, and hold harmless OakDev &amp; AI AB from any claims, liabilities,
-damages, losses, and expenses arising from:
-</p>
+<div class="notice">
+  <strong>Privacy Note:</strong> Your user-generated content is processed solely to provide the TipsyPal service. We do not use your content to train AI models without your explicit consent. Your messages and AI interactions are private and are not shared with other users.
+</div>
+
+<h3 id="section-5-3">5.3. Transaction and Purchase Information</h3>
+
+<p>When you make in-app purchases, we collect and process:</p>
+
 <ul>
-  <li>Your misuse of the App</li>
-  <li>Your violation of applicable laws</li>
-  <li>Your violation of this Privacy Policy</li>
-  <li>Your use of AI-generated content</li>
+  <li><strong>Purchase Tokens:</strong> Unique identifiers provided by Apple App Store or Google Play Store</li>
+  <li><strong>Transaction IDs:</strong> Reference numbers for each purchase</li>
+  <li><strong>Product SKU:</strong> Identifiers for purchased items (e.g., credit packs, Basic tier, Champion tier)</li>
+  <li><strong>Purchase Date and Time:</strong> Timestamp of transaction</li>
+  <li><strong>Purchase Status:</strong> Including confirmation, pending, completed, refunded, or cancelled</li>
+  <li><strong>Subscription Information:</strong> If applicable:
+    <ul>
+      <li>Subscription tier (Basic/Champion)</li>
+      <li>Start date and renewal date</li>
+      <li>Cancellation status</li>
+      <li>Auto-renewal settings</li>
+    </ul>
+  </li>
+  <li><strong>Credit Balance:</strong> Number of available credits and usage history</li>
+  <li><strong>Promotional Codes:</strong> If you redeem any discount or promotional codes</li>
 </ul>
 
-<h2>19. Changes &amp; Contact</h2>
 <p>
-We may update this Privacy Policy as needed to reflect changes in our practices, legal requirements, or service features.
-We will indicate the date of the latest update at the top of this document. Continued use of the App after changes are
-published constitutes acceptance of the updated Policy.
+<strong>Important:</strong> We do not collect or store your credit card numbers, bank account information, or other financial credentials. All payment processing is handled securely by Apple (for iOS) or Google (for Android) according to their respective payment processing policies.
 </p>
+
+<h3 id="section-5-4">5.4. Device and Technical Information</h3>
+
+<p>We automatically collect certain technical information about your device and how you access TipsyPal:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Specific Data Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Device Information</strong></td>
+      <td>
+        <ul>
+          <li>Device model and manufacturer (e.g., iPhone 14, Samsung Galaxy S23)</li>
+          <li>Device unique identifiers (IDFA, Advertising ID - with permission)</li>
+          <li>Hardware specifications</li>
+          <li>Screen resolution and size</li>
+          <li>Battery level (for performance optimization)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Operating System</strong></td>
+      <td>
+        <ul>
+          <li>OS type (iOS, Android)</li>
+          <li>OS version (e.g., iOS 17.2, Android 14)</li>
+          <li>System language and region settings</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Application Information</strong></td>
+      <td>
+        <ul>
+          <li>TipsyPal app version</li>
+          <li>Installation date</li>
+          <li>Update history</li>
+          <li>App configuration settings</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Network Information</strong></td>
+      <td>
+        <ul>
+          <li>IP address (IPv4 or IPv6)</li>
+          <li>Internet Service Provider (ISP)</li>
+          <li>Connection type (WiFi, cellular, etc.)</li>
+          <li>Network speed and performance metrics</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Location Information</strong></td>
+      <td>
+        <ul>
+          <li>Country and region (derived from IP address)</li>
+          <li>Time zone</li>
+          <li>Language and locale preferences</li>
+          <li>Note: We do NOT collect precise GPS location</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-5-5">5.5. Usage and Analytics Data</h3>
+
+<p>To improve TipsyPal and understand how users interact with our Service, we collect:</p>
+
+<ul>
+  <li><strong>Feature Usage:</strong> Which features you use, how often, and for how long</li>
+  <li><strong>Session Information:</strong> Duration, frequency, and timing of app sessions</li>
+  <li><strong>Navigation Patterns:</strong> Screens visited, buttons clicked, user flows</li>
+  <li><strong>Performance Metrics:</strong> App load times, response times, API latency</li>
+  <li><strong>Engagement Metrics:</strong> Active vs. passive usage, feature adoption rates</li>
+  <li><strong>Credit Usage Patterns:</strong> How and when credits are consumed</li>
+  <li><strong>Error Events:</strong> Non-crash errors, warnings, and exceptions</li>
+  <li><strong>A/B Test Assignments:</strong> If you participate in feature experiments</li>
+</ul>
+
+<h3 id="section-5-6">5.6. Diagnostic and Crash Data</h3>
+
+<p>To maintain app stability and fix bugs, we collect:</p>
+
+<ul>
+  <li><strong>Crash Reports:</strong> Including:
+    <ul>
+      <li>Stack traces and error logs</li>
+      <li>Device state at time of crash</li>
+      <li>Memory usage</li>
+      <li>Thread information</li>
+      <li>Code execution path leading to crash</li>
+    </ul>
+  </li>
+  <li><strong>Performance Diagnostics:</strong>
+    <ul>
+      <li>CPU usage patterns</li>
+      <li>Memory consumption</li>
+      <li>Network request success/failure rates</li>
+      <li>Database query performance</li>
+    </ul>
+  </li>
+  <li><strong>Error Logs:</strong> Application errors, API failures, and exception details</li>
+</ul>
+
+<p>Crash and diagnostic data is collected through Firebase Crashlytics and is used exclusively for debugging and quality improvement purposes.</p>
+
+<h3 id="section-5-7">5.7. Communication and Support Data</h3>
+
+<p>When you contact us for support or communicate with us, we collect:</p>
+
+<ul>
+  <li>Your name and email address</li>
+  <li>Subject matter and content of your inquiry</li>
+  <li>Any attachments, screenshots, or files you provide</li>
+  <li>Your user ID and account information</li>
+  <li>Communication history and timestamps</li>
+  <li>Support ticket numbers and status</li>
+  <li>Feedback, suggestions, or complaints you provide</li>
+  <li>Survey responses (if you participate in user research)</li>
+</ul>
+
+<h3 id="section-5-8">5.8. Marketing and Preference Data</h3>
+
+<p>If you opt in to marketing communications, we may collect:</p>
+
+<ul>
+  <li>Email marketing preferences and consent status</li>
+  <li>Push notification preferences</li>
+  <li>Communication frequency preferences</li>
+  <li>Topics of interest</li>
+  <li>Email open rates and click-through behavior</li>
+  <li>Unsubscribe requests and opt-out history</li>
+</ul>
+
+<h3 id="section-5-9">5.9. Data We Do NOT Collect</h3>
+
+<p>For transparency, we want to clearly state what we do NOT collect:</p>
+
+<ul>
+  <li>❌ Precise GPS location or real-time location tracking</li>
+  <li>❌ Contacts from your address book</li>
+  <li>❌ Photos, videos, or other media files (unless you explicitly upload them for processing)</li>
+  <li>❌ Microphone or camera access (unless specifically needed for a feature you choose to use)</li>
+  <li>❌ Credit card numbers or banking information</li>
+  <li>❌ Health data or medical information</li>
+  <li>❌ Biometric data (fingerprints, facial recognition data)</li>
+  <li>❌ Data from other apps on your device</li>
+  <li>❌ Browsing history outside of TipsyPal</li>
+  <li>❌ Social media account passwords</li>
+</ul>
+
+<h2 id="section-6">6. How and Why We Collect Your Data</h2>
+
+<h3 id="section-6-1">6.1. Methods of Collection</h3>
+
+<p>We collect personal data through the following methods:</p>
+
+<h4>6.1.1. Direct Collection</h4>
+<p>Data you voluntarily provide to us when you:</p>
+<ul>
+  <li>Create an account</li>
+  <li>Use AI features and submit text for processing</li>
+  <li>Make in-app purchases</li>
+  <li>Contact customer support</li>
+  <li>Respond to surveys or feedback requests</li>
+  <li>Participate in promotional activities</li>
+  <li>Update your profile or settings</li>
+</ul>
+
+<h4>6.1.2. Automatic Collection</h4>
+<p>Data automatically collected when you use TipsyPal through:</p>
+<ul>
+  <li>Log files and server logs</li>
+  <li>Firebase Analytics and Crashlytics SDKs</li>
+  <li>Mobile platform APIs (iOS/Android)</li>
+  <li>Cookies and similar tracking technologies (in webviews)</li>
+  <li>Error monitoring and diagnostic tools</li>
+</ul>
+
+<h4>6.1.3. Third-Party Sources</h4>
+<p>In limited circumstances, we may receive data from:</p>
+<ul>
+  <li>Apple App Store or Google Play Store (purchase verification)</li>
+  <li>Authentication providers (if you use third-party login)</li>
+  <li>Public databases for fraud prevention</li>
+  <li>Partners or affiliates (with your consent)</li>
+</ul>
+
+<h3 id="section-6-2">6.2. Purposes of Collection</h3>
+
+<p>We collect and process your personal data for the following specific purposes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Purpose Category</th>
+      <th>Specific Purposes</th>
+      <th>Data Used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Service Provision</strong></td>
+      <td>
+        <ul>
+          <li>Create and manage your account</li>
+          <li>Authenticate your identity</li>
+          <li>Provide AI writing assistance</li>
+          <li>Store and display conversation history</li>
+          <li>Process in-app purchases</li>
+          <li>Manage credit balances and entitlements</li>
+        </ul>
+      </td>
+      <td>Account info, user content, purchase data, device info</td>
+    </tr>
+    <tr>
+      <td><strong>Service Improvement</strong></td>
+      <td>
+        <ul>
+          <li>Analyze usage patterns and trends</li>
+          <li>Identify and fix bugs</li>
+          <li>Develop new features</li>
+          <li>Optimize performance</li>
+          <li>Conduct A/B testing</li>
+          <li>Enhance AI model accuracy</li>
+        </ul>
+      </td>
+      <td>Usage data, analytics, crash reports, feedback</td>
+    </tr>
+    <tr>
+      <td><strong>Communication</strong></td>
+      <td>
+        <ul>
+          <li>Send service-related notifications</li>
+          <li>Respond to support inquiries</li>
+          <li>Provide customer service</li>
+          <li>Send purchase confirmations</li>
+          <li>Notify about policy changes</li>
+        </ul>
+      </td>
+      <td>Email, user ID, support data</td>
+    </tr>
+    <tr>
+      <td><strong>Security & Fraud Prevention</strong></td>
+      <td>
+        <ul>
+          <li>Prevent unauthorized access</li>
+          <li>Detect and prevent fraud</li>
+          <li>Protect against abuse</li>
+          <li>Verify transactions</li>
+          <li>Maintain service integrity</li>
+        </ul>
+      </td>
+      <td>Device info, IP address, usage patterns, purchase data</td>
+    </tr>
+    <tr>
+      <td><strong>Legal Compliance</strong></td>
+      <td>
+        <ul>
+          <li>Comply with legal obligations</li>
+          <li>Respond to legal requests</li>
+          <li>Maintain tax records</li>
+          <li>Enforce terms of service</li>
+          <li>Protect our legal rights</li>
+        </ul>
+      </td>
+      <td>Account info, purchase records, communication logs</td>
+    </tr>
+    <tr>
+      <td><strong>Marketing (With Consent)</strong></td>
+      <td>
+        <ul>
+          <li>Send promotional communications</li>
+          <li>Provide personalized offers</li>
+          <li>Conduct market research</li>
+          <li>Advertise new features</li>
+        </ul>
+      </td>
+      <td>Email, preferences, usage patterns</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="section-7">7. Legal Bases for Processing (GDPR)</h2>
+
 <p>
-For privacy concerns, GDPR requests, or questions about this Policy, please contact:
+Under the General Data Protection Regulation (GDPR), we are required to identify and communicate the legal basis for processing your personal data. We rely on the following legal bases:
 </p>
+
+<h3 id="section-7-1">7.1. Contractual Necessity (Article 6(1)(b) GDPR)</h3>
+
+<p>Processing is necessary for the performance of the contract between you and OakDev &amp; AI AB (i.e., the TipsyPal Terms of Service). This includes:</p>
+
+<ul>
+  <li>Creating and managing your account</li>
+  <li>Providing AI writing assistance features</li>
+  <li>Processing your text inputs and generating outputs</li>
+  <li>Storing conversation history</li>
+  <li>Managing purchases and credits</li>
+  <li>Delivering the core functionality of TipsyPal</li>
+</ul>
+
+<p><strong>Consequence of not providing data:</strong> If you do not provide data necessary for contractual performance, we will be unable to provide the Service to you.</p>
+
+<h3 id="section-7-2">7.2. Legal Obligation (Article 6(1)(c) GDPR)</h3>
+
+<p>Processing is necessary to comply with legal obligations to which we are subject, including:</p>
+
+<ul>
+  <li>Tax reporting and record-keeping requirements</li>
+  <li>Accounting and financial regulations</li>
+  <li>Responding to valid legal requests from authorities</li>
+  <li>Complying with court orders or law enforcement requests</li>
+  <li>Meeting consumer protection requirements</li>
+  <li>Data retention obligations under Swedish and EU law</li>
+</ul>
+
+<h3 id="section-7-3">7.3. Legitimate Interests (Article 6(1)(f) GDPR)</h3>
+
+<p>Processing is necessary for the purposes of our legitimate interests, except where such interests are overridden by your fundamental rights and freedoms. Our legitimate interests include:</p>
+
+<ul>
+  <li><strong>Service Security:</strong> Protecting the App and our systems from security threats, unauthorized access, fraud, and abuse</li>
+  <li><strong>Service Improvement:</strong> Analyzing usage patterns to improve features, functionality, and user experience</li>
+  <li><strong>Technical Operations:</strong> Maintaining, troubleshooting, and optimizing the technical infrastructure</li>
+  <li><strong>Business Analytics:</strong> Understanding business performance and making informed decisions</li>
+  <li><strong>Customer Support:</strong> Providing efficient and effective support to our users</li>
+  <li><strong>Product Development:</strong> Developing new features and services that benefit our users</li>
+  <li><strong>Legal Rights:</strong> Establishing, exercising, or defending legal claims</li>
+</ul>
+
+<p>We have carefully balanced these interests against your rights and freedoms and have implemented appropriate safeguards to protect your data.</p>
+
+<h3 id="section-7-4">7.4. Consent (Article 6(1)(a) GDPR)</h3>
+
+<p>For certain processing activities, we rely on your explicit consent, including:</p>
+
+<ul>
+  <li>Sending marketing and promotional emails</li>
+  <li>Push notifications (non-essential)</li>
+  <li>Collecting certain optional data</li>
+  <li>Sharing data with partners or affiliates</li>
+  <li>Using data for purposes beyond service provision</li>
+  <li>Participating in beta testing or research studies</li>
+</ul>
+
+<p>
+<strong>You have the right to withdraw consent at any time.</strong> Withdrawal of consent will not affect the lawfulness of processing based on consent before its withdrawal. You can withdraw consent through your account settings or by contacting us at <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>.
+</p>
+
+<h3 id="section-7-5">7.5. Vital Interests (Article 6(1)(d) GDPR)</h3>
+
+<p>In rare circumstances, we may process your data to protect your vital interests or those of another person, such as in emergency situations.</p>
+
+<h2 id="section-8">8. How We Use Your Personal Data</h2>
+
+<p>This section provides a comprehensive overview of how we use the personal data we collect, organized by functional area:</p>
+
+<h3 id="section-8-1">8.1. Account Management and Authentication</h3>
+
+<ul>
+  <li>Create, maintain, and secure your user account</li>
+  <li>Verify your identity when you log in</li>
+  <li>Enable password reset and account recovery</li>
+  <li>Manage your profile information and preferences</li>
+  <li>Synchronize data across your devices</li>
+  <li>Maintain session security and prevent unauthorized access</li>
+  <li>Implement multi-factor authentication (if enabled)</li>
+</ul>
+
+<h3 id="section-8-2">8.2. AI Service Delivery</h3>
+
+<ul>
+  <li>Process your text inputs through our AI systems</li>
+  <li>Generate AI-powered corrections, improvements, and suggestions</li>
+  <li>Apply selected tone, style, and transformation options</li>
+  <li>Store conversation history for your future reference</li>
+  <li>Enable context-aware responses based on previous interactions</li>
+  <li>Optimize AI model performance for your use cases</li>
+  <li>Provide personalized writing assistance based on your usage patterns</li>
+</ul>
+
+<h3 id="section-8-3">8.3. Purchase and Payment Processing</h3>
+
+<ul>
+  <li>Process in-app purchases through Apple or Google payment systems</li>
+  <li>Verify and validate purchase receipts</li>
+  <li>Manage credit balances and subscriptions</li>
+  <li>Grant appropriate access levels (Basic/Champion)</li>
+  <li>Handle refund requests and purchase disputes</li>
+  <li>Prevent payment fraud and unauthorized purchases</li>
+  <li>Generate purchase confirmations and receipts</li>
+  <li>Maintain transaction records for accounting and tax purposes</li>
+</ul>
+
+<h3 id="section-8-4">8.4. Service Optimization and Improvement</h3>
+
+<ul>
+  <li>Analyze how users interact with different features</li>
+  <li>Identify usability issues and areas for improvement</li>
+  <li>Conduct A/B testing to evaluate feature changes</li>
+  <li>Monitor app performance and loading times</li>
+  <li>Optimize AI response quality and accuracy</li>
+  <li>Understand user needs and preferences</li>
+  <li>Prioritize development of new features</li>
+  <li>Benchmark performance against industry standards</li>
+</ul>
+
+<h3 id="section-8-5">8.5. Technical Maintenance and Support</h3>
+
+<ul>
+  <li>Identify, diagnose, and fix technical issues</li>
+  <li>Investigate and resolve crashes and errors</li>
+  <li>Monitor system health and availability</li>
+  <li>Perform routine maintenance and updates</li>
+  <li>Respond to customer support requests</li>
+  <li>Troubleshoot account-specific problems</li>
+  <li>Provide technical assistance to users</li>
+  <li>Document and track support tickets</li>
+</ul>
+
+<h3 id="section-8-6">8.6. Security and Fraud Prevention</h3>
+
+<ul>
+  <li>Detect and prevent unauthorized account access</li>
+  <li>Identify suspicious activity and usage patterns</li>
+  <li>Prevent abuse of free credits or promotional offers</li>
+  <li>Detect fraudulent purchases or chargebacks</li>
+  <li>Implement rate limiting and abuse prevention mechanisms</li>
+  <li>Monitor for malicious activity or bot behavior</li>
+  <li>Protect against spam and automated attacks</li>
+  <li>Maintain integrity of user-generated content</li>
+  <li>Comply with anti-money laundering requirements</li>
+</ul>
+
+<h3 id="section-8-7">8.7. Communication and Notifications</h3>
+
+<ul>
+  <li>Send transactional emails (account creation, password reset, purchase confirmation)</li>
+  <li>Deliver important service announcements and updates</li>
+  <li>Send push notifications about app activity (if enabled)</li>
+  <li>Notify you about credit balance and usage</li>
+  <li>Communicate policy changes and legal updates</li>
+  <li>Respond to your inquiries and support requests</li>
+  <li>Send marketing messages (only with your consent)</li>
+  <li>Conduct user surveys and gather feedback</li>
+</ul>
+
+<h3 id="section-8-8">8.8. Analytics and Business Intelligence</h3>
+
+<ul>
+  <li>Generate reports on app usage and engagement</li>
+  <li>Analyze user retention and churn rates</li>
+  <li>Understand demographic trends (in aggregate)</li>
+  <li>Evaluate feature adoption and popularity</li>
+  <li>Measure return on investment for new features</li>
+  <li>Identify growth opportunities</li>
+  <li>Support strategic business decisions</li>
+  <li>Create anonymized datasets for internal analysis</li>
+</ul>
+
+<h3 id="section-8-9">8.9. Legal Compliance and Risk Management</h3>
+
+<ul>
+  <li>Maintain records required by tax authorities</li>
+  <li>Respond to valid legal requests and subpoenas</li>
+  <li>Cooperate with law enforcement investigations</li>
+  <li>Enforce our Terms of Service and policies</li>
+  <li>Resolve disputes and legal claims</li>
+  <li>Conduct internal audits and compliance reviews</li>
+  <li>Demonstrate compliance with GDPR and other regulations</li>
+  <li>Protect our legal rights and interests</li>
+</ul>
+
+<h2 id="section-9">9. AI Processing and Third-Party AI Services</h2>
+
+<h3 id="section-9-1">9.1. AI Processing Overview</h3>
+
+<p>
+TipsyPal uses artificial intelligence to provide writing assistance, text correction, style transformation, and content generation. To deliver these AI-powered features, your text inputs are processed by advanced language models.
+</p>
+
+<h3 id="section-9-2">9.2. OpenAI Integration</h3>
+
+<p>
+We currently utilize OpenAI's API services (including GPT models) to process your text inputs and generate AI responses. When you use AI features in TipsyPal:
+</p>
+
+<ul>
+  <li>Your text input is securely transmitted to OpenAI's servers via encrypted HTTPS connections</li>
+  <li>OpenAI processes your text to generate the requested output (correction, transformation, suggestion, etc.)</li>
+  <li>The AI-generated response is returned to TipsyPal and displayed to you</li>
+  <li>Both your input and the AI output may be stored in your conversation history</li>
+</ul>
+
+<h3 id="section-9-3">9.3. Data Protection in AI Processing</h3>
+
+<p>We have implemented the following safeguards for AI processing:</p>
+
+<ul>
+  <li><strong>Encryption in Transit:</strong> All data transmitted to and from AI services is encrypted using TLS 1.2 or higher</li>
+  <li><strong>No Model Training:</strong> According to OpenAI's enterprise API terms, your data submitted via our API is NOT used to train or improve OpenAI's models</li>
+  <li><strong>Data Minimization:</strong> We only send the minimum necessary text content to the AI service</li>
+  <li><strong>No Sensitive Identifiers:</strong> We do not send your name, email, payment information, or device identifiers to AI services</li>
+  <li><strong>Retention Limits:</strong> OpenAI retains API data for a maximum of 30 days for abuse monitoring, after which it is deleted</li>
+  <li><strong>Contractual Protections:</strong> We have data processing agreements in place with our AI providers</li>
+</ul>
+
+<h3 id="section-9-4">9.4. OpenAI's Data Processing</h3>
+
+<p>
+OpenAI's processing of your data is governed by their API Data Usage Policies. Key points include:
+</p>
+
+<ul>
+  <li>API data is not used to train OpenAI's models</li>
+  <li>Data is retained for 30 days for abuse and misuse monitoring</li>
+  <li>After 30 days, data is deleted from OpenAI's systems</li>
+  <li>OpenAI may retain data longer if required by law or to address security/safety issues</li>
+  <li>OpenAI is certified under various data protection frameworks</li>
+</ul>
+
+<p>
+For more information, please review OpenAI's Privacy Policy at: <a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a>
+</p>
+
+<h3 id="section-9-5">9.5. Alternative AI Providers</h3>
+
+<p>
+We may integrate additional or alternative AI providers in the future to improve service quality, performance, or cost-effectiveness. If we do so:
+</p>
+
+<ul>
+  <li>We will update this Privacy Policy accordingly</li>
+  <li>We will ensure equivalent or better data protection standards</li>
+  <li>We will enter into appropriate data processing agreements</li>
+  <li>We will provide notice of significant changes</li>
+</ul>
+
+<h3 id="section-9-6">9.6. Your Control Over AI Processing</h3>
+
+<p>You maintain control over AI processing in the following ways:</p>
+
+<ul>
+  <li>You choose what text to submit for AI processing</li>
+  <li>You can delete your conversation history at any time</li>
+  <li>You can delete your account, which will remove your stored AI interactions</li>
+  <li>You can request deletion of specific data under your GDPR rights</li>
+</ul>
+
+<h3 id="section-9-7">9.7. AI Output Disclaimer</h3>
+
+<div class="notice">
+  <strong>Important Disclaimer:</strong> AI-generated content may contain inaccuracies, errors, or inappropriate suggestions. You are solely responsible for reviewing, editing, and deciding whether to use any AI-generated content. We are not liable for any consequences resulting from your use of AI outputs.
+</div>
+
+<h2 id="section-10">10. Third-Party Services and Integrations</h2>
+
+<p>
+TipsyPal integrates with several third-party services to provide functionality, analytics, infrastructure, and support. This section details each third-party service, what data they process, and how they protect your information.
+</p>
+
+<h3 id="section-10-1">10.1. Firebase (Google)</h3>
+
+<p><strong>Service Provider:</strong> Google LLC (United States)</p>
+<p><strong>Services Used:</strong></p>
+<ul>
+  <li>Firebase Authentication – User account management</li>
+  <li>Firebase Firestore – Database for storing user data and conversation history</li>
+  <li>Firebase Cloud Functions – Backend logic and API endpoints</li>
+  <li>Firebase Crashlytics – Crash reporting and diagnostics</li>
+  <li>Firebase Analytics – App usage analytics</li>
+  <li>Firebase Cloud Messaging – Push notifications</li>
+  <li>Firebase Performance Monitoring – App performance tracking</li>
+</ul>
+
+<p><strong>Data Shared:</strong></p>
+<ul>
+  <li>Account information (email, user ID)</li>
+  <li>User-generated content and conversation history</li>
+  <li>Device information and technical data</li>
+  <li>App usage and analytics data</li>
+  <li>Crash reports and error logs</li>
+</ul>
+
+<p><strong>Purpose:</strong> Core infrastructure, data storage, user authentication, analytics, and app stability monitoring</p>
+
+<p><strong>Data Protection:</strong></p>
+<ul>
+  <li>Data Processing Agreement in place</li>
+  <li>GDPR-compliant Standard Contractual Clauses</li>
+  <li>Encryption at rest and in transit</li>
+  <li>Google's ISO 27001, SOC 2, and other certifications</li>
+</ul>
+
+<p><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+
+<h3 id="section-10-2">10.2. OpenAI</h3>
+
+<p><strong>Service Provider:</strong> OpenAI, L.L.C. (United States)</p>
+<p><strong>Services Used:</strong> GPT API for AI text processing</p>
+
+<p><strong>Data Shared:</strong></p>
+<ul>
+  <li>Text inputs you submit for AI processing</li>
+  <li>Minimal request metadata (no personal identifiers)</li>
+</ul>
+
+<p><strong>Purpose:</strong> AI-powered writing assistance, text correction, and content generation</p>
+
+<p><strong>Data Protection:</strong> See Section 9 (AI Processing) for detailed information</p>
+
+<p><strong>Privacy Policy:</strong> <a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a></p>
+
+<h3 id="section-10-3">10.3. Apple App Store</h3>
+
+<p><strong>Service Provider:</strong> Apple Inc. (United States)</p>
+<p><strong>Services Used:</strong> In-app purchase processing (for iOS users)</p>
+
+<p><strong>Data Shared:</strong></p>
+<ul>
+  <li>Purchase tokens and transaction identifiers</li>
+  <li>Product SKUs and purchase status</li>
+  <li>Apple Account information (managed by Apple, not visible to us)</li>
+</ul>
+
+<p><strong>Purpose:</strong> Processing purchases, managing subscriptions, verifying transactions</p>
+
+<p><strong>Privacy Policy:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></p>
+
+<h3 id="section-10-4">10.4. Google Play Store</h3>
+
+<p><strong>Service Provider:</strong> Google LLC (United States)</p>
+<p><strong>Services Used:</strong> In-app purchase processing (for Android users)</p>
+
+<p><strong>Data Shared:</strong></p>
+<ul>
+  <li>Purchase tokens and order identifiers</li>
+  <li>Product SKUs and purchase status</li>
+  <li>Google Account information (managed by Google, not visible to us)</li>
+</ul>
+
+<p><strong>Purpose:</strong> Processing purchases, managing subscriptions, verifying transactions</p>
+
+<p><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+<h3 id="section-10-5">10.5. Email Service Provider</h3>
+
+<p>
+We may use third-party email service providers to send transactional and marketing emails. These services process:
+</p>
+
+<ul>
+  <li>Your email address</li>
+  <li>Email content (account notifications, support responses, marketing messages)</li>
+  <li>Email engagement data (opens, clicks)</li>
+</ul>
+
+<p>Email service providers we may use include: SendGrid, Amazon SES, or similar GDPR-compliant services.</p>
+
+<h3 id="section-10-6">10.6. Changes to Third-Party Services</h3>
+
+<p>
+We may add, remove, or change third-party service providers as needed to improve TipsyPal. When we make significant changes that affect data processing, we will update this Privacy Policy and notify you as required by law.
+</p>
+
+<h2 id="section-11">11. Data Sharing and Disclosure</h2>
+
+<p>
+We do not sell, rent, or trade your personal data to third parties for their marketing purposes. However, we may share your data in the following limited circumstances:
+</p>
+
+<h3 id="section-11-1">11.1. Service Providers and Processors</h3>
+
+<p>
+We share data with third-party service providers who process data on our behalf to provide infrastructure, analytics, AI services, payment processing, and other essential functions. These service providers include:
+</p>
+
+<ul>
+  <li>Firebase/Google (infrastructure and analytics)</li>
+  <li>OpenAI (AI processing)</li>
+  <li>Apple and Google (payment processing)</li>
+  <li>Email service providers</li>
+  <li>Customer support platforms</li>
+</ul>
+
+<p>All service providers are:</p>
+<ul>
+  <li>Contractually bound to protect your data</li>
+  <li>Limited to using data only for specified purposes</li>
+  <li>Required to comply with GDPR and applicable data protection laws</li>
+  <li>Subject to our oversight and audit rights</li>
+</ul>
+
+<h3 id="section-11-2">11.2. Legal Requirements and Law Enforcement</h3>
+
+<p>We may disclose your personal data if required to do so by law or in response to valid requests by public authorities, including to:</p>
+
+<ul>
+  <li>Comply with legal obligations, court orders, or subpoenas</li>
+  <li>Respond to lawful requests from law enforcement or government agencies</li>
+  <li>Protect our rights, property, or safety, or that of our users or the public</li>
+  <li>Detect, prevent, or address fraud, security, or technical issues</li>
+  <li>Enforce our Terms of Service or other agreements</li>
+  <li>Prevent illegal activity or violations of our policies</li>
+</ul>
+
+<p>We will:</p>
+<ul>
+  <li>Carefully review all legal requests for validity</li>
+  <li>Disclose only the minimum data necessary</li>
+  <li>Notify affected users when legally permitted</li>
+  <li>Maintain records of such disclosures</li>
+</ul>
+
+<h3 id="section-11-3">11.3. Business Transfers</h3>
+
+<p>
+If OakDev &amp; AI AB is involved in a merger, acquisition, asset sale, bankruptcy, or other business transaction, your personal data may be transferred to the acquiring or successor entity. In such cases:
+</p>
+
+<ul>
+  <li>We will notify you via email and/or prominent notice in the App</li>
+  <li>The successor entity will be bound by this Privacy Policy</li>
+  <li>You will have the opportunity to delete your account before the transfer</li>
+  <li>Your rights under applicable data protection laws will continue to apply</li>
+</ul>
+
+<h3 id="section-11-4">11.4. Aggregated and Anonymized Data</h3>
+
+<p>
+We may share aggregated, anonymized, or de-identified data that cannot reasonably be used to identify you. Such data may be used for:
+</p>
+
+<ul>
+  <li>Industry research and reports</li>
+  <li>Business analytics and benchmarking</li>
+  <li>Public presentations or publications</li>
+  <li>Improving AI models (only anonymized data)</li>
+</ul>
+
+<p>Anonymized data is not considered personal data under GDPR and is not subject to the restrictions in this Privacy Policy.</p>
+
+<h3 id="section-11-5">11.5. With Your Consent</h3>
+
+<p>
+We may share your personal data with third parties when you provide explicit consent, such as:
+</p>
+
+<ul>
+  <li>Sharing data with partners or affiliates for specific programs</li>
+  <li>Participating in joint promotions or offers</li>
+  <li>Integrating with third-party services you authorize</li>
+  <li>Publishing testimonials or case studies (with your permission)</li>
+</ul>
+
+<p>You can withdraw consent at any time by contacting us.</p>
+
+<h3 id="section-11-6">11.6. What We Do NOT Do</h3>
+
+<p>To be absolutely clear, we do NOT:</p>
+
+<ul>
+  <li>❌ Sell your personal data to data brokers or advertisers</li>
+  <li>❌ Share your email address with marketing partners without consent</li>
+  <li>❌ Provide your user-generated content to third parties (except AI processors as disclosed)</li>
+  <li>❌ Share your data for third-party marketing purposes</li>
+  <li>❌ Disclose your personal data to third parties except as described in this policy</li>
+</ul>
+
+<h2 id="section-12">12. Data Retention and Deletion</h2>
+
+<h3 id="section-12-1">12.1. Retention Principles</h3>
+
+<p>We retain your personal data only for as long as necessary to:</p>
+
+<ul>
+  <li>Provide the TipsyPal Service</li>
+  <li>Fulfill the purposes described in this Privacy Policy</li>
+  <li>Comply with legal, accounting, and regulatory requirements</li>
+  <li>Resolve disputes and enforce our agreements</li>
+  <li>Protect against fraud and abuse</li>
+</ul>
+
+<p>When data is no longer needed, we securely delete or anonymize it.</p>
+
+<h3 id="section-12-2">12.2. Specific Retention Periods</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Category</th>
+      <th>Retention Period</th>
+      <th>Reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Account Information</strong></td>
+      <td>Until account deletion requested</td>
+      <td>Necessary to provide service</td>
+    </tr>
+    <tr>
+      <td><strong>User-Generated Content</strong></td>
+      <td>Until deleted by user or account closure</td>
+      <td>Service functionality; user control</td>
+    </tr>
+    <tr>
+      <td><strong>Conversation History</strong></td>
+      <td>Until deleted by user or account closure</td>
+      <td>Service functionality; user convenience</td>
+    </tr>
+    <tr>
+      <td><strong>Purchase Records</strong></td>
+      <td>7 years from transaction date</td>
+      <td>Tax and accounting legal requirements</td>
+    </tr>
+    <tr>
+      <td><strong>Crash Logs</strong></td>
+      <td>90 days</td>
+      <td>Debugging and quality improvement</td>
+    </tr>
+    <tr>
+      <td><strong>Analytics Data</strong></td>
+      <td>14 months (then anonymized)</td>
+      <td>Service improvement; Firebase default</td>
+    </tr>
+    <tr>
+      <td><strong>Support Communications</strong></td>
+      <td>3 years from last interaction</td>
+      <td>Customer service; legal disputes</td>
+    </tr>
+    <tr>
+      <td><strong>Marketing Consent</strong></td>
+      <td>Until consent withdrawn</td>
+      <td>Legal requirement to honor consent</td>
+    </tr>
+    <tr>
+      <td><strong>IP Address Logs</strong></td>
+      <td>30-90 days</td>
+      <td>Security and fraud prevention</td>
+    </tr>
+    <tr>
+      <td><strong>Session Data</strong></td>
+      <td>Duration of session</td>
+      <td>Authentication and security</td>
+    </tr>
+    <tr>
+      <td><strong>Device Identifiers</strong></td>
+      <td>Until account deletion or opt-out</td>
+      <td>Analytics and fraud prevention</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-12-3">12.3. Data Retained After Account Deletion</h3>
+
+<p>Even after you delete your account, we may retain certain data as legally required or permitted:</p>
+
+<ul>
+  <li><strong>Purchase and billing records:</strong> Retained for 7 years to comply with tax laws</li>
+  <li><strong>Fraud prevention data:</strong> Retained to prevent repeated abuse or fraudulent activity</li>
+  <li><strong>Legal dispute information:</strong> Retained until the legal matter is resolved</li>
+  <li><strong>Backup copies:</strong> May remain in backup systems for up to 90 days before being overwritten</li>
+  <li><strong>Anonymized data:</strong> Aggregated data that cannot identify you may be retained indefinitely</li>
+</ul>
+
+<h3 id="section-12-4">12.4. Deletion Methods</h3>
+
+<p>When we delete personal data, we use the following methods:</p>
+
+<ul>
+  <li><strong>Secure Deletion:</strong> Data is permanently deleted from active databases and cannot be recovered</li>
+  <li><strong>Anonymization:</strong> Data is modified so it can no longer identify you</li>
+  <li><strong>Pseudonymization:</strong> Identifying information is replaced with pseudonyms</li>
+  <li><strong>Backup Purging:</strong> Data is removed from backup systems during routine backup cycles</li>
+</ul>
+
+<h2 id="section-13">13. International Data Transfers</h2>
+
+<h3 id="section-13-1">13.1. Transfer Overview</h3>
+
+<p>
+OakDev &amp; AI AB is based in Sweden (European Economic Area). However, to provide TipsyPal's services, your personal data may be transferred to, stored in, and processed in countries outside the EEA, including:
+</p>
+
+<ul>
+  <li><strong>United States:</strong> Where Firebase (Google) and OpenAI servers are located</li>
+  <li><strong>Other countries:</strong> Where our service providers maintain infrastructure</li>
+</ul>
+
+<p>These countries may have data protection laws that differ from those in your jurisdiction.</p>
+
+<h3 id="section-13-2">13.2. Transfer Safeguards</h3>
+
+<p>We ensure that all international data transfers comply with GDPR through the following mechanisms:</p>
+
+<h4>13.2.1. Standard Contractual Clauses (SCCs)</h4>
+<p>
+We use EU-approved Standard Contractual Clauses (also known as Model Clauses) with our service providers. These are standardized contractual terms approved by the European Commission that provide appropriate safeguards for data transferred outside the EEA.
+</p>
+
+<h4>13.2.2. Adequacy Decisions</h4>
+<p>
+Where available, we transfer data to countries that have been deemed by the European Commission to provide an adequate level of data protection.
+</p>
+
+<h4>13.2.3. Supplementary Measures</h4>
+<p>In addition to SCCs, we implement supplementary technical and organizational measures:</p>
+
+<ul>
+  <li>End-to-end encryption of data in transit</li>
+  <li>Encryption of data at rest</li>
+  <li>Strict access controls and authentication</li>
+  <li>Regular security audits</li>
+  <li>Data minimization practices</li>
+  <li>Pseudonymization where appropriate</li>
+</ul>
+
+<h3 id="section-13-3">13.3. Specific Transfer Disclosures</h3>
+
+<h4>13.3.1. Firebase/Google Cloud</h4>
+<p>
+Firebase and Google Cloud services may process data in the United States and other countries. Google has implemented:
+</p>
+
+<ul>
+  <li>EU-U.S. Data Privacy Framework certification (where applicable)</li>
+  <li>Standard Contractual Clauses</li>
+  <li>Additional technical safeguards</li>
+  <li>Transparency reports on government data requests</li>
+</ul>
+
+<h4>13.3.2. OpenAI</h4>
+<p>
+OpenAI processes data in the United States. Data transfers are protected by:
+</p>
+
+<ul>
+  <li>Data Processing Agreement with Standard Contractual Clauses</li>
+  <li>Limited retention period (30 days)</li>
+  <li>No use of data for model training</li>
+  <li>Encryption in transit and at rest</li>
+</ul>
+
+<h3 id="section-13-4">13.4. Your Rights Regarding Transfers</h3>
+
+<p>You have the right to:</p>
+
+<ul>
+  <li>Request information about the safeguards we use for international transfers</li>
+  <li>Obtain a copy of the Standard Contractual Clauses</li>
+  <li>Object to transfers in certain circumstances</li>
+</ul>
+
+<p>To exercise these rights, contact us at <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>.</p>
+
+<h2 id="section-14">14. Your Rights Under GDPR</h2>
+
+<p>
+If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have the following rights under the General Data Protection Regulation (GDPR):
+</p>
+
+<h3 id="section-14-1">14.1. Right of Access (Article 15)</h3>
+
+<p>You have the right to obtain:</p>
+
+<ul>
+  <li>Confirmation of whether we process your personal data</li>
+  <li>A copy of your personal data</li>
+  <li>Information about how and why we process your data</li>
+  <li>Information about data recipients</li>
+  <li>Information about retention periods</li>
+  <li>Information about your other rights</li>
+</ul>
+
+<p><strong>How to exercise:</strong> Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> with subject "GDPR Access Request"</p>
+
+<h3 id="section-14-2">14.2. Right to Rectification (Article 16)</h3>
+
+<p>You have the right to:</p>
+
+<ul>
+  <li>Correct inaccurate personal data</li>
+  <li>Complete incomplete personal data</li>
+</ul>
+
+<p><strong>How to exercise:</strong> Update information in your account settings or email us to correct specific data</p>
+
+<h3 id="section-14-3">14.3. Right to Erasure / "Right to Be Forgotten" (Article 17)</h3>
+
+<p>You have the right to request deletion of your personal data when:</p>
+
+<ul>
+  <li>The data is no longer necessary for the purposes for which it was collected</li>
+  <li>You withdraw consent (where processing is based on consent)</li>
+  <li>You object to processing and there are no overriding legitimate grounds</li>
+  <li>The data has been unlawfully processed</li>
+  <li>Deletion is required to comply with legal obligations</li>
+</ul>
+
+<p><strong>Limitations:</strong> We may retain data when necessary for:</p>
+<ul>
+  <li>Compliance with legal obligations (e.g., tax records)</li>
+  <li>Establishment, exercise, or defense of legal claims</li>
+  <li>Archiving purposes in the public interest</li>
+</ul>
+
+<p><strong>How to exercise:</strong> Delete your account through app settings or email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></p>
+
+<h3 id="section-14-4">14.4. Right to Restriction of Processing (Article 18)</h3>
+
+<p>You have the right to restrict processing when:</p>
+
+<ul>
+  <li>You contest the accuracy of the data (during verification)</li>
+  <li>Processing is unlawful but you prefer restriction over deletion</li>
+  <li>We no longer need the data but you need it for legal claims</li>
+  <li>You have objected to processing (pending verification of our legitimate grounds)</li>
+</ul>
+
+<p><strong>How to exercise:</strong> Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> with your specific request</p>
+
+<h3 id="section-14-5">14.5. Right to Data Portability (Article 20)</h3>
+
+<p>You have the right to:</p>
+
+<ul>
+  <li>Receive your personal data in a structured, commonly used, machine-readable format</li>
+  <li>Transmit your data to another controller</li>
+</ul>
+
+<p>This right applies when:</p>
+<ul>
+  <li>Processing is based on consent or contract</li>
+  <li>Processing is carried out by automated means</li>
+</ul>
+
+<p><strong>How to exercise:</strong> Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> to request data export</p>
+
+<h3 id="section-14-6">14.6. Right to Object (Article 21)</h3>
+
+<p>You have the right to object to processing based on:</p>
+
+<ul>
+  <li>Legitimate interests (Article 6(1)(f))</li>
+  <li>Direct marketing (absolute right - no conditions)</li>
+  <li>Profiling related to direct marketing</li>
+</ul>
+
+<p>If you object, we will stop processing unless we can demonstrate compelling legitimate grounds that override your interests, rights, and freedoms.</p>
+
+<p><strong>How to exercise:</strong> Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> or use opt-out links in marketing emails</p>
+
+<h3 id="section-14-7">14.7. Rights Related to Automated Decision-Making (Article 22)</h3>
+
+<p>You have the right not to be subject to decisions based solely on automated processing that produce legal effects or similarly significantly affect you.</p>
+
+<p><strong>Note:</strong> TipsyPal does not make automated decisions that produce legal effects or similarly significantly affect you.</p>
+
+<h3 id="section-14-8">14.8. Right to Withdraw Consent</h3>
+
+<p>Where processing is based on consent, you have the right to withdraw consent at any time. This does not affect the lawfulness of processing before withdrawal.</p>
+
+<p><strong>How to exercise:</strong> Manage consent in app settings or email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></p>
+
+<h3 id="section-14-9">14.9. Response Timeframe</h3>
+
+<p>We will respond to your rights requests:</p>
+
+<ul>
+  <li><strong>Within 30 days</strong> of receiving a valid request</li>
+  <li><strong>Within 60 days</strong> if the request is complex (we will notify you of the extension)</li>
+  <li><strong>Free of charge</strong> for the first request</li>
+  <li>We may charge a reasonable fee for excessive or repeated requests</li>
+</ul>
+
+<h3 id="section-14-10">14.10. Identity Verification</h3>
+
+<p>To protect your privacy, we may need to verify your identity before fulfilling rights requests. We may ask for:</p>
+
+<ul>
+  <li>Email address associated with your account</li>
+  <li>User ID or account details</li>
+  <li>Additional information to confirm you are the account holder</li>
+</ul>
+
+<h2 id="section-15">15. California Privacy Rights (CCPA/CPRA)</h2>
+
+<p>
+If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA).
+</p>
+
+<h3 id="section-15-1">15.1. Categories of Personal Information Collected</h3>
+
+<p>In the past 12 months, we have collected the following categories of personal information (as defined by CCPA):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CCPA Category</th>
+      <th>Examples from TipsyPal</th>
+      <th>Collected?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A. Identifiers</td>
+      <td>Email, user ID, device ID, IP address</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>B. Personal information (Cal. Civ. Code § 1798.80(e))</td>
+      <td>Name, email</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>C. Protected classification characteristics</td>
+      <td>Age (to verify 13+), country</td>
+      <td>LIMITED</td>
+    </tr>
+    <tr>
+      <td>D. Commercial information</td>
+      <td>Purchase history, credit usage</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>E. Biometric information</td>
+      <td>N/A</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>F. Internet or network activity</td>
+      <td>App usage, browsing behavior within app, device info</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>G. Geolocation data</td>
+      <td>Country/region from IP (not precise location)</td>
+      <td>LIMITED</td>
+    </tr>
+    <tr>
+      <td>H. Sensory data</td>
+      <td>N/A</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>I. Professional or employment information</td>
+      <td>N/A</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>J. Non-public education information</td>
+      <td>N/A</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>K. Inferences</td>
+      <td>Usage patterns, preferences</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>L. Sensitive Personal Information</td>
+      <td>Account login credentials (password hash only)</td>
+      <td>LIMITED</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-15-2">15.2. Your California Privacy Rights</h3>
+
+<h4>15.2.1. Right to Know</h4>
+<p>You have the right to request that we disclose:</p>
+<ul>
+  <li>The categories of personal information we collected about you</li>
+  <li>The categories of sources from which we collected the information</li>
+  <li>Our business or commercial purpose for collecting or selling the information</li>
+  <li>The categories of third parties with whom we share the information</li>
+  <li>The specific pieces of personal information we collected about you</li>
+</ul>
+
+<h4>15.2.2. Right to Delete</h4>
+<p>You have the right to request that we delete personal information we collected from you, subject to certain exceptions.</p>
+
+<h4>15.2.3. Right to Correct</h4>
+<p>You have the right to request correction of inaccurate personal information.</p>
+
+<h4>15.2.4. Right to Opt-Out of Sale or Sharing</h4>
+<p><strong>We do NOT sell or share your personal information</strong> as defined by CCPA. Therefore, there is no need to opt out.</p>
+
+<h4>15.2.5. Right to Limit Use of Sensitive Personal Information</h4>
+<p>We only use sensitive personal information (account credentials) for purposes permitted under CCPA (providing the service you requested). No opt-out is necessary.</p>
+
+<h4>15.2.6. Right to Non-Discrimination</h4>
+<p>We will not discriminate against you for exercising any of your CCPA rights, including by:</p>
+<ul>
+  <li>Denying goods or services</li>
+  <li>Charging different prices or rates</li>
+  <li>Providing a different level or quality of service</li>
+  <li>Suggesting you will receive a different price or quality of service</li>
+</ul>
+
+<h3 id="section-15-3">15.3. How to Exercise California Rights</h3>
+
+<p>To exercise your California privacy rights:</p>
+
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> with subject "California Privacy Rights Request"</li>
+  <li><strong>Include:</strong> Your name, email address associated with your account, and specific request</li>
+  <li><strong>Verification:</strong> We will verify your identity before processing the request</li>
+  <li><strong>Authorized Agent:</strong> You may designate an authorized agent to make requests on your behalf</li>
+</ul>
+
+<p><strong>Response Time:</strong> We will respond within 45 days (may extend to 90 days for complex requests with notice)</p>
+
+<h3 id="section-15-4">15.4. California "Shine the Light" Law</h3>
+
+<p>
+California Civil Code Section 1798.83 permits California residents to request information about disclosure of personal information to third parties for direct marketing purposes. <strong>We do not share personal information with third parties for their direct marketing purposes.</strong>
+</p>
+
+<h3 id="section-15-5">15.5. Do Not Sell My Personal Information</h3>
+
+<p>
+<strong>We do NOT sell your personal information</strong> and have not sold personal information in the past 12 months. We do not have actual knowledge that we sell personal information of consumers under 16 years of age.
+</p>
+
+<h2 id="section-16">16. Other U.S. State Privacy Rights</h2>
+
+<p>
+Several U.S. states have enacted comprehensive privacy laws that grant residents specific rights. This section addresses rights under state privacy laws other than California.
+</p>
+
+<h3 id="section-16-1">16.1. Applicable State Laws</h3>
+
+<p>If you are a resident of the following states, you may have additional rights:</p>
+
+<ul>
+  <li><strong>Virginia</strong> – Virginia Consumer Data Protection Act (VCDPA) – Effective January 1, 2023</li>
+  <li><strong>Colorado</strong> – Colorado Privacy Act (CPA) – Effective July 1, 2023</li>
+  <li><strong>Connecticut</strong> – Connecticut Data Privacy Act (CTDPA) – Effective July 1, 2023</li>
+  <li><strong>Utah</strong> – Utah Consumer Privacy Act (UCPA) – Effective December 31, 2023</li>
+  <li>Additional states with upcoming privacy laws</li>
+</ul>
+
+<h3 id="section-16-2">16.2. Rights Under State Privacy Laws</h3>
+
+<p>Depending on your state, you may have the following rights:</p>
+
+<h4>16.2.1. Right to Confirm and Access</h4>
+<p>Right to confirm whether we process your personal data and access such data</p>
+
+<h4>16.2.2. Right to Correct</h4>
+<p>Right to correct inaccuracies in your personal data</p>
+
+<h4>16.2.3. Right to Delete</h4>
+<p>Right to delete personal data you provided to us</p>
+
+<h4>16.2.4. Right to Data Portability</h4>
+<p>Right to obtain a copy of your personal data in a portable format</p>
+
+<h4>16.2.5. Right to Opt Out</h4>
+<p>Right to opt out of:</p>
+<ul>
+  <li>Targeted advertising (we don't engage in this)</li>
+  <li>Sale of personal data (we don't sell data)</li>
+  <li>Profiling in furtherance of decisions with legal or similarly significant effects (we don't do this)</li>
+</ul>
+
+<h4>16.2.6. Right to Non-Discrimination</h4>
+<p>Right not to receive discriminatory treatment for exercising your privacy rights</p>
+
+<h3 id="section-16-3">16.3. How to Exercise State Privacy Rights</h3>
+
+<p>To exercise your rights under state privacy laws:</p>
+
+<ul>
+  <li>Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> with subject "[Your State] Privacy Rights Request"</li>
+  <li>Specify which right you wish to exercise</li>
+  <li>Provide information necessary to verify your identity</li>
+  <li>We will respond within the timeframe required by your state's law (typically 45 days)</li>
+</ul>
+
+<h3 id="section-16-4">16.4. Appeals Process</h3>
+
+<p>
+If we decline to take action on your request, you have the right to appeal our decision. To appeal:
+</p>
+
+<ul>
+  <li>Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> within a reasonable period after receiving our decision</li>
+  <li>Include "Privacy Rights Appeal" in the subject line</li>
+  <li>Explain why you believe our decision was incorrect</li>
+  <li>We will respond to your appeal within 60 days (or as required by applicable law)</li>
+</ul>
+
+<p>If we deny your appeal, we will provide information about how to contact your state attorney general to submit a complaint.</p>
+
+<h2 id="section-17">17. Your Choices and Controls</h2>
+
+<p>
+You have multiple options to control how your personal data is collected, used, and shared:
+</p>
+
+<h3 id="section-17-1">17.1. Account Settings</h3>
+
+<p>You can control various aspects of your account through the TipsyPal app settings:</p>
+
+<ul>
+  <li><strong>Profile Information:</strong> Update your display name, email, and other profile details</li>
+  <li><strong>Password:</strong> Change your password at any time</li>
+  <li><strong>Notification Preferences:</strong> Control push notifications and email communications</li>
+  <li><strong>Data Deletion:</strong> Delete your conversation history or entire account</li>
+</ul>
+
+<h3 id="section-17-2">17.2. Communication Preferences</h3>
+
+<h4>17.2.1. Marketing Emails</h4>
+<ul>
+  <li>Opt out by clicking "Unsubscribe" in any marketing email</li>
+  <li>Update preferences in account settings</li>
+  <li>Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> to opt out</li>
+</ul>
+
+<p><strong>Note:</strong> Even if you opt out of marketing emails, we will still send transactional emails (account notifications, purchase confirmations, security alerts).</p>
+
+<h4>17.2.2. Push Notifications</h4>
+<ul>
+  <li>Disable in TipsyPal app settings</li>
+  <li>Adjust in your device's system settings</li>
+  <li>Control notification categories separately (if available)</li>
+</ul>
+
+<h3 id="section-17-3">17.3. Conversation History</h3>
+
+<p>You have full control over your AI conversation history:</p>
+
+<ul>
+  <li><strong>Delete Individual Conversations:</strong> Swipe to delete or use the delete button</li>
+  <li><strong>Clear All History:</strong> Use the "Clear All" option in settings</li>
+  <li><strong>Automatic Deletion:</strong> We never automatically delete your history unless you request it</li>
+</ul>
+
+<h3 id="section-17-4">17.4. Device-Level Controls</h3>
+
+<h4>17.4.1. iOS (Apple) Controls</h4>
+<ul>
+  <li><strong>Limit Ad Tracking:</strong> Settings > Privacy > Apple Advertising > Turn off "Personalized Ads"</li>
+  <li><strong>Reset Advertising ID:</strong> Settings > Privacy > Apple Advertising > Reset Advertising Identifier</li>
+  <li><strong>App Permissions:</strong> Settings > TipsyPal > Adjust permissions</li>
+</ul>
+
+<h4>17.4.2. Android (Google) Controls</h4>
+<ul>
+  <li><strong>Opt Out of Ads Personalization:</strong> Settings > Google > Ads > Opt out of Ads Personalization</li>
+  <li><strong>Reset Advertising ID:</strong> Settings > Google > Ads > Reset advertising ID</li>
+  <li><strong>App Permissions:</strong> Settings > Apps > TipsyPal > Permissions</li>
+</ul>
+
+<h3 id="section-17-5">17.5. Cookies and Tracking (Webviews)</h3>
+
+<p>
+While TipsyPal is primarily a native mobile app, if we use webviews for certain features, you can control cookies:
+</p>
+
+<ul>
+  <li>Clear cookies through your device's browser settings</li>
+  <li>Adjust cookie preferences in-app (if available)</li>
+  <li>Note that disabling cookies may limit certain features</li>
+</ul>
+
+<h3 id="section-17-6">17.6. Data Download</h3>
+
+<p>You can request a copy of your personal data:</p>
+
+<ul>
+  <li>Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> with subject "Data Download Request"</li>
+  <li>We will provide your data in JSON or CSV format within 30 days</li>
+  <li>Data will include account info, conversation history, purchase records, etc.</li>
+</ul>
+
+<h2 id="section-18">18. Account Management and Deletion</h2>
+
+<h3 id="section-18-1">18.1. Account Deletion Process</h3>
+
+<p>You can delete your TipsyPal account at any time by following these steps:</p>
+
+<h4>Option 1: In-App Deletion</h4>
+<ol>
+  <li>Open TipsyPal app</li>
+  <li>Go to Settings/Account</li>
+  <li>Select "Delete Account"</li>
+  <li>Confirm deletion (this action is permanent)</li>
+  <li>You will receive a confirmation email</li>
+</ol>
+
+<h4>Option 2: Email Request</h4>
+<ol>
+  <li>Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> from your registered email</li>
+  <li>Subject: "Account Deletion Request"</li>
+  <li>Include your user ID or account email</li>
+  <li>We will confirm your identity and process deletion within 72 hours</li>
+</ol>
+
+<h3 id="section-18-2">18.2. What Happens When You Delete Your Account</h3>
+
+<p>When you delete your account, the following data will be permanently deleted or anonymized:</p>
+
+<ul>
+  <li>✓ Your email address and login credentials</li>
+  <li>✓ Your display name and profile information</li>
+  <li>✓ All conversation history and AI-generated content</li>
+  <li>✓ User-generated content and saved items</li>
+  <li>✓ Preferences and settings</li>
+  <li>✓ Device tokens and notification identifiers</li>
+  <li>✓ Session data and authentication tokens</li>
+</ul>
+
+<h3 id="section-18-3">18.3. Data Retained After Deletion</h3>
+
+<p>Certain data may be retained as legally required:</p>
+
+<ul>
+  <li><strong>Purchase records:</strong> Retained for 7 years for tax and accounting compliance</li>
+  <li><strong>Fraud prevention data:</strong> De-identified markers to prevent abuse</li>
+  <li><strong>Legal hold data:</strong> Data subject to pending legal proceedings</li>
+  <li><strong>Backup copies:</strong> May persist in backups for up to 90 days</li>
+  <li><strong>Aggregated analytics:</strong> Anonymized data that cannot identify you</li>
+</ul>
+
+<p>This retention is necessary to comply with legal obligations under Swedish and EU law.</p>
+
+<h3 id="section-18-4">18.4. Impact on Subscriptions and Purchases</h3>
+
+<p>
+<strong>Important:</strong> Deleting your TipsyPal account does NOT automatically cancel app store subscriptions.
+</p>
+
+<p>To cancel subscriptions:</p>
+
+<ul>
+  <li><strong>iOS:</strong> Settings > [Your Name] > Subscriptions > TipsyPal > Cancel Subscription</li>
+  <li><strong>Android:</strong> Google Play Store > Menu > Subscriptions > TipsyPal > Cancel Subscription</li>
+</ul>
+
+<p>You will not receive refunds for unused subscription time or credits when you delete your account.</p>
+
+<h3 id="section-18-5">18.5. Reactivation</h3>
+
+<p>Account deletion is permanent and cannot be reversed. If you wish to use TipsyPal again, you must:</p>
+
+<ul>
+  <li>Create a new account</li>
+  <li>You will lose all previous conversation history and data</li>
+  <li>Previous purchases cannot be transferred to a new account</li>
+  <li>Credits and entitlements do not carry over</li>
+</ul>
+
+<h2 id="section-19">19. Marketing Communications and Consent</h2>
+
+<h3 id="section-19-1">19.1. Types of Communications</h3>
+
+<p>We may send you two types of communications:</p>
+
+<h4>19.1.1. Transactional Communications (No Opt-Out)</h4>
+<p>These are necessary for the service and cannot be opted out of:</p>
+
+<ul>
+  <li>Welcome emails and account setup</li>
+  <li>Password reset and security alerts</li>
+  <li>Purchase confirmations and receipts</li>
+  <li>Important service announcements</li>
+  <li>Changes to Terms of Service or Privacy Policy</li>
+  <li>Account suspension or termination notices</li>
+  <li>Customer support responses</li>
+</ul>
+
+<h4>19.1.2. Marketing Communications (Opt-In/Opt-Out)</h4>
+<p>These require your consent and can be opted out of:</p>
+
+<ul>
+  <li>Promotional offers and discounts</li>
+  <li>New feature announcements</li>
+  <li>Tips and best practices</li>
+  <li>User surveys and feedback requests</li>
+  <li>Partner offers and collaborations</li>
+  <li>Newsletter subscriptions</li>
+</ul>
+
+<h3 id="section-19-2">19.2. Marketing Consent</h3>
+
+<p>We will only send marketing communications if:</p>
+
+<ul>
+  <li>You explicitly opt in during account creation or in settings</li>
+  <li>You check a box consenting to marketing emails</li>
+  <li>You request to receive updates or newsletters</li>
+</ul>
+
+<p><strong>Pre-checked boxes:</strong> We do not use pre-checked consent boxes. All marketing consent is obtained through clear, affirmative action.</p>
+
+<h3 id="section-19-3">19.3. Partner Communications</h3>
+
+<p>
+Occasionally, we may send communications about partner offers, sponsored content, or collaborative promotions. However:
+</p>
+
+<ul>
+  <li><strong>We never share your email address with partners</strong></li>
+  <li>All communications come from OakDev &amp; AI AB</li>
+  <li>You must opt in separately for partner-related marketing</li>
+  <li>You can opt out at any time without affecting other communications</li>
+</ul>
+
+<h3 id="section-19-4">19.4. How to Opt Out of Marketing</h3>
+
+<p>You can stop receiving marketing emails at any time:</p>
+
+<ul>
+  <li><strong>Unsubscribe Link:</strong> Click "Unsubscribe" at the bottom of any marketing email</li>
+  <li><strong>Account Settings:</strong> Disable marketing emails in TipsyPal settings</li>
+  <li><strong>Email Us:</strong> Send request to <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+</ul>
+
+<p><strong>Processing Time:</strong> We will process opt-out requests within 10 business days.</p>
+
+<h3 id="section-19-5">19.5. Marketing Analytics</h3>
+
+<p>When you receive marketing emails, we may track:</p>
+
+<ul>
+  <li>Whether the email was delivered</li>
+  <li>Whether you opened the email</li>
+  <li>Whether you clicked any links</li>
+  <li>Your device and email client (aggregated)</li>
+</ul>
+
+<p>This helps us understand the effectiveness of our communications. You can disable tracking by:</p>
+
+<ul>
+  <li>Disabling image loading in your email client</li>
+  <li>Using email clients with tracking protection</li>
+  <li>Opting out of marketing entirely</li>
+</ul>
+
+<h2 id="section-20">20. Cookies, Analytics, and Tracking Technologies</h2>
+
+<h3 id="section-20-1">20.1. What Are Cookies and Similar Technologies?</h3>
+
+<p>
+Cookies are small text files stored on your device. Similar technologies include SDKs, pixels, local storage, and mobile identifiers. While TipsyPal is a native mobile app and doesn't use traditional browser cookies, we use equivalent mobile technologies.
+</p>
+
+<h3 id="section-20-2">20.2. Technologies We Use</h3>
+
+<h4>20.2.1. Firebase SDK</h4>
+<p><strong>Purpose:</strong> Analytics, crash reporting, authentication, database</p>
+<p><strong>Data Collected:</strong> Device info, app usage, user ID, crash logs</p>
+<p><strong>Retention:</strong> 14 months (analytics), 90 days (crash logs)</p>
+<p><strong>Control:</strong> Opt out via device settings (limit ad tracking)</p>
+
+<h4>20.2.2. Mobile Advertising Identifiers</h4>
+<p><strong>iOS:</strong> IDFA (Identifier for Advertisers)</p>
+<p><strong>Android:</strong> AAID (Google Advertising ID)</p>
+<p><strong>Purpose:</strong> Analytics and attribution (we do NOT use for targeted advertising)</p>
+<p><strong>Control:</strong></p>
+<ul>
+  <li>iOS: Settings > Privacy > Tracking > Deny permission to TipsyPal</li>
+  <li>Android: Settings > Google > Ads > Opt out of Ads Personalization</li>
+</ul>
+
+<h4>20.2.3. Session Storage</h4>
+<p><strong>Purpose:</strong> Maintain your login state and app preferences</p>
+<p><strong>Duration:</strong> Until you log out or uninstall the app</p>
+<p><strong>Type:</strong> Essential for service functionality</p>
+
+<h4>20.2.4. Local Storage</h4>
+<p><strong>Purpose:</strong> Cache conversation history and app data for offline access</p>
+<p><strong>Data Stored:</strong> Conversation history, user preferences, cached responses</p>
+<p><strong>Control:</strong> Clear by deleting conversation history or uninstalling app</p>
+
+<h3 id="section-20-3">20.3. Categories of Technologies</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Purpose</th>
+      <th>Examples</th>
+      <th>Opt-Out</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Essential</strong></td>
+      <td>Required for app functionality</td>
+      <td>Authentication tokens, session management</td>
+      <td>Cannot opt out (required for service)</td>
+    </tr>
+    <tr>
+      <td><strong>Analytics</strong></td>
+      <td>Understand app usage and performance</td>
+      <td>Firebase Analytics, usage metrics</td>
+      <td>Limited ad tracking in device settings</td>
+    </tr>
+    <tr>
+      <td><strong>Functional</strong></td>
+      <td>Remember your preferences</td>
+      <td>Language settings, display preferences</td>
+      <td>Reset in app settings</td>
+    </tr>
+    <tr>
+      <td><strong>Performance</strong></td>
+      <td>Monitor app performance</td>
+      <td>Performance monitoring, crash reporting</td>
+      <td>Limited through device settings</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Note:</strong> We do NOT use advertising/marketing cookies or technologies for behavioral tracking.</p>
+
+<h3 id="section-20-4">20.4. Third-Party Analytics</h3>
+
+<p>We use Firebase Analytics (Google) to understand app usage:</p>
+
+<ul>
+  <li><strong>Data Collected:</strong> Screen views, events, user properties, device info</li>
+  <li><strong>Purpose:</strong> Improve user experience, identify bugs, understand feature usage</li>
+  <li><strong>Data Sharing:</strong> Data is shared with Google as a processor</li>
+  <li><strong>Retention:</strong> 14 months, then automatically deleted</li>
+  <li><strong>Opt-Out:</strong> Limit ad tracking in your device settings</li>
+</ul>
+
+<h3 id="section-20-5">20.5. How to Control Tracking</h3>
+
+<h4>iOS Users:</h4>
+<ol>
+  <li>Settings > Privacy & Security > Tracking</li>
+  <li>Toggle off "Allow Apps to Request to Track"</li>
+  <li>Or deny tracking for TipsyPal specifically</li>
+</ol>
+
+<h4>Android Users:</h4>
+<ol>
+  <li>Settings > Google > Ads</li>
+  <li>Select "Opt out of Ads Personalization"</li>
+  <li>Or "Reset advertising ID"</li>
+</ol>
+
+<h2 id="section-21">21. Push Notifications and Communications</h2>
+
+<h3 id="section-21-1">21.1. Types of Push Notifications</h3>
+
+<p>TipsyPal may send push notifications for:</p>
+
+<ul>
+  <li><strong>Transactional Notifications:</strong>
+    <ul>
+      <li>Purchase confirmations</li>
+      <li>Credit balance alerts</li>
+      <li>Account security notices</li>
+      <li>Important service updates</li>
+    </ul>
+  </li>
+  <li><strong>Promotional Notifications (Optional):</strong>
+    <ul>
+      <li>Special offers and discounts</li>
+      <li>New feature announcements</li>
+      <li>Usage tips and recommendations</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="section-21-2">21.2. Managing Push Notifications</h3>
+
+<h4>In-App Controls:</h4>
+<ul>
+  <li>Go to TipsyPal Settings > Notifications</li>
+  <li>Toggle notification categories on/off</li>
+  <li>Choose which types of notifications you want to receive</li>
+</ul>
+
+<h4>Device-Level Controls:</h4>
+<p><strong>iOS:</strong> Settings > Notifications > TipsyPal > Customize</p>
+<p><strong>Android:</strong> Settings > Apps > TipsyPal > Notifications > Customize</p>
+
+<h3 id="section-21-3">21.3. Push Notification Data</h3>
+
+<p>To send push notifications, we collect:</p>
+
+<ul>
+  <li>Device push notification token (Firebase Cloud Messaging token)</li>
+  <li>Notification delivery status</li>
+  <li>Interaction with notifications (opened, dismissed)</li>
+</ul>
+
+<p>This data is used solely to deliver and improve notification functionality.</p>
+
+<h2 id="section-22">22. Children's Privacy</h2>
+
+<h3 id="section-22-1">22.1. Age Restrictions</h3>
+
+<p>
+TipsyPal is not intended for use by children under the age of 13 (or the applicable age of consent for data processing in your jurisdiction, which may be 14, 15, or 16 in some EU countries).
+</p>
+
+<p>We do not knowingly collect personal information from children under these ages.</p>
+
+<h3 id="section-22-2">22.2. COPPA Compliance</h3>
+
+<p>
+We comply with the Children's Online Privacy Protection Act (COPPA) in the United States. We do not:
+</p>
+
+<ul>
+  <li>Knowingly collect personal information from children under 13</li>
+  <li>Target TipsyPal to children under 13</li>
+  <li>Allow children under 13 to create accounts</li>
+  <li>Use AI features to collect information from children</li>
+</ul>
+
+<h3 id="section-22-3">22.3. Age Verification</h3>
+
+<p>While we do not actively verify ages, we:</p>
+
+<ul>
+  <li>Require users to confirm they meet the minimum age during account creation</li>
+  <li>Comply with app store age ratings</li>
+  <li>Monitor for accounts that may belong to children</li>
+</ul>
+
+<h3 id="section-22-4">22.4. Parental Rights</h3>
+
+<p>
+If you are a parent or guardian and believe your child under 13 has provided us with personal information:
+</p>
+
+<ul>
+  <li>Contact us immediately at <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+  <li>Subject: "Child Privacy Concern"</li>
+  <li>We will promptly investigate and delete the account and data</li>
+  <li>We will take steps to prevent future access</li>
+</ul>
+
+<h3 id="section-22-5">22.5. EU Age Requirements</h3>
+
+<p>For users in the European Union, the minimum age for consent to data processing varies by country:</p>
+
+<ul>
+  <li>Most EU countries: 16 years</li>
+  <li>Some EU countries: 13-15 years (depending on national law)</li>
+</ul>
+
+<p>Users under the applicable age require parental or guardian consent to use TipsyPal.</p>
+
+<h2 id="section-23">23. Information Security and Data Protection</h2>
+
+<h3 id="section-23-1">23.1. Our Security Commitment</h3>
+
+<p>
+We take the security of your personal data extremely seriously. We have implemented comprehensive technical and organizational measures designed to protect your data against unauthorized access, disclosure, alteration, and destruction.
+</p>
+
+<h3 id="section-23-2">23.2. Technical Security Measures</h3>
+
+<h4>23.2.1. Encryption</h4>
+<ul>
+  <li><strong>Data in Transit:</strong> All data transmitted between your device and our servers is encrypted using TLS 1.2 or higher (HTTPS)</li>
+  <li><strong>Data at Rest:</strong> Personal data stored in Firebase/Google Cloud is encrypted at rest using AES-256 encryption</li>
+  <li><strong>Password Protection:</strong> Passwords are hashed using industry-standard algorithms (bcrypt or equivalent) and are never stored in plain text</li>
+  <li><strong>API Communication:</strong> All API calls to OpenAI and other services use encrypted channels</li>
+</ul>
+
+<h4>23.2.2. Access Controls</h4>
+<ul>
+  <li><strong>Principle of Least Privilege:</strong> Access to personal data is restricted to employees and contractors who need it to perform their job functions</li>
+  <li><strong>Multi-Factor Authentication:</strong> Internal systems require MFA for administrative access</li>
+  <li><strong>Role-Based Access Control:</strong> Different access levels based on job responsibilities</li>
+  <li><strong>Access Logging:</strong> All access to production systems is logged and monitored</li>
+</ul>
+
+<h4>23.2.3. Infrastructure Security</h4>
+<ul>
+  <li><strong>Cloud Security:</strong> We use Firebase/Google Cloud Platform, which maintains SOC 2, ISO 27001, and other security certifications</li>
+  <li><strong>Firewalls:</strong> Network-level firewalls protect our infrastructure</li>
+  <li><strong>DDoS Protection:</strong> Distributed denial-of-service protection</li>
+  <li><strong>Regular Updates:</strong> Systems are regularly updated with security patches</li>
+  <li><strong>Vulnerability Scanning:</strong> Automated scans for known vulnerabilities</li>
+</ul>
+
+<h4>23.2.4. Application Security</h4>
+<ul>
+  <li><strong>Secure Development:</strong> Security best practices in software development lifecycle</li>
+  <li><strong>Code Reviews:</strong> Security-focused code reviews</li>
+  <li><strong>Input Validation:</strong> Validation and sanitization of user inputs to prevent injection attacks</li>
+  <li><strong>Rate Limiting:</strong> Protection against abuse and automated attacks</li>
+  <li><strong>Session Management:</strong> Secure session handling with automatic timeout</li>
+</ul>
+
+<h3 id="section-23-3">23.3. Organizational Security Measures</h3>
+
+<h4>23.3.1. Policies and Procedures</h4>
+<ul>
+  <li>Comprehensive data protection and security policies</li>
+  <li>Incident response plan and procedures</li>
+  <li>Business continuity and disaster recovery plans</li>
+  <li>Data retention and deletion procedures</li>
+  <li>Regular policy reviews and updates</li>
+</ul>
+
+<h4>23.3.2. Employee Training</h4>
+<ul>
+  <li>Security awareness training for all employees</li>
+  <li>GDPR and data protection training</li>
+  <li>Confidentiality agreements for all personnel</li>
+  <li>Regular security reminders and updates</li>
+</ul>
+
+<h4>23.3.3. Vendor Management</h4>
+<ul>
+  <li>Due diligence on third-party service providers</li>
+  <li>Data Processing Agreements with all processors</li>
+  <li>Regular vendor security assessments</li>
+  <li>Contractual security requirements</li>
+</ul>
+
+<h3 id="section-23-4">23.4. Security Monitoring</h3>
+
+<ul>
+  <li><strong>24/7 Monitoring:</strong> Automated monitoring of system health and security events</li>
+  <li><strong>Intrusion Detection:</strong> Systems to detect unauthorized access attempts</li>
+  <li><strong>Log Analysis:</strong> Regular review of system and access logs</li>
+  <li><strong>Anomaly Detection:</strong> Automated alerts for unusual activity</li>
+  <li><strong>Security Audits:</strong> Regular internal and external security assessments</li>
+</ul>
+
+<h3 id="section-23-5">23.5. Limitations</h3>
+
+<p>
+While we implement industry-leading security measures, no system is 100% secure. We cannot guarantee absolute security of data transmitted over the Internet or stored electronically. You acknowledge and accept this inherent risk when using TipsyPal.
+</p>
+
+<div class="notice">
+  <strong>Your Responsibility:</strong> You are responsible for maintaining the security of your account credentials. Never share your password, and use a strong, unique password. Enable device security features (passcode, biometrics) to protect access to TipsyPal.
+</div>
+
+<h2 id="section-24">24. Data Breach Notification</h2>
+
+<h3 id="section-24-1">24.1. Our Incident Response Process</h3>
+
+<p>
+In the unlikely event of a data breach that affects your personal information, we have established procedures to respond quickly and effectively.
+</p>
+
+<h3 id="section-24-2">24.2. Breach Detection and Assessment</h3>
+
+<p>We maintain systems to detect potential security incidents:</p>
+
+<ul>
+  <li>Automated security monitoring and alerts</li>
+  <li>Regular security assessments</li>
+  <li>Employee reporting mechanisms</li>
+  <li>Third-party vulnerability disclosures</li>
+</ul>
+
+<p>Upon detecting a potential breach, we will:</p>
+<ol>
+  <li>Contain the incident and prevent further unauthorized access</li>
+  <li>Assess the scope and severity of the breach</li>
+  <li>Identify what data was affected</li>
+  <li>Determine which users are impacted</li>
+  <li>Investigate the root cause</li>
+</ol>
+
+<h3 id="section-24-3">24.3. Notification to Authorities</h3>
+
+<p>In compliance with GDPR Article 33, if we determine that a breach poses a risk to user rights and freedoms:</p>
+
+<ul>
+  <li>We will notify the Swedish Data Protection Authority (Integritetsskyddsmyndigheten) within 72 hours of becoming aware of the breach</li>
+  <li>The notification will include:
+    <ul>
+      <li>Nature of the breach</li>
+      <li>Categories and approximate number of affected users</li>
+      <li>Likely consequences</li>
+      <li>Measures taken or proposed to address the breach</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="section-24-4">24.4. Notification to Affected Users</h3>
+
+<p>If the breach poses a high risk to your rights and freedoms, we will notify you without undue delay via:</p>
+
+<ul>
+  <li>Email to your registered email address</li>
+  <li>In-app notification</li>
+  <li>Public notice (if email contact is impossible)</li>
+</ul>
+
+<p>Our notification will include:</p>
+<ul>
+  <li>Description of what happened</li>
+  <li>What data was affected</li>
+  <li>Steps we have taken to address the breach</li>
+  <li>Recommended actions you should take</li>
+  <li>Contact information for questions</li>
+</ul>
+
+<h3 id="section-24-5">24.5. Remediation</h3>
+
+<p>Following a breach, we will:</p>
+
+<ul>
+  <li>Implement additional security measures to prevent recurrence</li>
+  <li>Conduct a thorough post-incident review</li>
+  <li>Update our security policies and procedures as needed</li>
+  <li>Provide credit monitoring or identity theft protection services if appropriate</li>
+  <li>Cooperate fully with law enforcement and regulatory authorities</li>
+</ul>
+
+<h3 id="section-24-6">24.6. Reporting Security Issues</h3>
+
+<p>If you discover a security vulnerability or potential breach:</p>
+
+<ul>
+  <li>Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> with subject "Security Issue"</li>
+  <li>Provide detailed information about the vulnerability</li>
+  <li>Do not publicly disclose the issue until we have addressed it</li>
+  <li>We appreciate responsible disclosure and will acknowledge your report</li>
+</ul>
+
+<h2 id="section-25">25. Automated Decision-Making and Profiling</h2>
+
+<h3 id="section-25-1">25.1. What is Automated Decision-Making?</h3>
+
+<p>
+Automated decision-making refers to decisions made solely by automated means (without human involvement) that produce legal effects or similarly significantly affect you.
+</p>
+
+<h3 id="section-25-2">25.2. Our Use of Automated Processing</h3>
+
+<p><strong>TipsyPal does NOT engage in automated decision-making that produces legal effects or similarly significantly affects you.</strong></p>
+
+<p>However, we do use automated processing for:</p>
+
+<h4>25.2.1. AI Text Processing</h4>
+<ul>
+  <li><strong>Purpose:</strong> Generate writing suggestions, corrections, and transformations</li>
+  <li><strong>Impact:</strong> Does not produce legal effects; you control whether to use the output</li>
+  <li><strong>Human Involvement:</strong> You review and decide whether to accept AI suggestions</li>
+</ul>
+
+<h4>25.2.2. Fraud Detection</h4>
+<ul>
+  <li><strong>Purpose:</strong> Identify potentially fraudulent transactions or abuse</li>
+  <li><strong>Impact:</strong> May flag transactions for human review</li>
+  <li><strong>Human Involvement:</strong> Final decisions are made by humans; you can contact support to appeal</li>
+</ul>
+
+<h4>25.2.3. Content Recommendations (Future Feature)</h4>
+<ul>
+  <li><strong>Purpose:</strong> Suggest features or content based on usage patterns</li>
+  <li><strong>Impact:</strong> Purely informational; does not restrict access or affect your rights</li>
+  <li><strong>Control:</strong> You can ignore recommendations</li>
+</ul>
+
+<h3 id="section-25-3">25.3. Your Rights</h3>
+
+<p>Under GDPR Article 22, you have the right not to be subject to solely automated decisions with legal or similarly significant effects. Since we don't engage in such processing, this right is not currently applicable to TipsyPal.</p>
+
+<p>If we introduce automated decision-making in the future, we will:</p>
+<ul>
+  <li>Update this Privacy Policy</li>
+  <li>Obtain your explicit consent where required</li>
+  <li>Provide meaningful information about the logic involved</li>
+  <li>Offer the right to human intervention</li>
+  <li>Allow you to contest the decision</li>
+</ul>
+
+<h3 id="section-25-4">25.4. Profiling</h3>
+
+<p><strong>Profiling</strong> is automated processing used to evaluate certain personal aspects, such as preferences or behavior.</p>
+
+<p>We engage in limited profiling for:</p>
+
+<ul>
+  <li>Analyzing usage patterns to improve the app (aggregated, not targeted at individuals)</li>
+  <li>Understanding which features are popular</li>
+  <li>Segmenting users for analytics purposes (e.g., "users who purchased Champion tier")</li>
+</ul>
+
+<p>This profiling does not produce legal effects or significantly affect you. It is used solely for service improvement and business analytics.</p>
+
+<h2 id="section-26">26. Business Transfers and Corporate Changes</h2>
+
+<h3 id="section-26-1">26.1. Mergers and Acquisitions</h3>
+
+<p>
+If OakDev &amp; AI AB is involved in a merger, acquisition, consolidation, restructuring, or sale of assets, your personal data may be transferred as part of that transaction.
+</p>
+
+<h3 id="section-26-2">26.2. Your Rights in Business Transfers</h3>
+
+<p>In the event of a business transfer:</p>
+
+<ul>
+  <li><strong>Advance Notice:</strong> We will notify you via email and prominent in-app notice at least 30 days before the transfer</li>
+  <li><strong>Privacy Protection:</strong> The acquiring entity will be bound by this Privacy Policy until they provide their own policy</li>
+  <li><strong>Opt-Out Right:</strong> You will have the opportunity to delete your account before the transfer takes effect</li>
+  <li><strong>Continued Rights:</strong> Your privacy rights under GDPR and other applicable laws will continue to apply</li>
+  <li><strong>Policy Changes:</strong> If the new entity intends to process your data differently, they must notify you and obtain consent where required</li>
+</ul>
+
+<h3 id="section-26-3">26.3. Bankruptcy or Insolvency</h3>
+
+<p>
+In the unlikely event of bankruptcy or insolvency proceedings:
+</p>
+
+<ul>
+  <li>Personal data may be treated as a business asset</li>
+  <li>We will work with bankruptcy trustees to ensure data protection compliance</li>
+  <li>You will be notified if your data will be transferred to a third party</li>
+  <li>You may have the right to object to the transfer</li>
+</ul>
+
+<h3 id="section-26-4">26.4. Due Diligence</h3>
+
+<p>
+During due diligence for a potential transaction, we may share limited information with prospective buyers or investors, subject to:
+</p>
+
+<ul>
+  <li>Strict confidentiality agreements</li>
+  <li>Data minimization (only necessary information)</li>
+  <li>Anonymization or pseudonymization where possible</li>
+  <li>Compliance with data protection laws</li>
+</ul>
+
+<h2 id="section-27">27. Do Not Track Signals</h2>
+
+<h3 id="section-27-1">27.1. What is Do Not Track?</h3>
+
+<p>
+Do Not Track (DNT) is a browser setting that signals to websites that you do not want to be tracked. DNT is primarily relevant to web browsers and websites, not native mobile apps.
+</p>
+
+<h3 id="section-27-2">27.2. TipsyPal and DNT</h3>
+
+<p>
+Because TipsyPal is a native mobile application, traditional web-based DNT signals do not apply. However, we respect the spirit of DNT by:
+</p>
+
+<ul>
+  <li>Not using personal data for behavioral advertising</li>
+  <li>Not selling your data to third parties</li>
+  <li>Providing clear opt-out mechanisms for analytics</li>
+  <li>Honoring device-level tracking preferences (Limit Ad Tracking on iOS, Opt out of Ads Personalization on Android)</li>
+</ul>
+
+<h3 id="section-27-3">27.3. Mobile Tracking Controls</h3>
+
+<p>Instead of DNT, you can control tracking on mobile devices:</p>
+
+<h4>iOS:</h4>
+<ul>
+  <li>Settings > Privacy & Security > Tracking</li>
+  <li>Settings > Privacy & Security > Apple Advertising > Personalized Ads (toggle off)</li>
+</ul>
+
+<h4>Android:</h4>
+<ul>
+  <li>Settings > Google > Ads > Opt out of Ads Personalization</li>
+  <li>Settings > Google > Ads > Reset advertising ID</li>
+</ul>
+
+<p>These settings will limit TipsyPal's access to advertising identifiers used for analytics.</p>
+
+<h2 id="section-28">28. Links to Third-Party Services</h2>
+
+<h3 id="section-28-1">28.1. Third-Party Links</h3>
+
+<p>
+TipsyPal may contain links to third-party websites, services, or resources (for example, in help documentation or promotional materials).
+</p>
+
+<p><strong>Important:</strong> This Privacy Policy does NOT apply to third-party websites or services.</p>
+
+<h3 id="section-28-2">28.2. No Responsibility for Third Parties</h3>
+
+<p>We are not responsible for:</p>
+
+<ul>
+  <li>Privacy practices of third-party websites</li>
+  <li>Content on external websites</li>
+  <li>Accuracy of third-party information</li>
+  <li>Security of third-party services</li>
+  <li>Data collection by third parties</li>
+</ul>
+
+<h3 id="section-28-3">28.3. Your Responsibility</h3>
+
+<p>When you click on third-party links:</p>
+
+<ul>
+  <li>You leave TipsyPal and are subject to the third party's privacy policy</li>
+  <li>We encourage you to review their privacy practices</li>
+  <li>Be cautious about providing personal information</li>
+  <li>We are not liable for any issues arising from third-party services</li>
+</ul>
+
+<h3 id="section-28-4">28.4. Social Media Features</h3>
+
+<p>
+If TipsyPal includes social media features (such as share buttons), these features may collect data about you and are governed by the privacy policies of the respective social media platforms.
+</p>
+
+<h2 id="section-29">29. Changes to This Privacy Policy</h2>
+
+<h3 id="section-29-1">29.1. Right to Modify</h3>
+
+<p>
+We reserve the right to update, modify, or replace this Privacy Policy at any time to reflect:
+</p>
+
+<ul>
+  <li>Changes in our data processing practices</li>
+  <li>New features or services</li>
+  <li>Changes in applicable laws or regulations</li>
+  <li>Technical or organizational improvements</li>
+  <li>Feedback from users or regulators</li>
+</ul>
+
+<h3 id="section-29-2">29.2. Notice of Changes</h3>
+
+<p>When we make changes to this Privacy Policy, we will:</p>
+
+<h4>29.2.1. For Material Changes:</h4>
+<ul>
+  <li>Send email notification to your registered email address (at least 30 days before the changes take effect)</li>
+  <li>Display a prominent notice in the TipsyPal app</li>
+  <li>Update the "Last Updated" date at the top of this document</li>
+  <li>Provide a summary of key changes</li>
+  <li>For changes that require consent, obtain your explicit consent before the changes apply</li>
+</ul>
+
+<p><strong>Material changes</strong> include changes that significantly affect your rights or how we process your personal data.</p>
+
+<h4>29.2.2. For Minor Changes:</h4>
+<ul>
+  <li>Update the "Last Updated" date</li>
+  <li>Post the updated policy on our website and in the app</li>
+  <li>In-app notification (may be less prominent)</li>
+</ul>
+
+<p><strong>Minor changes</strong> include clarifications, formatting improvements, or updates that don't materially affect your rights.</p>
+
+<h3 id="section-29-3">29.3. Your Acceptance</h3>
+
+<p>
+By continuing to use TipsyPal after changes to this Privacy Policy take effect, you acknowledge and accept the updated terms. If you do not agree with the changes:
+</p>
+
+<ul>
+  <li>You should stop using TipsyPal</li>
+  <li>You may delete your account before the changes take effect</li>
+  <li>Contact us with concerns at <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+</ul>
+
+<h3 id="section-29-4">29.4. Version History</h3>
+
+<p>We maintain a version history of this Privacy Policy:</p>
+
+<ul>
+  <li><strong>Version 3.0 – January 16, 2025:</strong> Comprehensive expansion; added detailed sections on CCPA, state privacy laws, AI processing, security measures, data breach procedures, and enhanced GDPR rights information</li>
+  <li><strong>Version 2.6 – December 16, 2024:</strong> Previous version (as provided)</li>
+</ul>
+
+<p>You may request previous versions of this Privacy Policy by emailing <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>.</p>
+
+<h2 id="section-30">30. How to Exercise Your Rights</h2>
+
+<p>
+This section provides a comprehensive guide to exercising your data protection rights under GDPR, CCPA, and other applicable laws.
+</p>
+
+<h3 id="section-30-1">30.1. Submitting a Request</h3>
+
+<h4>Step 1: Choose Your Method</h4>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+  <li><strong>In-App:</strong> Settings > Privacy & Data > Exercise My Rights (if available)</li>
+</ul>
+
+<h4>Step 2: Provide Required Information</h4>
+<p>Include in your request:</p>
+<ul>
+  <li>Subject line indicating the type of request (e.g., "GDPR Access Request")</li>
+  <li>Your full name</li>
+  <li>Email address associated with your TipsyPal account</li>
+  <li>Specific right you wish to exercise</li>
+  <li>Detailed description of your request</li>
+  <li>Any additional information to help us verify your identity</li>
+</ul>
+
+<h4>Step 3: Identity Verification</h4>
+<p>To protect your privacy, we must verify your identity. We may ask for:</p>
+<ul>
+  <li>Confirmation that you control the email address associated with the account</li>
+  <li>Answers to security questions</li>
+  <li>Login to your account (for in-app requests)</li>
+  <li>Additional information if we have doubts about your identity</li>
+</ul>
+
+<h4>Step 4: Processing</h4>
+<p>We will:</p>
+<ul>
+  <li>Acknowledge receipt of your request within 5 business days</li>
+  <li>Process your request within 30 days (may extend to 60 days for complex requests)</li>
+  <li>Notify you if we need additional information</li>
+  <li>Provide the requested information or confirm the action taken</li>
+</ul>
+
+<h3 id="section-30-2">30.2. Authorized Agent Requests</h3>
+
+<p>You may designate an authorized agent to make requests on your behalf. The agent must:</p>
+
+<ul>
+  <li>Provide proof of authorization (power of attorney or signed permission letter)</li>
+  <li>Verify their own identity</li>
+  <li>We may still require you to verify your identity directly</li>
+  <li>We may contact you to confirm the agent's authority</li>
+</ul>
+
+<h3 id="section-30-3">30.3. Fees</h3>
+
+<p>We process rights requests free of charge, except:</p>
+
+<ul>
+  <li>If the request is manifestly unfounded or excessive</li>
+  <li>For repeated requests for the same information</li>
+  <li>If we previously provided the information</li>
+</ul>
+
+<p>In such cases, we may charge a reasonable fee or refuse the request. We will notify you and explain our reasoning.</p>
+
+<h3 id="section-30-4">30.4. Denial of Requests</h3>
+
+<p>We may deny a request if:</p>
+
+<ul>
+  <li>We cannot verify your identity</li>
+  <li>The request is manifestly unfounded or excessive</li>
+  <li>We have a legal obligation to retain the data</li>
+  <li>The data is necessary for legal claims</li>
+  <li>The request would adversely affect others' rights</li>
+</ul>
+
+<p>If we deny a request, we will explain why and inform you of your right to complain to a supervisory authority.</p>
+
+<h3 id="section-30-5">30.5. Common Requests and How to Submit</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Request Type</th>
+      <th>What to Include</th>
+      <th>Expected Timeline</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Access Request</strong></td>
+      <td>Specify what data you want (all data, specific categories, etc.)</td>
+      <td>30 days</td>
+    </tr>
+    <tr>
+      <td><strong>Deletion Request</strong></td>
+      <td>Confirm you want to delete your entire account or specific data</td>
+      <td>72 hours</td>
+    </tr>
+    <tr>
+      <td><strong>Correction Request</strong></td>
+      <td>Specify what data is incorrect and provide correct information</td>
+      <td>14 days</td>
+    </tr>
+    <tr>
+      <td><strong>Data Portability</strong></td>
+      <td>Specify desired format (JSON, CSV, etc.)</td>
+      <td>30 days</td>
+    </tr>
+    <tr>
+      <td><strong>Objection</strong></td>
+      <td>Explain which processing you object to and why</td>
+      <td>14 days</td>
+    </tr>
+    <tr>
+      <td><strong>Restriction Request</strong></td>
+      <td>Explain which processing should be restricted and why</td>
+      <td>14 days</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="section-31">31. Complaints and Supervisory Authority</h2>
+
+<h3 id="section-31-1">31.1. Internal Complaint Process</h3>
+
+<p>If you have concerns about our privacy practices:</p>
+
+<ol>
+  <li>Contact us at <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> with subject "Privacy Complaint"</li>
+  <li>Describe your concern in detail</li>
+  <li>We will investigate and respond within 30 days</li>
+  <li>If you're not satisfied, you may escalate to our Data Protection Officer</li>
+</ol>
+
+<h3 id="section-31-2">31.2. Right to Lodge a Complaint with Supervisory Authority</h3>
+
+<p>
+Under GDPR, you have the right to lodge a complaint with a data protection supervisory authority, particularly in the EU member state where you reside, work, or where you believe a violation occurred.
+</p>
+
+<h4>31.2.1. Swedish Supervisory Authority</h4>
+<p>Since OakDev &amp; AI AB is based in Sweden, the lead supervisory authority is:</p>
+
+<p>
+  <strong>Integritetsskyddsmyndigheten (IMY)</strong><br>
+  Swedish Authority for Privacy Protection<br>
+  Box 8114<br>
+  104 20 Stockholm, Sweden<br>
+  Phone: +46 8 657 61 00<br>
+  Email: <a href="mailto:imy@imy.se">imy@imy.se</a><br>
+  Website: <a href="https://www.imy.se" target="_blank">https://www.imy.se</a>
+</p>
+
+<h4>31.2.2. Other EU Supervisory Authorities</h4>
+<p>You may also contact the supervisory authority in your own country. A list of EU data protection authorities is available at: <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank">https://edpb.europa.eu/about-edpb/board/members_en</a></p>
+
+<h3 id="section-31-3">31.3. California Attorney General</h3>
+
+<p>California residents may also file complaints with:</p>
+
+<p>
+  <strong>California Attorney General</strong><br>
+  Privacy Enforcement and Protection Unit<br>
+  California Department of Justice<br>
+  <a href="https://oag.ca.gov/contact/consumer-complaint-against-business-or-company" target="_blank">https://oag.ca.gov/contact/consumer-complaint-against-business-or-company</a>
+</p>
+
+<h3 id="section-31-4">31.4. Other U.S. State Authorities</h3>
+
+<p>Residents of Virginia, Colorado, Connecticut, and Utah may contact their respective state attorneys general to file complaints related to privacy violations.</p>
+
+<h3 id="section-31-5">31.5. No Retaliation</h3>
+
+<p>
+We will not retaliate against you for filing a complaint with a supervisory authority or exercising your privacy rights.
+</p>
+
+<h2 id="section-32">32. Disclaimers and Limitations</h2>
+
+<h3 id="section-32-1">32.1. Service Provided "AS IS"</h3>
+
+<p>
+TipsyPal is provided on an "AS IS" and "AS AVAILABLE" basis, without warranties of any kind, whether express, implied, statutory, or otherwise. We specifically disclaim all implied warranties, including but not limited to:
+</p>
+
+<ul>
+  <li>Warranties of merchantability</li>
+  <li>Warranties of fitness for a particular purpose</li>
+  <li>Warranties of non-infringement</li>
+  <li>Warranties arising from course of dealing or usage of trade</li>
+</ul>
+
+<h3 id="section-32-2">32.2. No Warranty of Accuracy</h3>
+
+<p>We do not warrant that:</p>
+
+<ul>
+  <li>AI-generated content will be accurate, appropriate, or suitable for your purposes</li>
+  <li>The Service will be error-free, uninterrupted, or secure</li>
+  <li>Results obtained from using TipsyPal will be reliable</li>
+  <li>Any errors or defects will be corrected</li>
+  <li>The Service will meet your requirements or expectations</li>
+</ul>
+
+<h3 id="section-32-3">32.3. AI Output Disclaimer</h3>
+
+<div class="notice">
+  <strong>Important:</strong> AI-generated content is produced by automated systems and may contain errors, inaccuracies, biases, or inappropriate suggestions. You are solely responsible for reviewing, verifying, and deciding whether to use any AI output. We are not responsible for consequences arising from your use of AI-generated content.
+</div>
+
+<p>You acknowledge and agree that:</p>
+
+<ul>
+  <li>AI responses may be incorrect, misleading, or inappropriate</li>
+  <li>You should not rely on AI output for critical decisions without independent verification</li>
+  <li>AI may not understand context or nuance</li>
+  <li>We are not liable for damages resulting from AI output</li>
+</ul>
+
+<h3 id="section-32-4">32.4. Third-Party Services</h3>
+
+<p>
+We are not responsible for the performance, accuracy, availability, or security of third-party services (Firebase, OpenAI, Apple, Google, etc.). Issues with third-party services may affect TipsyPal's functionality.
+</p>
+
+<h3 id="section-32-5">32.5. Internet and Technology Risks</h3>
+
+<p>You acknowledge that:</p>
+
+<ul>
+  <li>Internet transmissions are never completely private or secure</li>
+  <li>Messages or data sent through TipsyPal may be intercepted by third parties despite encryption</li>
+  <li>Your device may be compromised by malware or unauthorized access</li>
+  <li>Network connectivity issues may affect service availability</li>
+</ul>
+
+<h2 id="section-33">33. Limitation of Liability</h2>
+
+<h3 id="section-33-1">33.1. Scope of Limitation</h3>
+
+<p>
+To the maximum extent permitted by applicable law, OakDev &amp; AI AB, its affiliates, directors, employees, agents, and licensors shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:
+</p>
+
+<ul>
+  <li>Your use or inability to use TipsyPal</li>
+  <li>Any unauthorized access to or use of your data</li>
+  <li>Any interruption or cessation of transmission to or from TipsyPal</li>
+  <li>Any bugs, viruses, or malicious code that may be transmitted to or through TipsyPal</li>
+  <li>Any errors or omissions in content or AI output</li>
+  <li>Any user content or conduct of third parties</li>
+  <li>Your reliance on AI-generated content</li>
+</ul>
+
+<h3 id="section-33-2">33.2. Maximum Liability</h3>
+
+<p>
+In no event shall OakDev &amp; AI AB's total liability to you for all claims related to TipsyPal exceed the greater of:
+</p>
+
+<ul>
+  <li>The amount you paid to us in the twelve (12) months preceding the claim, or</li>
+  <li>One hundred euros (€100)</li>
+</ul>
+
+<h3 id="section-33-3">33.3. Jurisdictional Limitations</h3>
+
+<p>
+Some jurisdictions do not allow the exclusion or limitation of certain warranties or liabilities. In such jurisdictions, the above limitations may not apply to you, and our liability will be limited to the maximum extent permitted by law.
+</p>
+
+<h3 id="section-33-4">33.4. Basis of the Bargain</h3>
+
+<p>
+You acknowledge that we have set our prices and entered into this agreement in reliance upon the disclaimers and limitations of liability set forth herein, that the same reflect an allocation of risk between us (including the risk that a contract remedy may fail of its essential purpose and cause consequential loss), and that the same form an essential basis of the bargain between us.
+</p>
+
+<h2 id="section-34">34. Indemnification</h2>
+
+<h3 id="section-34-1">34.1. Your Indemnification Obligation</h3>
+
+<p>
+You agree to indemnify, defend (at our option), and hold harmless OakDev &amp; AI AB, its affiliates, and their respective officers, directors, employees, agents, licensors, and suppliers from and against any claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising from or relating to:
+</p>
+
+<ul>
+  <li>Your use or misuse of TipsyPal</li>
+  <li>Your violation of this Privacy Policy or Terms of Service</li>
+  <li>Your violation of any rights of another person or entity</li>
+  <li>Your violation of any applicable laws or regulations</li>
+  <li>Any user content you submit or transmit through TipsyPal</li>
+  <li>Your reliance on or use of AI-generated content</li>
+  <li>Any negligent or wrongful conduct on your part</li>
+</ul>
+
+<h3 id="section-34-2">34.2. Procedure</h3>
+
+<p>We reserve the right to assume the exclusive defense and control of any matter subject to indemnification by you, in which case you agree to cooperate with our defense of such claim.</p>
+
+<h3 id="section-34-3">34.3. Survival</h3>
+
+<p>This indemnification obligation will survive termination of your use of TipsyPal and this Privacy Policy.</p>
+
+<h2 id="section-35">35. Governing Law and Jurisdiction</h2>
+
+<h3 id="section-35-1">35.1. Governing Law</h3>
+
+<p>
+This Privacy Policy and any disputes arising out of or related to it shall be governed by and construed in accordance with the laws of <strong>Sweden</strong>, without regard to its conflict of law principles.
+</p>
+
+<p>However, your statutory rights under mandatory consumer protection laws in your jurisdiction remain unaffected.</p>
+
+<h3 id="section-35-2">35.2. Jurisdiction for EU/EEA Users</h3>
+
+<p>
+If you are a resident of the European Union or European Economic Area:
+</p>
+
+<ul>
+  <li>You may bring legal proceedings in the courts of Sweden (where we are established), or</li>
+  <li>You may bring proceedings in the courts of your country of residence</li>
+  <li>We may only bring proceedings against you in the courts of your country of residence</li>
+</ul>
+
+<h3 id="section-35-3">35.3. Jurisdiction for Non-EU Users</h3>
+
+<p>
+If you are not an EU/EEA resident, you agree that any disputes shall be subject to the exclusive jurisdiction of the courts of Sweden, and you consent to personal jurisdiction in those courts.
+</p>
+
+<h3 id="section-35-4">35.4. Dispute Resolution</h3>
+
+<p>Before initiating legal proceedings, we encourage you to contact us to attempt to resolve any disputes amicably:</p>
+
+<ul>
+  <li>Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> with a detailed description of the dispute</li>
+  <li>We will attempt to resolve the matter within 30 days</li>
+  <li>If resolution is not possible, you may pursue legal remedies</li>
+</ul>
+
+<h3 id="section-35-5">35.5. Severability</h3>
+
+<p>
+If any provision of this Privacy Policy is found to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect. The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable.
+</p>
+
+<h3 id="section-35-6">35.6. Waiver</h3>
+
+<p>
+No waiver of any term or condition of this Privacy Policy shall be deemed a further or continuing waiver of such term or any other term. Our failure to enforce any right or provision shall not constitute a waiver of such right or provision.
+</p>
+
+<h3 id="section-35-7">35.7. Entire Agreement</h3>
+
+<p>
+This Privacy Policy, together with our Terms of Service, constitutes the entire agreement between you and OakDev &amp; AI AB regarding the subject matter hereof and supersedes all prior or contemporaneous communications and proposals.
+</p>
+
+<h2 id="section-36">36. Contact Information</h2>
+
+<h3 id="section-36-1">36.1. How to Contact Us</h3>
+
+<p>For any questions, concerns, or requests related to this Privacy Policy or our data processing practices, please contact us:</p>
+
 <p>
   <strong>OakDev &amp; AI AB</strong><br>
-  Sweden<br>
-  Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>
+  Attn: Privacy & Data Protection<br>
+  Swedish Organization Number: 5594316787<br>
+  Sweden
+</p>
+
+<p>
+  <strong>Email:</strong> <a href="mailto:hello@oakdev.app">hello@oakdev.app</a><br>
+  <strong>Website:</strong> <a href="https://oakdev.app" target="_blank">https://oakdev.app</a>
+</p>
+
+<h3 id="section-36-2">36.2. Response Time</h3>
+
+<p>We aim to respond to all inquiries within:</p>
+
+<ul>
+  <li><strong>General questions:</strong> 5 business days</li>
+  <li><strong>Privacy rights requests:</strong> 30 days (may extend to 60 days for complex requests)</li>
+  <li><strong>Data breach concerns:</strong> 48 hours</li>
+  <li><strong>Urgent security matters:</strong> 24 hours</li>
+</ul>
+
+<h3 id="section-36-3">36.3. Languages</h3>
+
+<p>
+This Privacy Policy is provided in English. If we provide translations into other languages, the English version shall prevail in case of any inconsistency or discrepancy.
+</p>
+
+<p>You may contact us in English or Swedish.</p>
+
+<h3 id="section-36-4">36.4. Data Protection Officer</h3>
+
+<p>For privacy-specific inquiries, you may contact our Data Protection Officer:</p>
+
+<p>
+  <strong>Data Protection Officer</strong><br>
+  OakDev &amp; AI AB<br>
+  Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a><br>
+  Subject: "Attention: Data Protection Officer"
+</p>
+
+<h3 id="section-36-5">36.5. Stay Informed</h3>
+
+<p>To stay informed about privacy updates and best practices:</p>
+
+<ul>
+  <li>Check this Privacy Policy periodically for updates</li>
+  <li>Enable notifications in the TipsyPal app</li>
+  <li>Subscribe to our newsletter (optional)</li>
+  <li>Follow us on social media for announcements</li>
+</ul>
+
+<hr style="margin: 40px 0; border: none; border-top: 1px solid #e5e7eb;">
+
+<div class="info-box">
+  <strong>Thank you for trusting TipsyPal with your data.</strong><br>
+  We are committed to protecting your privacy and providing transparency in all our data processing activities. If you have any questions or concerns, please don't hesitate to reach out to us at <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>.
+</div>
+
+<p style="text-align: center; margin-top: 40px; color: #6b7280; font-size: 0.9rem;">
+  © 2025 OakDev &amp; AI AB. All rights reserved.<br>
+  Last Updated: January 16, 2025 | Version 3.0
 </p>
 
 </body>

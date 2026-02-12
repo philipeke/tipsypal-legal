@@ -7,39 +7,48 @@
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 20px;
       line-height: 1.7;
       color: #111827;
       background: #ffffff;
     }
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
       color: #111827;
       margin-top: 28px;
       margin-bottom: 10px;
     }
     h1 {
-      font-size: 1.9rem;
+      font-size: 2.2rem;
       margin-top: 0;
+      border-bottom: 3px solid #111827;
+      padding-bottom: 12px;
     }
     h2 {
-      font-size: 1.3rem;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 4px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
+      margin-top: 36px;
     }
     h3 {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      margin-top: 24px;
+    }
+    h4 {
+      font-size: 1.05rem;
+      margin-top: 18px;
+      font-weight: 600;
     }
     p {
-      margin: 6px 0 10px;
+      margin: 8px 0 12px;
     }
-    ul {
-      margin: 6px 0 12px 1.5rem;
+    ul, ol {
+      margin: 8px 0 14px 1.8rem;
       padding: 0;
     }
     li {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
     strong {
       font-weight: 600;
@@ -47,313 +56,3162 @@
     code {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       background: #f3f4f6;
-      padding: 2px 4px;
+      padding: 2px 5px;
       border-radius: 3px;
       font-size: 0.9em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background: #f9fafb;
+      font-weight: 600;
+    }
+    .toc {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 20px 30px;
+      margin: 24px 0;
+    }
+    .toc h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      border: none;
+    }
+    .toc ul {
+      margin-left: 0;
+      list-style-position: inside;
+    }
+    .toc a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .toc a:hover {
+      text-decoration: underline;
+    }
+    .notice {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 4px;
+    }
+    .info-box {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 4px;
+    }
+    .warning-box {
+      background: #fee2e2;
+      border-left: 4px solid #ef4444;
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 4px;
+    }
+    a {
+      color: #2563eb;
     }
   </style>
 </head>
 <body>
 
 <h1>Terms of Use for TipsyPal</h1>
-<p><strong>Version 2.1 — Last Updated: 2025-12-16<br>
+<p><strong>Effective Date: February 12, 2026<br>
+Last Updated: February 12, 2026<br>
+Version: 3.0<br>
 Governing Entity: OakDev &amp; AI AB (Sweden)</strong></p>
 
-<h2>1. Introduction</h2>
+<div class="warning-box">
+  <strong>Important Legal Agreement:</strong> These Terms of Use constitute a legally binding agreement between you and OakDev &amp; AI AB. By downloading, accessing, or using TipsyPal, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree, you must immediately cease using the App and uninstall it from your device.
+</div>
+
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#section-1">Introduction and Agreement</a></li>
+    <li><a href="#section-2">Definitions</a></li>
+    <li><a href="#section-3">About TipsyPal Service</a></li>
+    <li><a href="#section-4">Eligibility and Age Requirements</a></li>
+    <li><a href="#section-5">Account Registration and Security</a></li>
+    <li><a href="#section-6">License Grant and Restrictions</a></li>
+    <li><a href="#section-7">Service Tiers and Access Levels</a></li>
+    <li><a href="#section-8">Purchases, Payments, and Billing</a></li>
+    <li><a href="#section-9">Credits System and Usage</a></li>
+    <li><a href="#section-10">Subscriptions and Renewals</a></li>
+    <li><a href="#section-11">Refunds and Cancellations</a></li>
+    <li><a href="#section-12">User Responsibilities and Conduct</a></li>
+    <li><a href="#section-13">Prohibited Uses and Activities</a></li>
+    <li><a href="#section-14">User Content and Data</a></li>
+    <li><a href="#section-15">AI-Generated Content and Disclaimers</a></li>
+    <li><a href="#section-16">Content Standards and Acceptable Use</a></li>
+    <li><a href="#section-17">Intellectual Property Rights</a></li>
+    <li><a href="#section-18">Third-Party Services and Integrations</a></li>
+    <li><a href="#section-19">Privacy and Data Protection</a></li>
+    <li><a href="#section-20">Service Availability and Modifications</a></li>
+    <li><a href="#section-21">Communications and Marketing</a></li>
+    <li><a href="#section-22">Termination and Suspension</a></li>
+    <li><a href="#section-23">Effect of Termination</a></li>
+    <li><a href="#section-24">Disclaimers and Warranty Exclusions</a></li>
+    <li><a href="#section-25">Limitation of Liability</a></li>
+    <li><a href="#section-26">Indemnification</a></li>
+    <li><a href="#section-27">Dispute Resolution and Arbitration</a></li>
+    <li><a href="#section-28">Class Action Waiver</a></li>
+    <li><a href="#section-29">Governing Law and Jurisdiction</a></li>
+    <li><a href="#section-30">International Use and Export Compliance</a></li>
+    <li><a href="#section-31">Digital Millennium Copyright Act (DMCA)</a></li>
+    <li><a href="#section-32">Force Majeure</a></li>
+    <li><a href="#section-33">Assignment and Transfer</a></li>
+    <li><a href="#section-34">Severability and Waiver</a></li>
+    <li><a href="#section-35">Entire Agreement</a></li>
+    <li><a href="#section-36">Changes to These Terms</a></li>
+    <li><a href="#section-37">Contact Information</a></li>
+  </ol>
+</div>
+
+<h2 id="section-1">1. Introduction and Agreement</h2>
+
+<h3 id="section-1-1">1.1. Binding Agreement</h3>
+
 <p>
-These Terms of Use (“Terms”) govern your access to and use of the TipsyPal mobile application (“TipsyPal”, “App”,
-“Service”), operated and owned by OakDev &amp; AI AB, a Swedish limited liability company (“we”, “us”, “our”).
-</p>
-<p>
-By downloading, accessing, or using the App, you agree to be legally bound by these Terms. If you do not agree, do not use
-the App.
-</p>
-<p>
-These Terms apply to all users of the Service, whether registered or unregistered.
+These Terms of Use (these "Terms", "Agreement", "Terms of Use", or "Terms of Service") constitute a legally binding agreement between you ("you", "your", "User") and <strong>OakDev &amp; AI AB</strong>, a limited liability company organized and existing under the laws of Sweden, with organization number 5594316787 ("Company", "we", "us", "our").
 </p>
 
-<h2>2. About TipsyPal</h2>
 <p>
-TipsyPal is an AI-assisted writing and communication enhancement tool designed to help users produce clearer, more polished,
-and more effective text.
+These Terms govern your access to and use of the TipsyPal mobile application (the "App", "Application", "Service", "TipsyPal"), including all features, functionalities, content, and services provided through the App.
 </p>
-<p>Core features include (but are not limited to):</p>
+
+<h3 id="section-1-2">1.2. Acceptance of Terms</h3>
+
+<p>By doing any of the following, you explicitly agree to be bound by these Terms:</p>
+
 <ul>
-  <li>AI-generated rewriting, tone adjustment, and enhancement</li>
-  <li>Grammar and clarity improvements</li>
-  <li>Message drafting for social media, messaging apps, and personal communication</li>
-  <li>Multiple language support</li>
-  <li>Optional AI persona modes</li>
-  <li>Credit-based entitlements and optional premium access</li>
+  <li>Downloading or installing the TipsyPal App</li>
+  <li>Creating an account</li>
+  <li>Accessing any features or content within the App</li>
+  <li>Making any purchases through the App</li>
+  <li>Using any AI-powered features or services</li>
 </ul>
-<p>TipsyPal is not intended to replace professional advice of any kind.</p>
 
-<h2>3. Eligibility</h2>
-<p>You must be:</p>
+<p>
+If you do not agree to these Terms in their entirety, you are not authorized to use TipsyPal and must immediately uninstall the App and cease all use.
+</p>
+
+<h3 id="section-1-3">1.3. Scope of Agreement</h3>
+
+<p>These Terms apply to:</p>
+
 <ul>
-  <li>At least 13 years old, and</li>
-  <li>Legally permitted to use the App under the laws of your jurisdiction.</li>
+  <li>All users of TipsyPal, whether free or paid</li>
+  <li>All features and functionalities of the App</li>
+  <li>All platforms on which TipsyPal is available (iOS, Android, and any future platforms)</li>
+  <li>All in-app purchases and subscriptions</li>
+  <li>All communications between you and OakDev &amp; AI AB</li>
 </ul>
-<p>
-If you are under 18, you may use the App only with the consent of a parent or legal guardian.
-</p>
-<p>We may suspend or terminate accounts that violate eligibility requirements.</p>
 
-<h2>4. Account Registration</h2>
-<p>
-Certain features require creating an account using Firebase Authentication. You agree to:
-</p>
+<h3 id="section-1-4">1.4. Additional Terms</h3>
+
+<p>Your use of TipsyPal is also governed by:</p>
+
 <ul>
-  <li>Provide accurate and complete information</li>
-  <li>Maintain the confidentiality of your login credentials</li>
-  <li>Accept responsibility for all activity occurring under your account</li>
+  <li>Our <strong>Privacy Policy</strong>, which explains how we collect, use, and protect your personal data</li>
+  <li><strong>Apple App Store Terms of Service</strong> (for iOS users)</li>
+  <li><strong>Google Play Terms of Service</strong> (for Android users)</li>
+  <li>Any additional terms presented to you within the App for specific features</li>
 </ul>
+
 <p>
-We are not liable for unauthorized access resulting from your failure to secure your credentials.
+In the event of a conflict between these Terms and additional terms, these Terms shall prevail unless explicitly stated otherwise.
 </p>
 
-<h2>5. Basic &amp; Champion Access (Credits Model)</h2>
+<h3 id="section-1-5">1.5. Modifications and Updates</h3>
 
-<h3>5.1. Basic (One-Time Purchase)</h3>
 <p>
-Purchasing Basic unlocks access to a fixed allocation of AI credits (for example, <strong>200 credits</strong>).
-Credits are consumed when you use AI generation features (e.g., prompt-based output generation).
+We reserve the right to modify, update, or replace these Terms at any time. Material changes will be communicated to you as described in Section 36. Your continued use of TipsyPal after changes are posted constitutes your acceptance of the updated Terms.
 </p>
 
-<h3>5.2. Champion (Credit Pack / Premium Entitlement)</h3>
+<h2 id="section-2">2. Definitions</h2>
+
+<p>For purposes of these Terms, the following definitions apply:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Account</strong></td>
+      <td>Your registered user account created through Firebase Authentication that allows you to access TipsyPal's features and services.</td>
+    </tr>
+    <tr>
+      <td><strong>AI Services</strong></td>
+      <td>Artificial intelligence-powered features that process, transform, generate, or enhance text content, including but not limited to rewriting, tone adjustment, grammar correction, and content generation.</td>
+    </tr>
+    <tr>
+      <td><strong>App</strong></td>
+      <td>The TipsyPal mobile application, including all versions, updates, and associated services.</td>
+    </tr>
+    <tr>
+      <td><strong>Basic Tier</strong></td>
+      <td>The entry-level access tier that provides a limited allocation of AI credits (typically 200 credits) through a one-time purchase.</td>
+    </tr>
+    <tr>
+      <td><strong>Champion Tier</strong></td>
+      <td>The premium access tier that provides an expanded allocation of AI credits (typically 2,000 credits) and may include additional features and benefits.</td>
+    </tr>
+    <tr>
+      <td><strong>Content</strong></td>
+      <td>All text, data, information, graphics, software, and other materials available through or generated by TipsyPal.</td>
+    </tr>
+    <tr>
+      <td><strong>Credits</strong></td>
+      <td>Virtual units consumed when using AI-powered features. Each AI request consumes a certain number of credits depending on the complexity and length of the request.</td>
+    </tr>
+    <tr>
+      <td><strong>Device</strong></td>
+      <td>Any mobile device, smartphone, tablet, or computer capable of running the TipsyPal App.</td>
+    </tr>
+    <tr>
+      <td><strong>In-App Purchase</strong></td>
+      <td>Any purchase made within the App through Apple App Store or Google Play Store billing systems, including credit packs, tier upgrades, and subscriptions.</td>
+    </tr>
+    <tr>
+      <td><strong>Subscription</strong></td>
+      <td>A recurring purchase that automatically renews at specified intervals (monthly, annually, etc.) until canceled.</td>
+    </tr>
+    <tr>
+      <td><strong>User Content</strong></td>
+      <td>Any text, data, information, or other content that you input, submit, upload, transmit, or provide to TipsyPal.</td>
+    </tr>
+    <tr>
+      <td><strong>Third-Party Services</strong></td>
+      <td>External services integrated with TipsyPal, including Firebase, OpenAI, Apple services, and Google services.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="section-3">3. About TipsyPal Service</h2>
+
+<h3 id="section-3-1">3.1. Service Description</h3>
+
 <p>
-Champion is offered as a premium access option that provides a larger allocation of AI credits (for example,
-<strong>2,000 credits</strong>) and may include premium features such as enhanced modes, priority access to new features, or
-additional functionality as described in the App at the time of purchase.
+TipsyPal is an AI-powered writing assistant and communication enhancement tool designed to help users create clearer, more polished, and more effective text for various purposes. The Service leverages advanced artificial intelligence and natural language processing technologies to provide real-time writing assistance.
 </p>
-<p>
-Champion may be offered as a one-time entitlement and/or as a store-managed product, and is governed by:
-</p>
+
+<h3 id="section-3-2">3.2. Core Features</h3>
+
+<p>TipsyPal provides the following core features (subject to availability and your access tier):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature Category</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Text Enhancement</strong></td>
+      <td>AI-powered rewriting, grammar correction, clarity improvement, and style enhancement of your text.</td>
+    </tr>
+    <tr>
+      <td><strong>Tone Adjustment</strong></td>
+      <td>Modify the tone of your text to be more professional, casual, friendly, formal, persuasive, or other styles as available.</td>
+    </tr>
+    <tr>
+      <td><strong>Content Generation</strong></td>
+      <td>Generate new text content based on prompts, ideas, or partial inputs you provide.</td>
+    </tr>
+    <tr>
+      <td><strong>Message Drafting</strong></td>
+      <td>Create messages optimized for social media, messaging apps, emails, and personal communication.</td>
+    </tr>
+    <tr>
+      <td><strong>Multi-Language Support</strong></td>
+      <td>Support for multiple languages for input and output (availability varies).</td>
+    </tr>
+    <tr>
+      <td><strong>Conversation History</strong></td>
+      <td>Store and access your previous AI interactions and generated content.</td>
+    </tr>
+    <tr>
+      <td><strong>AI Persona Modes</strong></td>
+      <td>Different AI personality modes that adjust the style and approach of responses (availability varies by tier).</td>
+    </tr>
+    <tr>
+      <td><strong>Credit Management</strong></td>
+      <td>Track your credit balance and usage, purchase additional credits, and manage your access tier.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-3-3">3.3. Service Nature and Purpose</h3>
+
+<p>TipsyPal is intended for:</p>
+
 <ul>
-  <li>Google Play Billing</li>
-  <li>Apple App Store Billing</li>
+  <li>Personal communication enhancement</li>
+  <li>Social media content creation</li>
+  <li>Casual and professional writing assistance</li>
+  <li>Idea generation and brainstorming</li>
+  <li>Language learning and improvement</li>
+  <li>General creative writing support</li>
 </ul>
+
+<div class="warning-box">
+  <strong>Important Limitation:</strong> TipsyPal is NOT intended to replace professional services, provide professional advice (legal, medical, financial, etc.), or be used for critical decision-making. You are solely responsible for verifying and evaluating any AI-generated content before use.
+</div>
+
+<h3 id="section-3-4">3.4. Service Evolution</h3>
+
 <p>
-Your purchases are processed by your app store provider, not OakDev &amp; AI AB. Pricing, availability, taxes, refunds,
-and cancellations are determined by the applicable app store policies and local law.
+TipsyPal is an evolving service. We continuously work to improve features, add new capabilities, and enhance performance. Features may be added, modified, or removed at our discretion. We will provide notice of material changes that significantly affect your access to core features.
 </p>
 
-<h3>5.3. Top-Ups / Additional Credits</h3>
-<p>
-You may be able to purchase additional AI credits (“Top-Ups”) such as credit packs. Top-Ups add credits to your balance and
-are consumed as you use AI features. The exact packs, prices, and amounts are shown in the App store listing and in the App.
-</p>
+<h2 id="section-4">4. Eligibility and Age Requirements</h2>
 
-<h3>5.4. No Guarantee of Specific Allocation or Availability</h3>
-<p>
-We may adjust credit amounts, pack configurations, and feature availability over time. Any changes will be reflected in the
-App and/or store listing. Where required by law, material changes will be communicated to you.
-</p>
+<h3 id="section-4-1">4.1. Minimum Age</h3>
 
-<h2>6. User Responsibilities</h2>
-<p>You agree NOT to:</p>
+<p>To use TipsyPal, you must meet the following age requirements:</p>
+
 <ul>
-  <li>Use the App to generate or distribute unlawful content</li>
-  <li>Upload content that is harmful, abusive, threatening, or discriminatory</li>
-  <li>Attempt to reverse engineer, decompile, or modify the App</li>
-  <li>Circumvent credit consumption, access controls, paywalls, or purchase verification</li>
-  <li>Use the Service in a way that disrupts or harms the App or its users</li>
-  <li>Misrepresent your identity or affiliation</li>
+  <li><strong>General Users:</strong> You must be at least 13 years of age</li>
+  <li><strong>EU/EEA Users:</strong> You must meet the digital consent age in your country (typically 16, but may be 13-15 in some countries)</li>
+  <li><strong>Jurisdiction-Specific:</strong> You must meet any higher age requirement imposed by your local laws</li>
 </ul>
-<p>Violation of these rules may result in immediate account suspension or termination.</p>
 
-<h2>7. AI-Generated Content Disclaimer</h2>
 <p>
-TipsyPal uses third-party AI models (e.g., OpenAI) to generate text. You acknowledge and accept that:
+By using TipsyPal, you represent and warrant that you meet all applicable age requirements.
 </p>
+
+<h3 id="section-4-2">4.2. Parental Consent for Minors</h3>
+
+<p>
+If you are under the age of 18 (or the age of majority in your jurisdiction), you may only use TipsyPal with the consent, supervision, and approval of a parent or legal guardian who agrees to be bound by these Terms on your behalf.
+</p>
+
+<p>Parents and guardians who permit minors to use TipsyPal:</p>
+
 <ul>
-  <li>AI output may contain errors</li>
-  <li>AI suggestions may be incomplete, inappropriate, or inaccurate</li>
-  <li>AI cannot guarantee correctness, safety, legality, or factual accuracy</li>
-  <li>You remain solely responsible for reviewing and using AI output</li>
+  <li>Are responsible for monitoring and supervising such use</li>
+  <li>Accept full responsibility for any charges, damages, or liabilities arising from the minor's use</li>
+  <li>Agree to these Terms on behalf of the minor</li>
+  <li>Are responsible for ensuring appropriate use of AI features</li>
 </ul>
-<p>
-We do not guarantee that AI-generated content is reliable or suitable for any specific purpose.
-</p>
 
-<h2>8. No Professional Advice</h2>
-<p>AI responses in TipsyPal do not constitute:</p>
+<h3 id="section-4-3">4.3. Legal Capacity</h3>
+
+<p>You represent and warrant that:</p>
+
 <ul>
-  <li>Legal advice</li>
-  <li>Medical advice</li>
-  <li>Financial advice</li>
-  <li>Psychological counseling</li>
-  <li>Relationship or personal advice</li>
+  <li>You have the legal capacity to enter into binding contracts</li>
+  <li>You are not prohibited from using the Service under applicable laws</li>
+  <li>You have not been previously suspended or banned from TipsyPal</li>
+  <li>All information you provide is accurate and truthful</li>
 </ul>
+
+<h3 id="section-4-4">4.4. Geographic Restrictions</h3>
+
 <p>
-You agree that you will not rely on AI output as a substitute for professional judgment.
+TipsyPal is available globally, subject to local laws and regulations. However, we reserve the right to restrict access in certain jurisdictions for legal, regulatory, or business reasons. You are responsible for ensuring that your use of TipsyPal complies with all applicable local laws.
 </p>
 
-<h2>9. User Content</h2>
+<h3 id="section-4-5">4.5. Verification of Eligibility</h3>
+
 <p>
-“User Content” means any text, data, or information you input into the App.
+We reserve the right to verify your eligibility at any time. We may request proof of age, identity, or parental consent. Failure to provide requested verification may result in suspension or termination of your account.
 </p>
+
+<h2 id="section-5">5. Account Registration and Security</h2>
+
+<h3 id="section-5-1">5.1. Account Creation</h3>
+
 <p>
-You retain ownership of your User Content.
+To access certain features of TipsyPal, you must create an account using Firebase Authentication. Account creation requires:
 </p>
-<p>
-However, by submitting User Content, you grant OakDev &amp; AI AB a limited, non-exclusive, revocable license to:
-</p>
+
 <ul>
-  <li>Process the content</li>
-  <li>Transmit it to third-party AI providers</li>
-  <li>Display AI-generated output to you</li>
-  <li>Maintain data necessary to operate the App</li>
+  <li>A valid email address</li>
+  <li>A secure password meeting our security requirements</li>
+  <li>Acceptance of these Terms and our Privacy Policy</li>
+  <li>Confirmation that you meet eligibility requirements</li>
 </ul>
+
+<h3 id="section-5-2">5.2. Account Information Accuracy</h3>
+
+<p>You agree to:</p>
+
+<ul>
+  <li>Provide accurate, current, and complete information during registration</li>
+  <li>Maintain and promptly update your account information to keep it accurate and current</li>
+  <li>Notify us immediately of any unauthorized use of your account</li>
+  <li>Not provide false, misleading, or fraudulent information</li>
+</ul>
+
 <p>
-We do not claim ownership of your content. We do not use your content to train AI models.
+Providing false information, impersonating others, or creating accounts on behalf of others without authorization may result in immediate termination and potential legal action.
 </p>
 
-<h2>10. Acceptable Use Policy</h2>
+<h3 id="section-5-3">5.3. Account Security</h3>
+
+<p>You are responsible for maintaining the confidentiality and security of your account credentials. You agree to:</p>
+
+<ul>
+  <li>Choose a strong, unique password</li>
+  <li>Not share your password with anyone</li>
+  <li>Not allow others to access your account</li>
+  <li>Enable device security features (passcode, biometrics, etc.)</li>
+  <li>Log out of shared or public devices</li>
+  <li>Immediately notify us of any suspected security breach</li>
+</ul>
+
+<h3 id="section-5-4">5.4. Account Responsibility</h3>
+
+<p>
+You are fully responsible for all activities that occur under your account, whether authorized by you or not. You agree to accept responsibility for all actions taken using your account credentials.
+</p>
+
+<p>
+We are not liable for any loss or damage arising from unauthorized access to your account resulting from your failure to maintain adequate security measures.
+</p>
+
+<h3 id="section-5-5">5.5. One Account Per User</h3>
+
+<p>
+You may only create and maintain one account. Creating multiple accounts to circumvent restrictions, obtain additional free credits, or abuse promotions is strictly prohibited and will result in termination of all accounts.
+</p>
+
+<h3 id="section-5-6">5.6. Account Transfer</h3>
+
+<p>
+Your account is personal to you. You may not:
+</p>
+
+<ul>
+  <li>Transfer your account to another person</li>
+  <li>Sell or rent your account</li>
+  <li>Share account access with others</li>
+  <li>Allow others to use your account</li>
+</ul>
+
+<p>Any attempt to transfer or share your account will result in termination.</p>
+
+<h2 id="section-6">6. License Grant and Restrictions</h2>
+
+<h3 id="section-6-1">6.1. Limited License</h3>
+
+<p>
+Subject to your compliance with these Terms, OakDev &amp; AI AB grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to:
+</p>
+
+<ul>
+  <li>Download and install the TipsyPal App on your personal device</li>
+  <li>Access and use the App's features and services for personal, non-commercial purposes</li>
+  <li>Use AI-generated content for your personal use in accordance with these Terms</li>
+</ul>
+
+<h3 id="section-6-2">6.2. License Restrictions</h3>
+
+<p>This license does NOT permit you to:</p>
+
+<ul>
+  <li>Use TipsyPal for any commercial purpose without written authorization</li>
+  <li>Resell, sublicense, or redistribute the App or AI services</li>
+  <li>Reverse engineer, decompile, disassemble, or attempt to derive source code from the App</li>
+  <li>Modify, adapt, translate, or create derivative works of the App</li>
+  <li>Remove, obscure, or alter any copyright, trademark, or proprietary notices</li>
+  <li>Use automated tools, bots, or scripts to access the Service</li>
+  <li>Circumvent or disable any security features or usage restrictions</li>
+  <li>Access the App to build a competitive product or service</li>
+  <li>Frame, mirror, or scrape content from the App</li>
+  <li>Use the App in any way that violates applicable laws or regulations</li>
+</ul>
+
+<h3 id="section-6-3">6.3. Reservation of Rights</h3>
+
+<p>
+All rights not expressly granted to you in these Terms are reserved by OakDev &amp; AI AB and its licensors. Nothing in these Terms transfers any ownership rights to you.
+</p>
+
+<h3 id="section-6-4">6.4. License Revocation</h3>
+
+<p>
+This license is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any provision of these Terms. Upon termination, you must immediately cease using the App and delete all copies from your devices.
+</p>
+
+<h2 id="section-7">7. Service Tiers and Access Levels</h2>
+
+<h3 id="section-7-1">7.1. Overview of Tiers</h3>
+
+<p>TipsyPal offers multiple access tiers to accommodate different user needs and usage levels:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tier</th>
+      <th>Typical Credit Allocation</th>
+      <th>Purchase Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Free Trial</strong></td>
+      <td>Limited credits (if offered)</td>
+      <td>N/A</td>
+      <td>Initial trial access to test TipsyPal features. Availability and duration subject to change.</td>
+    </tr>
+    <tr>
+      <td><strong>Basic</strong></td>
+      <td>~200 credits</td>
+      <td>One-time purchase</td>
+      <td>Entry-level access providing moderate AI usage for casual users.</td>
+    </tr>
+    <tr>
+      <td><strong>Champion</strong></td>
+      <td>~2,000 credits</td>
+      <td>One-time or subscription</td>
+      <td>Premium access with significantly more credits and potential access to exclusive features.</td>
+    </tr>
+    <tr>
+      <td><strong>Credit Top-Ups</strong></td>
+      <td>Variable</td>
+      <td>One-time purchase</td>
+      <td>Additional credit packs that can be purchased to supplement existing allocation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Note:</strong> Specific credit allocations, pricing, and features are displayed within the App and app store listings and may vary by region and promotional offers.</p>
+
+<h3 id="section-7-2">7.2. Basic Tier</h3>
+
+<p>The Basic tier provides:</p>
+
+<ul>
+  <li>Fixed allocation of AI credits (typically 200 credits)</li>
+  <li>Access to core AI features</li>
+  <li>Conversation history storage</li>
+  <li>Standard processing priority</li>
+  <li>One-time purchase with no recurring charges</li>
+</ul>
+
+<p>
+Basic tier credits do not expire but cannot be refilled automatically. Additional credits must be purchased separately.
+</p>
+
+<h3 id="section-7-3">7.3. Champion Tier</h3>
+
+<p>The Champion tier provides:</p>
+
+<ul>
+  <li>Significantly larger credit allocation (typically 2,000 credits)</li>
+  <li>Access to all AI features</li>
+  <li>Priority processing (where available)</li>
+  <li>Exclusive AI persona modes (if available)</li>
+  <li>Early access to new features (at our discretion)</li>
+  <li>Extended conversation history storage</li>
+  <li>Enhanced support</li>
+</ul>
+
+<p>
+Champion tier may be offered as a one-time purchase, subscription, or both. Subscription details are provided at the point of purchase.
+</p>
+
+<h3 id="section-7-4">7.4. Feature Availability</h3>
+
+<p>
+We reserve the right to:
+</p>
+
+<ul>
+  <li>Modify credit allocations with notice to users</li>
+  <li>Adjust pricing for new purchases (existing purchases unaffected)</li>
+  <li>Add or remove features from tiers</li>
+  <li>Introduce new tiers or promotional offers</li>
+  <li>Discontinue certain tiers (with reasonable notice and migration options)</li>
+</ul>
+
+<p>
+Changes to your existing purchased tier will be communicated in advance when they materially affect your access or benefits.
+</p>
+
+<h3 id="section-7-5">7.5. Tier Upgrades</h3>
+
+<p>
+You may upgrade from Basic to Champion at any time. When upgrading:
+</p>
+
+<ul>
+  <li>Unused credits from your previous tier are typically retained</li>
+  <li>New credits are added to your balance</li>
+  <li>Upgrade is effective immediately upon successful payment</li>
+  <li>You gain access to Champion-exclusive features</li>
+</ul>
+
+<p>Tier downgrades may not be available. Contact support for specific questions about tier changes.</p>
+
+<h2 id="section-8">8. Purchases, Payments, and Billing</h2>
+
+<h3 id="section-8-1">8.1. Payment Processing</h3>
+
+<p>
+All in-app purchases are processed through:
+</p>
+
+<ul>
+  <li><strong>Apple App Store</strong> for iOS users, governed by Apple's payment terms</li>
+  <li><strong>Google Play Store</strong> for Android users, governed by Google's payment terms</li>
+</ul>
+
+<p>
+OakDev &amp; AI AB does not directly process payments or store your credit card or payment information. All payment data is handled by Apple or Google according to their security standards and privacy policies.
+</p>
+
+<h3 id="section-8-2">8.2. Pricing and Currency</h3>
+
+<p>
+Prices for TipsyPal services are displayed in your local currency as determined by your app store and may include:
+</p>
+
+<ul>
+  <li>Base price set by OakDev &amp; AI AB</li>
+  <li>Applicable taxes (VAT, sales tax, etc.)</li>
+  <li>Currency conversion fees (if applicable)</li>
+  <li>App store processing fees</li>
+</ul>
+
+<p>
+The total price you pay is shown at the point of purchase. Prices may vary by region and are subject to change.
+</p>
+
+<h3 id="section-8-3">8.3. Payment Authorization</h3>
+
+<p>
+By making a purchase, you authorize OakDev &amp; AI AB (through Apple or Google) to charge your selected payment method for:
+</p>
+
+<ul>
+  <li>The purchase price</li>
+  <li>All applicable taxes</li>
+  <li>Any additional fees disclosed at the time of purchase</li>
+  <li>For subscriptions: recurring charges at each renewal period until canceled</li>
+</ul>
+
+<h3 id="section-8-4">8.4. Purchase Confirmation</h3>
+
+<p>
+Upon successful purchase, you will receive:
+</p>
+
+<ul>
+  <li>A purchase confirmation from Apple or Google (via email or notification)</li>
+  <li>Immediate activation of credits or features in the App</li>
+  <li>A receipt accessible through your app store account</li>
+</ul>
+
+<p>
+For purchase history, receipts, and invoices, please refer to your Apple or Google account.
+</p>
+
+<h3 id="section-8-5">8.5. Failed Payments</h3>
+
+<p>
+If a payment fails due to insufficient funds, expired payment methods, or other reasons:
+</p>
+
+<ul>
+  <li>You will not receive the purchased credits or access</li>
+  <li>For subscriptions, your access may be suspended until payment is resolved</li>
+  <li>You are responsible for updating your payment information</li>
+  <li>We may retry charging your payment method (for subscriptions)</li>
+</ul>
+
+<h3 id="section-8-6">8.6. Taxes</h3>
+
+<p>
+You are responsible for all applicable taxes related to your purchases. Taxes are typically calculated and collected by Apple or Google based on your billing address. If you are tax-exempt, you must handle exemption claims through your app store provider.
+</p>
+
+<h3 id="section-8-7">8.7. No Unauthorized Charges</h3>
+
+<p>
+We do not charge your payment method without your explicit authorization. All purchases require active confirmation through your app store's purchase flow.
+</p>
+
+<p>
+If you notice unauthorized charges, contact:
+</p>
+
+<ul>
+  <li>Apple Support (for iOS purchases): <a href="https://support.apple.com" target="_blank">https://support.apple.com</a></li>
+  <li>Google Play Support (for Android purchases): <a href="https://support.google.com/googleplay" target="_blank">https://support.google.com/googleplay</a></li>
+</ul>
+
+<h2 id="section-9">9. Credits System and Usage</h2>
+
+<h3 id="section-9-1">9.1. What Are Credits?</h3>
+
+<p>
+Credits are virtual units used to access AI-powered features in TipsyPal. Each AI request consumes a certain number of credits based on:
+</p>
+
+<ul>
+  <li>The length of input text</li>
+  <li>The complexity of the requested transformation</li>
+  <li>The selected AI model or mode</li>
+  <li>The type of output requested</li>
+</ul>
+
+<h3 id="section-9-2">9.2. Credit Consumption</h3>
+
+<p>Credits are typically consumed as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Action Type</th>
+      <th>Typical Credit Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Basic text rewriting (short)</td>
+      <td>1-5 credits</td>
+    </tr>
+    <tr>
+      <td>Longer text enhancement</td>
+      <td>5-15 credits</td>
+    </tr>
+    <tr>
+      <td>Content generation from prompts</td>
+      <td>10-30 credits</td>
+    </tr>
+    <tr>
+      <td>Advanced transformations</td>
+      <td>Variable, displayed before use</td>
+    </tr>
+    <tr>
+      <td>Reading conversation history</td>
+      <td>0 credits (free)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Note:</strong> Actual credit costs are displayed in the App before each use and may vary based on the factors listed above.</p>
+
+<h3 id="section-9-3">9.3. Credit Balance</h3>
+
+<p>
+You can view your current credit balance at any time within the App. Your balance reflects:
+</p>
+
+<ul>
+  <li>Credits included with your tier purchase</li>
+  <li>Credits from additional top-up purchases</li>
+  <li>Credits consumed through AI usage</li>
+  <li>Any promotional or bonus credits awarded</li>
+</ul>
+
+<h3 id="section-9-4">9.4. Credit Expiration</h3>
+
+<p>
+Unless otherwise specified at the time of purchase:
+</p>
+
+<ul>
+  <li><strong>Purchased credits do not expire</strong> as long as your account remains active</li>
+  <li><strong>Promotional credits</strong> may have expiration dates, which will be clearly communicated</li>
+  <li>Credits are forfeited upon account deletion or termination for cause</li>
+</ul>
+
+<h3 id="section-9-5">9.5. Credit Depletion</h3>
+
+<p>
+When your credit balance reaches zero:
+</p>
+
+<ul>
+  <li>You can no longer use AI-powered features</li>
+  <li>You can still access previously generated content</li>
+  <li>You can view conversation history</li>
+  <li>You must purchase additional credits to continue using AI features</li>
+</ul>
+
+<p>
+The App will notify you when your credit balance is low.
+</p>
+
+<h3 id="section-9-6">9.6. Credit Top-Ups</h3>
+
+<p>
+You can purchase additional credits at any time through credit packs offered in the App. Top-up credits:
+</p>
+
+<ul>
+  <li>Are added immediately to your existing balance</li>
+  <li>Can be purchased regardless of your current tier</li>
+  <li>Are one-time purchases (not subscriptions)</li>
+  <li>Are subject to the same terms as tier-based credits</li>
+</ul>
+
+<h3 id="section-9-7">9.7. No Credit Refills or Rollovers</h3>
+
+<p>
+Credits are consumed upon use and are not refillable. Once credits are used, they cannot be restored except in cases of:
+</p>
+
+<ul>
+  <li>Technical errors that prevent delivery of AI output</li>
+  <li>Service failures attributable to TipsyPal</li>
+  <li>Billing errors</li>
+</ul>
+
+<p>
+Credits do not roll over between subscriptions periods unless you are on a subscription plan that explicitly provides rollover benefits.
+</p>
+
+<h3 id="section-9-8">9.8. No Cash Value</h3>
+
+<p>
+Credits have no cash value and cannot be:
+</p>
+
+<ul>
+  <li>Exchanged for money</li>
+  <li>Transferred to other accounts</li>
+  <li>Sold or gifted to others</li>
+  <li>Redeemed for products or services outside TipsyPal</li>
+</ul>
+
+<h2 id="section-10">10. Subscriptions and Renewals</h2>
+
+<h3 id="section-10-1">10.1. Subscription Offerings</h3>
+
+<p>
+If TipsyPal offers subscription-based access (such as recurring Champion tier access), subscriptions provide:
+</p>
+
+<ul>
+  <li>Automatic renewal at specified intervals (monthly, annually, etc.)</li>
+  <li>Continuous access to tier benefits</li>
+  <li>Potential credit replenishment at each renewal</li>
+  <li>Consistent pricing for the duration of your subscription (subject to advance notice of changes)</li>
+</ul>
+
+<h3 id="section-10-2">10.2. Auto-Renewal</h3>
+
+<p>
+Subscriptions automatically renew at the end of each billing period unless you cancel before the renewal date. By subscribing, you authorize:
+</p>
+
+<ul>
+  <li>Automatic charges to your payment method on each renewal date</li>
+  <li>Continued access to subscription benefits</li>
+  <li>Receipt of renewal notifications before each charge</li>
+</ul>
+
+<h3 id="section-10-3">10.3. Renewal Notifications</h3>
+
+<p>
+You will receive renewal reminders:
+</p>
+
+<ul>
+  <li>Via email to your registered email address</li>
+  <li>Through app notifications (if enabled)</li>
+  <li>Typically 7 days before the renewal date</li>
+</ul>
+
+<p>
+It is your responsibility to ensure you receive these notifications by maintaining a current email address and enabling notifications.
+</p>
+
+<h3 id="section-10-4">10.4. Canceling Subscriptions</h3>
+
+<p>
+You may cancel your subscription at any time before the next renewal date. To cancel:
+</p>
+
+<h4>For iOS Users:</h4>
+<ol>
+  <li>Open Settings on your iPhone/iPad</li>
+  <li>Tap your name > Subscriptions</li>
+  <li>Select TipsyPal</li>
+  <li>Tap "Cancel Subscription"</li>
+</ol>
+
+<h4>For Android Users:</h4>
+<ol>
+  <li>Open Google Play Store</li>
+  <li>Tap Menu > Subscriptions</li>
+  <li>Select TipsyPal</li>
+  <li>Tap "Cancel Subscription"</li>
+</ol>
+
+<p>
+Cancellation is effective at the end of the current billing period. You will retain access to subscription benefits until that date.
+</p>
+
+<h3 id="section-10-5">10.5. Effect of Cancellation</h3>
+
+<p>
+When your subscription ends:
+</p>
+
+<ul>
+  <li>You lose access to subscription-exclusive features</li>
+  <li>Your tier may revert to Basic or Free (if applicable)</li>
+  <li>You retain any unused credits from the subscription period (unless credits are subscription-specific)</li>
+  <li>Your conversation history is preserved</li>
+  <li>You can resubscribe at any time</li>
+</ul>
+
+<h3 id="section-10-6">10.6. Subscription Price Changes</h3>
+
+<p>
+We may change subscription prices for new or renewing subscribers. If your subscription price will increase:
+</p>
+
+<ul>
+  <li>You will receive at least 30 days' advance notice</li>
+  <li>The new price applies to your next renewal after the notice period</li>
+  <li>You may cancel before the price change takes effect</li>
+  <li>Canceling before the increase allows you to avoid the higher price</li>
+</ul>
+
+<h3 id="section-10-7">10.7. Subscription Modifications</h3>
+
+<p>
+We reserve the right to modify, discontinue, or replace subscription offerings. If your subscription is materially affected, we will provide reasonable notice and options to transition to alternative offerings or cancel with a pro-rated refund where required by law.
+</p>
+
+<h2 id="section-11">11. Refunds and Cancellations</h2>
+
+<h3 id="section-11-1">11.1. General Refund Policy</h3>
+
+<p>
+All purchases made through TipsyPal are processed by Apple or Google and are subject to their respective refund policies. OakDev &amp; AI AB does not directly process refunds for in-app purchases.
+</p>
+
+<div class="info-box">
+  <strong>Important:</strong> To request a refund, you must contact Apple or Google directly. We cannot process refunds for app store purchases.
+</div>
+
+<h3 id="section-11-2">11.2. Requesting Refunds</h3>
+
+<h4>For iOS Purchases:</h4>
+<ul>
+  <li>Visit: <a href="https://reportaproblem.apple.com" target="_blank">https://reportaproblem.apple.com</a></li>
+  <li>Sign in with your Apple ID</li>
+  <li>Locate the TipsyPal purchase</li>
+  <li>Select "Report a Problem" and follow Apple's process</li>
+  <li>Refund decisions are made by Apple according to their policies</li>
+</ul>
+
+<h4>For Android Purchases:</h4>
+<ul>
+  <li>Visit: <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play refund support</a></li>
+  <li>Sign in to your Google account</li>
+  <li>Locate the TipsyPal purchase</li>
+  <li>Request a refund through Google's process</li>
+  <li>Refund decisions are made by Google according to their policies</li>
+</ul>
+
+<h3 id="section-11-3">11.3. Refund Eligibility</h3>
+
+<p>
+Refunds are generally subject to the following limitations:
+</p>
+
+<ul>
+  <li>Requests must typically be made within a specific timeframe (e.g., 48 hours to 14 days, depending on app store policy and jurisdiction)</li>
+  <li>Refunds may not be available for consumed credits or services already used</li>
+  <li>Multiple refund requests may be flagged as abuse and denied</li>
+  <li>Refund approval is at the sole discretion of Apple or Google</li>
+</ul>
+
+<h3 id="section-11-4">11.4. Effect of Refunds</h3>
+
+<p>
+If a refund is granted by Apple or Google:
+</p>
+
+<ul>
+  <li>Your access to the refunded content will be revoked</li>
+  <li>Credits associated with the purchase will be deducted from your balance</li>
+  <li>Your tier may be downgraded if applicable</li>
+  <li>Any content generated using refunded credits may be deleted</li>
+  <li>We reserve the right to suspend or terminate accounts that abuse the refund process</li>
+</ul>
+
+<h3 id="section-11-5">11.5. Statutory Rights</h3>
+
+<p>
+Nothing in this section affects your statutory rights as a consumer under applicable consumer protection laws. If you are an EU consumer, you may have the right to:
+</p>
+
+<ul>
+  <li>Withdraw from a purchase within 14 days (right of withdrawal)</li>
+  <li>Request refunds for defective or non-conforming digital content</li>
+  <li>Seek remedies under consumer protection legislation</li>
+</ul>
+
+<p>
+To exercise these rights, contact us at <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> or use the app store refund process.
+</p>
+
+<h3 id="section-11-6">11.6. No Refunds for Violations</h3>
+
+<p>
+No refunds will be provided if your account is suspended or terminated for violation of these Terms, including but not limited to:
+</p>
+
+<ul>
+  <li>Abuse of the Service</li>
+  <li>Fraudulent activity</li>
+  <li>Violation of acceptable use policies</li>
+  <li>Circumvention of payment or access controls</li>
+</ul>
+
+<h2 id="section-12">12. User Responsibilities and Conduct</h2>
+
+<h3 id="section-12-1">12.1. General Responsibilities</h3>
+
+<p>As a user of TipsyPal, you agree to:</p>
+
+<ul>
+  <li>Use the Service in a lawful, ethical, and responsible manner</li>
+  <li>Comply with all applicable laws, regulations, and these Terms</li>
+  <li>Respect the rights of other users and third parties</li>
+  <li>Maintain the security of your account and device</li>
+  <li>Report bugs, vulnerabilities, or abuse to us promptly</li>
+  <li>Use AI-generated content responsibly and appropriately</li>
+  <li>Verify the accuracy of AI output before relying on it</li>
+  <li>Not hold TipsyPal responsible for consequences of using AI-generated content</li>
+</ul>
+
+<h3 id="section-12-2">12.2. Lawful Use</h3>
+
+<p>You agree to use TipsyPal only for lawful purposes. You may not use the Service to:</p>
+
+<ul>
+  <li>Violate any local, state, national, or international law or regulation</li>
+  <li>Infringe upon or violate intellectual property rights</li>
+  <li>Transmit or distribute illegal content</li>
+  <li>Engage in or promote criminal activity</li>
+  <li>Facilitate fraud, scams, or deceptive practices</li>
+  <li>Violate privacy rights of others</li>
+  <li>Circumvent or undermine security measures</li>
+</ul>
+
+<h3 id="section-12-3">12.3. Respectful Use</h3>
+
+<p>You agree to interact with the Service and other users respectfully. You may not:</p>
+
+<ul>
+  <li>Harass, bully, threaten, or intimidate others</li>
+  <li>Use the Service to generate hate speech or discriminatory content</li>
+  <li>Impersonate others or misrepresent your identity</li>
+  <li>Generate content intended to harm, defame, or slander others</li>
+  <li>Spam or send unsolicited communications using AI-generated content</li>
+  <li>Interfere with or disrupt the Service or other users' experience</li>
+</ul>
+
+<h3 id="section-12-4">12.4. Technical Responsibilities</h3>
+
+<p>You agree to:</p>
+
+<ul>
+  <li>Use the Service only through the official TipsyPal app</li>
+  <li>Not use unauthorized third-party tools, bots, or scripts</li>
+  <li>Not attempt to reverse engineer or decompile the App</li>
+  <li>Not probe, scan, or test vulnerabilities without authorization</li>
+  <li>Not overload or interfere with servers or networks</li>
+  <li>Not circumvent rate limiting, credit consumption, or access controls</li>
+</ul>
+
+<h3 id="section-12-5">12.5. Content Accuracy</h3>
+
+<p>You acknowledge and agree that:</p>
+
+<ul>
+  <li>You are solely responsible for verifying AI-generated content</li>
+  <li>AI output may contain errors, biases, or inaccuracies</li>
+  <li>You should not rely on AI content for critical decisions without verification</li>
+  <li>You are responsible for how you use and share AI-generated content</li>
+  <li>We are not liable for consequences arising from your use of AI output</li>
+</ul>
+
+<h2 id="section-13">13. Prohibited Uses and Activities</h2>
+
+<h3 id="section-13-1">13.1. Strictly Prohibited Activities</h3>
+
+<p>The following activities are strictly prohibited and will result in immediate account termination:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prohibited Activity</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Illegal Content Generation</strong></td>
+      <td>Generating content that promotes or facilitates illegal activities, drug trafficking, weapons sales, human trafficking, terrorism, or any criminal conduct.</td>
+    </tr>
+    <tr>
+      <td><strong>Harmful Content</strong></td>
+      <td>Creating content designed to harm, threaten, harass, bully, defame, or intimidate individuals or groups.</td>
+    </tr>
+    <tr>
+      <td><strong>Hate Speech</strong></td>
+      <td>Generating content that promotes hate, discrimination, or violence based on race, ethnicity, religion, gender, sexual orientation, disability, or other protected characteristics.</td>
+    </tr>
+    <tr>
+      <td><strong>Child Exploitation</strong></td>
+      <td>Any content that sexualizes, exploits, or endangers minors in any way.</td>
+    </tr>
+    <tr>
+      <td><strong>Fraud and Deception</strong></td>
+      <td>Creating fraudulent documents, phishing messages, scam communications, fake identities, or deceptive content.</td>
+    </tr>
+    <tr>
+      <td><strong>Malware Distribution</strong></td>
+      <td>Using AI-generated content to distribute viruses, malware, ransomware, or malicious code.</td>
+    </tr>
+    <tr>
+      <td><strong>Privacy Violations</strong></td>
+      <td>Generating content that exposes private information, doxxing, or violates others' privacy rights.</td>
+    </tr>
+    <tr>
+      <td><strong>Self-Harm Content</strong></td>
+      <td>Creating content that promotes, encourages, or provides instructions for self-harm, suicide, or eating disorders.</td>
+    </tr>
+    <tr>
+      <td><strong>Spam and Abuse</strong></td>
+      <td>Mass-generating spam messages, automated harassment, or content for unsolicited commercial communications.</td>
+    </tr>
+    <tr>
+      <td><strong>System Abuse</strong></td>
+      <td>Attempting to circumvent credit usage, access controls, security measures, or exploiting vulnerabilities.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-13-2">13.2. Intellectual Property Violations</h3>
+
 <p>You may not use TipsyPal to:</p>
-<ul>
-  <li>Commit fraud or impersonation</li>
-  <li>Violate intellectual property rights</li>
-  <li>Generate harmful or deceptive communications</li>
-  <li>Engage in harassment, discrimination, or abusive behavior</li>
-  <li>Produce content intended to harm yourself or others</li>
-  <li>Facilitate criminal activity or illegal transactions</li>
-</ul>
-<p>We reserve the right to determine violations at our sole discretion.</p>
 
-<h2>11. Termination</h2>
-<p>We may suspend or terminate your access if you:</p>
 <ul>
-  <li>Violate these Terms</li>
-  <li>Engage in fraudulent or abusive behavior</li>
-  <li>Attempt to compromise the Service’s security</li>
-  <li>Attempt to circumvent credit usage or purchase verification</li>
-  <li>Use the App in a manner harmful to OakDev &amp; AI AB or other users</li>
-</ul>
-<p>Upon termination:</p>
-<ul>
-  <li>Access to the App is revoked</li>
-  <li>User Content may be deleted (subject to retention laws)</li>
-  <li>Purchases are not refunded unless required by law or store policy</li>
+  <li>Generate content that infringes copyrights, trademarks, patents, or other intellectual property rights</li>
+  <li>Create unauthorized derivative works of copyrighted material</li>
+  <li>Plagiarize or pass off others' work as your own</li>
+  <li>Circumvent digital rights management (DRM) or copy protection</li>
+  <li>Generate content that misappropriates trade secrets</li>
 </ul>
 
-<h2>12. Intellectual Property Rights</h2>
-<p>
-All rights, title, and interest in the App, its design and interface, logos and visual assets, technical infrastructure,
-AI prompts and system architecture are owned exclusively by OakDev &amp; AI AB or its licensors.
-</p>
-<p>
-Nothing in these Terms transfers ownership to you.
-You receive only a limited, revocable, non-transferable license to use the App.
-</p>
+<h3 id="section-13-3">13.3. Commercial Misuse</h3>
 
-<h2>13. Third-Party Services</h2>
-<p>TipsyPal integrates with:</p>
+<p>Unless you have written authorization from OakDev &amp; AI AB, you may not:</p>
+
 <ul>
-  <li>Firebase Authentication</li>
-  <li>Firebase Firestore</li>
-  <li>Firebase Analytics &amp; Crashlytics</li>
-  <li>Google Play Billing</li>
-  <li>Apple In-App Purchases</li>
-  <li>OpenAI API</li>
+  <li>Resell access to TipsyPal or AI-generated content</li>
+  <li>Use TipsyPal to provide writing services to third parties for profit</li>
+  <li>Integrate TipsyPal into commercial products or services</li>
+  <li>Use AI output in mass-produced commercial products</li>
+  <li>Offer TipsyPal features as part of a competitive service</li>
 </ul>
-<p>
-We are not responsible for failures, outages, or actions of these third parties.
-</p>
 
-<h2>14. Service Availability</h2>
-<p>We do not guarantee that:</p>
+<h3 id="section-13-4">13.4. Misrepresentation</h3>
+
+<p>You may not:</p>
+
 <ul>
-  <li>The App will be uninterrupted or error-free</li>
-  <li>AI services will be available at all times</li>
-  <li>Content will be preserved without loss</li>
-  <li>Updates will be compatible with older devices</li>
+  <li>Present AI-generated content as being created entirely by you without AI assistance (where disclosure is expected or required)</li>
+  <li>Use AI-generated content to impersonate others</li>
+  <li>Create fake reviews, testimonials, or endorsements</li>
+  <li>Generate content that misrepresents facts or spreads disinformation</li>
+  <li>Use AI output to manipulate or deceive others</li>
 </ul>
-<p>
-We may modify, suspend, or discontinue parts of the App without notice, subject to applicable law.
-</p>
 
-<h2>15. Warranty Disclaimer</h2>
-<p>
-The App is provided “AS IS” and “AS AVAILABLE” without warranties of any kind, express or implied.
-</p>
-<p>We disclaim all warranties including:</p>
+<h3 id="section-13-5">13.5. Consequences of Prohibited Activities</h3>
+
+<p>Violation of these prohibitions may result in:</p>
+
 <ul>
-  <li>Merchantability</li>
-  <li>Fitness for a particular purpose</li>
-  <li>Non-infringement</li>
-  <li>Accuracy of AI content</li>
-  <li>Reliability of responses</li>
+  <li>Immediate suspension or termination of your account</li>
+  <li>Forfeiture of all credits and paid access</li>
+  <li>Reporting to law enforcement or appropriate authorities</li>
+  <li>Legal action for damages, injunctive relief, or other remedies</li>
+  <li>Permanent ban from creating new accounts</li>
+  <li>Cooperation with investigations into your conduct</li>
 </ul>
-<p>Use of the App is at your sole risk.</p>
 
-<h2>16. Limitation of Liability</h2>
-<p>
-To the fullest extent permitted by law, OakDev &amp; AI AB is not liable for:
-</p>
+<h3 id="section-13-6">13.6. Reporting Violations</h3>
+
+<p>If you become aware of violations of these Terms or illegal activity on TipsyPal, please report it immediately to:</p>
+
 <ul>
-  <li>Indirect or consequential damages</li>
-  <li>Loss of profits, data, reputation, or business opportunities</li>
-  <li>Damages resulting from AI-generated content</li>
-  <li>Damages caused by misuse or unauthorized access</li>
-  <li>Service interruptions or loss of availability</li>
+  <li>Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+  <li>Subject: "Terms Violation Report"</li>
+  <li>Include details of the violation and any supporting evidence</li>
 </ul>
+
+<p>We take all reports seriously and will investigate promptly.</p>
+
+<h2 id="section-14">14. User Content and Data</h2>
+
+<h3 id="section-14-1">14.1. Definition of User Content</h3>
+
 <p>
-Our maximum liability in any case shall not exceed the amount paid by you (if any) for the Service during the last 12
-months.
+"User Content" means any and all text, data, information, ideas, prompts, inputs, or other content that you submit, upload, transmit, or provide to TipsyPal, including:
 </p>
 
-<h2>17. Indemnification</h2>
-<p>
-You agree to indemnify, defend, and hold harmless OakDev &amp; AI AB, its officers, employees, and partners from any claims,
-damages, losses, liabilities, and expenses arising out of:
-</p>
 <ul>
-  <li>Your use of the App</li>
+  <li>Text you input for AI processing</li>
+  <li>Prompts and instructions you provide</li>
+  <li>Messages and conversation history</li>
+  <li>Feedback and suggestions</li>
+  <li>Any other data you create or provide within the App</li>
+</ul>
+
+<h3 id="section-14-2">14.2. Ownership of User Content</h3>
+
+<p>
+You retain all ownership rights in your User Content. By submitting User Content to TipsyPal, you do not transfer ownership of your content to us.
+</p>
+
+<p>However, you grant us certain limited rights as described below to enable us to provide the Service.</p>
+
+<h3 id="section-14-3">14.3. License Grant to OakDev &amp; AI AB</h3>
+
+<p>
+By submitting User Content, you grant OakDev &amp; AI AB a limited, non-exclusive, worldwide, royalty-free, revocable license to:
+</p>
+
+<ul>
+  <li>Process your User Content through our systems and AI services</li>
+  <li>Transmit your User Content to third-party AI providers (such as OpenAI) for processing</li>
+  <li>Store your User Content on our servers and databases</li>
+  <li>Display AI-generated outputs to you within the App</li>
+  <li>Create backups and copies necessary for service operation</li>
+  <li>Perform technical operations necessary to provide the Service</li>
+</ul>
+
+<p>
+This license exists solely to enable TipsyPal to function and provide you with AI-powered features. We do not use your User Content for any other purpose without your explicit consent.
+</p>
+
+<h3 id="section-14-4">14.4. We Do Not Use Your Content for Training</h3>
+
+<p>
+<strong>Important:</strong> We do not use your User Content to train, improve, or develop AI models (our own or third parties') without your explicit consent. According to our agreements with AI providers (such as OpenAI), your content submitted via API is not used for model training.
+</p>
+
+<h3 id="section-14-5">14.5. Your Responsibilities for User Content</h3>
+
+<p>You represent and warrant that:</p>
+
+<ul>
+  <li>You own or have the necessary rights to submit the User Content</li>
+  <li>Your User Content does not violate any laws, regulations, or third-party rights</li>
+  <li>Your User Content does not infringe intellectual property rights</li>
+  <li>Your User Content does not contain viruses, malware, or harmful code</li>
+  <li>You have obtained all necessary consents if your content contains personal data of others</li>
+</ul>
+
+<h3 id="section-14-6">14.6. AI-Generated Output</h3>
+
+<p>
+Content generated by TipsyPal's AI in response to your prompts ("AI Output") is provided to you for your use. However:
+</p>
+
+<ul>
+  <li>AI Output may be similar or identical to content generated for other users (due to the nature of AI)</li>
+  <li>We do not guarantee uniqueness of AI Output</li>
+  <li>We do not claim ownership of AI Output</li>
+  <li>To the extent permitted by law, you may use AI Output for personal or commercial purposes, subject to verification and compliance with applicable laws</li>
+  <li>You are solely responsible for how you use AI Output</li>
+</ul>
+
+<div class="notice">
+  <strong>Note:</strong> The legal framework around AI-generated content ownership is evolving. Consult legal counsel if you have specific questions about ownership rights in AI-generated works.
+</div>
+
+<h3 id="section-14-7">14.7. Content Monitoring and Removal</h3>
+
+<p>
+While we do not actively monitor all User Content, we reserve the right to:
+</p>
+
+<ul>
+  <li>Review User Content for compliance with these Terms</li>
+  <li>Use automated systems to detect prohibited content</li>
+  <li>Remove or refuse to process User Content that violates these Terms</li>
+  <li>Report illegal content to appropriate authorities</li>
+  <li>Cooperate with law enforcement investigations</li>
+</ul>
+
+<p>We are not obligated to monitor User Content but may do so at our discretion.</p>
+
+<h3 id="section-14-8">14.8. Data Retention and Deletion</h3>
+
+<p>
+We retain User Content in accordance with our Privacy Policy. You may delete your User Content by:
+</p>
+
+<ul>
+  <li>Deleting individual conversations within the App</li>
+  <li>Clearing your conversation history</li>
+  <li>Deleting your account (which removes all associated User Content subject to legal retention requirements)</li>
+</ul>
+
+<p>For more information, see our Privacy Policy, Section 12 (Data Retention).</p>
+
+<h2 id="section-15">15. AI-Generated Content and Disclaimers</h2>
+
+<h3 id="section-15-1">15.1. Nature of AI Technology</h3>
+
+<p>
+TipsyPal uses advanced artificial intelligence models (including but not limited to OpenAI's GPT models) to generate, transform, and enhance text. These AI systems:
+</p>
+
+<ul>
+  <li>Are probabilistic and based on patterns in training data</li>
+  <li>Do not "understand" content in the human sense</li>
+  <li>Generate outputs based on statistical likelihood</li>
+  <li>May produce varied outputs for the same input</li>
+  <li>Are subject to limitations and biases inherent in AI technology</li>
+</ul>
+
+<h3 id="section-15-2">15.2. No Guarantee of Accuracy</h3>
+
+<div class="warning-box">
+  <strong>Critical Disclaimer:</strong> AI-generated content may contain errors, inaccuracies, falsehoods, biases, inconsistencies, or inappropriate suggestions. You must independently verify all AI output before relying on it or using it for any important purpose.
+</div>
+
+<p>We explicitly do NOT guarantee that AI-generated content is:</p>
+
+<ul>
+  <li>Accurate or factually correct</li>
+  <li>Complete or comprehensive</li>
+  <li>Up-to-date or current</li>
+  <li>Appropriate for your specific use case</li>
+  <li>Free from bias or offensive material</li>
+  <li>Grammatically perfect</li>
+  <li>Suitable for publication without review</li>
+  <li>Original or non-infringing</li>
+  <li>Compliant with your industry's standards or regulations</li>
+</ul>
+
+<h3 id="section-15-3">15.3. Your Responsibility for AI Output</h3>
+
+<p>You acknowledge and agree that:</p>
+
+<ul>
+  <li><strong>You are solely responsible</strong> for reviewing, editing, verifying, and deciding whether to use AI-generated content</li>
+  <li><strong>You assume all risk</strong> associated with relying on or using AI output</li>
+  <li><strong>You must verify factual claims</strong> before presenting them as true</li>
+  <li><strong>You must ensure compliance</strong> with all applicable laws, regulations, and professional standards</li>
+  <li><strong>You must attribute AI assistance</strong> where disclosure is required or expected</li>
+  <li><strong>We are not liable</strong> for any consequences resulting from your use of AI-generated content</li>
+</ul>
+
+<h3 id="section-15-4">15.4. No Professional Advice</h3>
+
+<p>AI-generated content from TipsyPal is NOT and shall NOT be considered:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type of Advice</th>
+      <th>Disclaimer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Legal Advice</strong></td>
+      <td>AI output is not legal advice and does not create an attorney-client relationship. Consult a licensed attorney for legal matters.</td>
+    </tr>
+    <tr>
+      <td><strong>Medical Advice</strong></td>
+      <td>AI output is not medical advice. Consult a qualified healthcare professional for medical concerns.</td>
+    </tr>
+    <tr>
+      <td><strong>Financial Advice</strong></td>
+      <td>AI output is not financial, investment, or tax advice. Consult a qualified financial advisor or accountant.</td>
+    </tr>
+    <tr>
+      <td><strong>Mental Health Counseling</strong></td>
+      <td>AI output is not therapy or mental health treatment. Seek help from licensed mental health professionals.</td>
+    </tr>
+    <tr>
+      <td><strong>Professional Consultation</strong></td>
+      <td>AI output is not a substitute for professional judgment in any field (engineering, architecture, etc.).</td>
+    </tr>
+    <tr>
+      <td><strong>Emergency Services</strong></td>
+      <td>Never use TipsyPal for emergencies. Call emergency services (911, 112, etc.) immediately if needed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-15-5">15.5. Limitations of AI Understanding</h3>
+
+<p>AI systems used by TipsyPal may:</p>
+
+<ul>
+  <li>Misunderstand context, nuance, or sarcasm</li>
+  <li>Produce outputs that don't match your intent</li>
+  <li>Generate plausible-sounding but incorrect information ("hallucinations")</li>
+  <li>Exhibit biases present in training data</li>
+  <li>Fail to recognize inappropriate requests</li>
+  <li>Provide outdated information (AI models have knowledge cutoff dates)</li>
+  <li>Struggle with highly specialized or technical topics</li>
+</ul>
+
+<h3 id="section-15-6">15.6. No Warranty for AI Services</h3>
+
+<p>
+We provide AI services "as is" without any warranties regarding:
+</p>
+
+<ul>
+  <li>Quality, suitability, or fitness for any particular purpose</li>
+  <li>Availability or uptime of AI features</li>
+  <li>Consistency or reliability of outputs</li>
+  <li>Freedom from errors or defects</li>
+  <li>Compatibility with your specific needs</li>
+</ul>
+
+<h3 id="section-15-7">15.7. AI Model Changes</h3>
+
+<p>
+We may change, upgrade, or replace AI models at any time without notice. Such changes may affect:
+</p>
+
+<ul>
+  <li>Output quality and style</li>
+  <li>Processing speed</li>
+  <li>Credit consumption rates</li>
+  <li>Available features</li>
+  <li>Supported languages</li>
+</ul>
+
+<h2 id="section-16">16. Content Standards and Acceptable Use</h2>
+
+<h3 id="section-16-1">16.1. Content Standards Overview</h3>
+
+<p>
+All User Content and use of TipsyPal must comply with these content standards. Violation may result in content removal, account suspension, or termination.
+</p>
+
+<h3 id="section-16-2">16.2. Prohibited Content Categories</h3>
+
+<p>You may not use TipsyPal to create or distribute content that:</p>
+
+<ul>
+  <li><strong>Is illegal:</strong> Violates any applicable law or regulation</li>
+  <li><strong>Is fraudulent:</strong> Designed to deceive, defraud, or scam others</li>
+  <li><strong>Is harmful:</strong> Promotes violence, harm, or danger to individuals or groups</li>
+  <li><strong>Is harassing:</strong> Bullies, threatens, stalks, or harasses others</li>
+  <li><strong>Is hateful:</strong> Expresses hate or discrimination based on protected characteristics</li>
+  <li><strong>Is sexually explicit:</strong> Contains pornography, sexual content involving minors, or non-consensual sexual content</li>
+  <li><strong>Violates privacy:</strong> Discloses private information without consent (doxxing)</li>
+  <li><strong>Is defamatory:</strong> Contains false statements that harm someone's reputation</li>
+  <li><strong>Infringes IP rights:</strong> Violates copyrights, trademarks, or other intellectual property</li>
+  <li><strong>Is spam:</strong> Unsolicited commercial messages or repetitive content</li>
+  <li><strong>Contains malware:</strong> Viruses, trojans, or other malicious code</li>
+  <li><strong>Promotes self-harm:</strong> Encourages suicide, self-injury, or eating disorders</li>
+</ul>
+
+<h3 id="section-16-3">16.3. Context-Appropriate Use</h3>
+
+<p>
+Some content may be acceptable in certain contexts but not others. Use good judgment and consider:
+</p>
+
+<ul>
+  <li>The purpose and audience for the content</li>
+  <li>Whether the content could reasonably cause harm or offense</li>
+  <li>Legal and ethical standards in your jurisdiction</li>
+  <li>Professional and community norms</li>
+</ul>
+
+<h3 id="section-16-4">16.4. Content Moderation</h3>
+
+<p>
+We employ a combination of automated systems and human review to enforce content standards:
+</p>
+
+<ul>
+  <li><strong>Automated filtering:</strong> AI-based detection of prohibited content</li>
+  <li><strong>User reports:</strong> Investigation of content reported by users</li>
+  <li><strong>Proactive review:</strong> Spot checks and audits of generated content</li>
+  <li><strong>Third-party moderation:</strong> Moderation services from OpenAI and other providers</li>
+</ul>
+
+<h3 id="section-16-5">16.5. Content Removal</h3>
+
+<p>
+If we determine that content violates these standards, we may:
+</p>
+
+<ul>
+  <li>Remove or refuse to process the content</li>
+  <li>Issue a warning</li>
+  <li>Temporarily suspend your account</li>
+  <li>Permanently terminate your account</li>
+  <li>Report illegal content to authorities</li>
+</ul>
+
+<p>Decisions are made at our sole discretion and may not be reversible.</p>
+
+<h3 id="section-16-6">16.6. Appeals</h3>
+
+<p>
+If you believe content was wrongly removed or your account was wrongly suspended, you may appeal by:
+</p>
+
+<ul>
+  <li>Emailing <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+  <li>Subject: "Content Moderation Appeal"</li>
+  <li>Providing your account details and explanation</li>
+  <li>We will review appeals and respond within 14 business days</li>
+</ul>
+
+<h2 id="section-17">17. Intellectual Property Rights</h2>
+
+<h3 id="section-17-1">17.1. Ownership of TipsyPal</h3>
+
+<p>
+All rights, title, and interest in and to TipsyPal and its components are owned exclusively by OakDev &amp; AI AB or our licensors, including:
+</p>
+
+<ul>
+  <li><strong>Software and Code:</strong> All source code, object code, algorithms, and software architecture</li>
+  <li><strong>Design and Interface:</strong> Visual design, user interface, graphics, icons, and layout</li>
+  <li><strong>Brand Elements:</strong> TipsyPal name, logo, trademarks, and trade dress</li>
+  <li><strong>Content:</strong> Help documentation, tutorials, and in-app content</li>
+  <li><strong>AI Infrastructure:</strong> Prompts, system instructions, model configurations, and integration architecture</li>
+  <li><strong>Data:</strong> Anonymized usage data, analytics, and insights (not including your User Content)</li>
+</ul>
+
+<h3 id="section-17-2">17.2. Trademarks</h3>
+
+<p>
+"TipsyPal", the TipsyPal logo, and other brand names, marks, and logos used in connection with the Service are trademarks or registered trademarks of OakDev &amp; AI AB. You may not use these marks without prior written permission.
+</p>
+
+<p>Third-party trademarks mentioned in TipsyPal are the property of their respective owners.</p>
+
+<h3 id="section-17-3">17.3. Copyrights</h3>
+
+<p>
+TipsyPal is protected by copyright laws and international copyright treaties. All content, features, and functionality are the copyrighted work of OakDev &amp; AI AB.
+</p>
+
+<p>You may not:</p>
+
+<ul>
+  <li>Copy, reproduce, or duplicate significant portions of the App</li>
+  <li>Create derivative works based on TipsyPal</li>
+  <li>Distribute or publicly display TipsyPal content (except AI output as permitted)</li>
+  <li>Reverse engineer to extract copyrighted elements</li>
+</ul>
+
+<h3 id="section-17-4">17.4. Patents</h3>
+
+<p>
+TipsyPal may incorporate patented technologies owned by OakDev &amp; AI AB or licensed from third parties. No patent rights are granted to you except as necessary to use the Service as intended.
+</p>
+
+<h3 id="section-17-5">17.5. Third-Party Intellectual Property</h3>
+
+<p>
+TipsyPal uses third-party services and technologies, including:
+</p>
+
+<ul>
+  <li>OpenAI API and GPT models (proprietary to OpenAI)</li>
+  <li>Firebase and Google Cloud Platform (proprietary to Google)</li>
+  <li>Apple and Google platform services</li>
+  <li>Open-source libraries (used under their respective licenses)</li>
+</ul>
+
+<p>All third-party intellectual property remains the property of its respective owners.</p>
+
+<h3 id="section-17-6">17.6. Feedback and Suggestions</h3>
+
+<p>
+If you provide feedback, suggestions, or ideas about TipsyPal ("Feedback"), you grant us an unlimited, irrevocable, perpetual, royalty-free license to use, implement, and commercialize such Feedback without obligation or compensation to you.
+</p>
+
+<p>We have no obligation to implement any Feedback.</p>
+
+<h3 id="section-17-7">17.7. DMCA and Copyright Infringement</h3>
+
+<p>
+If you believe your copyrighted work has been infringed through TipsyPal, please see Section 31 (DMCA) for information on filing a copyright infringement notice.
+</p>
+
+<h2 id="section-18">18. Third-Party Services and Integrations</h2>
+
+<h3 id="section-18-1">18.1. Third-Party Dependencies</h3>
+
+<p>
+TipsyPal relies on the following third-party services to function:
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>Provider</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Firebase Authentication</strong></td>
+      <td>Google LLC</td>
+      <td>User account creation and authentication</td>
+    </tr>
+    <tr>
+      <td><strong>Firebase Firestore</strong></td>
+      <td>Google LLC</td>
+      <td>Database for storing user data and conversation history</td>
+    </tr>
+    <tr>
+      <td><strong>Firebase Cloud Functions</strong></td>
+      <td>Google LLC</td>
+      <td>Backend serverless computing</td>
+    </tr>
+    <tr>
+      <td><strong>Firebase Analytics</strong></td>
+      <td>Google LLC</td>
+      <td>App usage analytics</td>
+    </tr>
+    <tr>
+      <td><strong>Firebase Crashlytics</strong></td>
+      <td>Google LLC</td>
+      <td>Crash reporting and diagnostics</td>
+    </tr>
+    <tr>
+      <td><strong>OpenAI API</strong></td>
+      <td>OpenAI, L.L.C.</td>
+      <td>AI text processing and generation</td>
+    </tr>
+    <tr>
+      <td><strong>Apple In-App Purchase</strong></td>
+      <td>Apple Inc.</td>
+      <td>Payment processing (iOS)</td>
+    </tr>
+    <tr>
+      <td><strong>Google Play Billing</strong></td>
+      <td>Google LLC</td>
+      <td>Payment processing (Android)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-18-2">18.2. Third-Party Terms</h3>
+
+<p>
+Your use of TipsyPal is also subject to the terms and policies of these third-party services, including:
+</p>
+
+<ul>
+  <li><a href="https://firebase.google.com/terms" target="_blank">Firebase Terms of Service</a></li>
+  <li><a href="https://openai.com/policies/terms-of-use" target="_blank">OpenAI Terms of Use</a></li>
+  <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Developer Terms</a></li>
+  <li><a href="https://play.google.com/intl/en_us/about/developer-distribution-agreement.html" target="_blank">Google Play Developer Distribution Agreement</a></li>
+</ul>
+
+<h3 id="section-18-3">18.3. No Control Over Third Parties</h3>
+
+<p>
+We do not control third-party services and are not responsible for:
+</p>
+
+<ul>
+  <li>Their availability, reliability, or performance</li>
+  <li>Their security practices or data protection</li>
+  <li>Changes to their services or terms</li>
+  <li>Their actions or omissions</li>
+  <li>Interruptions or failures of their services</li>
+</ul>
+
+<h3 id="section-18-4">18.4. Third-Party Service Failures</h3>
+
+<p>
+If third-party services experience outages or issues:
+</p>
+
+<ul>
+  <li>TipsyPal functionality may be limited or unavailable</li>
+  <li>We will make reasonable efforts to restore service</li>
+  <li>We are not liable for damages resulting from third-party failures</li>
+  <li>No refunds or credits are guaranteed for third-party service disruptions</li>
+</ul>
+
+<h3 id="section-18-5">18.5. Changes to Third-Party Services</h3>
+
+<p>
+If we change, add, or remove third-party service providers:
+</p>
+
+<ul>
+  <li>We will update this section and our Privacy Policy</li>
+  <li>We will select providers with comparable or better service levels</li>
+  <li>Material changes will be communicated to users</li>
+  <li>You may be required to accept new terms</li>
+</ul>
+
+<h2 id="section-19">19. Privacy and Data Protection</h2>
+
+<h3 id="section-19-1">19.1. Privacy Policy Incorporation</h3>
+
+<p>
+Your privacy is important to us. Our collection, use, and protection of your personal data is governed by our <strong>Privacy Policy</strong>, which is incorporated into these Terms by reference.
+</p>
+
+<p>By using TipsyPal, you also agree to our Privacy Policy.</p>
+
+<h3 id="section-19-2">19.2. Data We Collect</h3>
+
+<p>
+As detailed in our Privacy Policy, we collect:
+</p>
+
+<ul>
+  <li>Account information (email, user ID, password hash)</li>
+  <li>User Content (text you input for AI processing)</li>
+  <li>Device and technical data (device model, OS version, IP address)</li>
+  <li>Usage analytics and app performance data</li>
+  <li>Purchase and transaction data</li>
+  <li>Crash reports and diagnostic information</li>
+</ul>
+
+<h3 id="section-19-3">19.3. How We Use Your Data</h3>
+
+<p>
+We use your data to:
+</p>
+
+<ul>
+  <li>Provide and improve TipsyPal services</li>
+  <li>Process AI requests and generate outputs</li>
+  <li>Manage your account and purchases</li>
+  <li>Communicate with you</li>
+  <li>Ensure security and prevent fraud</li>
+  <li>Comply with legal obligations</li>
+</ul>
+
+<p>For detailed information, see our Privacy Policy, Section 8 (How We Use Your Personal Data).</p>
+
+<h3 id="section-19-4">19.4. Data Sharing</h3>
+
+<p>
+We share your data with:
+</p>
+
+<ul>
+  <li>Firebase/Google (infrastructure and analytics)</li>
+  <li>OpenAI (AI processing only)</li>
+  <li>Apple and Google (payment processing)</li>
+  <li>We do NOT sell your data to third parties</li>
+</ul>
+
+<p>See Privacy Policy, Section 11 (Data Sharing and Disclosure) for details.</p>
+
+<h3 id="section-19-5">19.5. Your Privacy Rights</h3>
+
+<p>
+Depending on your location, you may have rights including:
+</p>
+
+<ul>
+  <li>Access your personal data</li>
+  <li>Correct inaccurate data</li>
+  <li>Delete your data ("right to be forgotten")</li>
+  <li>Export your data (data portability)</li>
+  <li>Object to certain processing</li>
+  <li>Withdraw consent</li>
+</ul>
+
+<p>To exercise these rights, see Privacy Policy, Section 30 (How to Exercise Your Rights).</p>
+
+<h3 id="section-19-6">19.6. Children's Privacy</h3>
+
+<p>
+TipsyPal is not intended for children under 13 (or applicable age of digital consent in your jurisdiction). We do not knowingly collect personal data from children under these ages.
+</p>
+
+<p>See Privacy Policy, Section 22 (Children's Privacy) for more information.</p>
+
+<h2 id="section-20">20. Service Availability and Modifications</h2>
+
+<h3 id="section-20-1">20.1. Service Availability</h3>
+
+<p>
+We strive to provide reliable access to TipsyPal, but we do NOT guarantee:
+</p>
+
+<ul>
+  <li>Uninterrupted or error-free operation</li>
+  <li>24/7 availability</li>
+  <li>Any specific uptime percentage</li>
+  <li>Compatibility with all devices or OS versions</li>
+  <li>Availability of specific features at all times</li>
+  <li>Consistent AI response times or quality</li>
+</ul>
+
+<h3 id="section-20-2">20.2. Scheduled Maintenance</h3>
+
+<p>
+We may perform scheduled maintenance that temporarily interrupts service:
+</p>
+
+<ul>
+  <li>We will provide advance notice when possible</li>
+  <li>Maintenance windows will be minimized</li>
+  <li>We will attempt to schedule during low-usage periods</li>
+  <li>No compensation or credits are provided for scheduled maintenance</li>
+</ul>
+
+<h3 id="section-20-3">20.3. Service Interruptions</h3>
+
+<p>
+Service may be interrupted due to:
+</p>
+
+<ul>
+  <li>Technical issues or bugs</li>
+  <li>Third-party service failures (Firebase, OpenAI, etc.)</li>
+  <li>Network or infrastructure problems</li>
+  <li>Security incidents or attacks</li>
+  <li>Force majeure events (see Section 32)</li>
+</ul>
+
+<p>We will make reasonable efforts to restore service promptly but are not liable for interruptions.</p>
+
+<h3 id="section-20-4">20.4. Service Modifications</h3>
+
+<p>
+We reserve the right to modify TipsyPal at any time, including:
+</p>
+
+<ul>
+  <li><strong>Feature changes:</strong> Adding, modifying, or removing features</li>
+  <li><strong>UI/UX updates:</strong> Changing the interface or user experience</li>
+  <li><strong>Performance improvements:</strong> Optimizing speed, reliability, or quality</li>
+  <li><strong>AI model changes:</strong> Upgrading or changing AI providers or models</li>
+  <li><strong>Credit system changes:</strong> Adjusting credit consumption rates (with notice)</li>
+  <li><strong>Tier restructuring:</strong> Modifying access tiers or benefits</li>
+</ul>
+
+<h3 id="section-20-5">20.5. Notice of Material Changes</h3>
+
+<p>
+For changes that materially reduce your access to core features or benefits:
+</p>
+
+<ul>
+  <li>We will provide at least 30 days' advance notice</li>
+  <li>Notice will be sent via email and in-app notification</li>
+  <li>You will have the option to cancel subscriptions before changes take effect</li>
+  <li>Refunds may be provided as required by law or app store policy</li>
+</ul>
+
+<h3 id="section-20-6">20.6. Service Discontinuation</h3>
+
+<p>
+We reserve the right to discontinue TipsyPal entirely or in specific regions:
+</p>
+
+<ul>
+  <li>At least 90 days' advance notice will be provided where feasible</li>
+  <li>We will provide options to export your data</li>
+  <li>Refunds for unused subscription time will be processed as required</li>
+  <li>No refunds for consumed credits or completed services</li>
+</ul>
+
+<h3 id="section-20-7">20.7. Beta Features</h3>
+
+<p>
+We may offer beta or experimental features:
+</p>
+
+<ul>
+  <li>Marked as "Beta", "Experimental", or similar</li>
+  <li>Provided "as is" with no guarantees</li>
+  <li>May be unstable, incomplete, or subject to change</li>
+  <li>May be removed at any time without notice</li>
+  <li>Your feedback helps us improve these features</li>
+</ul>
+
+<h2 id="section-21">21. Communications and Marketing</h2>
+
+<h3 id="section-21-1">21.1. Transactional Communications</h3>
+
+<p>
+By using TipsyPal, you consent to receive transactional communications that are necessary for the Service:
+</p>
+
+<ul>
+  <li>Welcome emails and onboarding</li>
+  <li>Purchase confirmations and receipts</li>
+  <li>Account security alerts</li>
+  <li>Password reset emails</li>
+  <li>Service announcements and updates</li>
+  <li>Policy change notifications</li>
+  <li>Subscription renewal reminders</li>
+</ul>
+
+<p>You cannot opt out of transactional communications as they are essential to the Service.</p>
+
+<h3 id="section-21-2">21.2. Marketing Communications</h3>
+
+<p>
+With your explicit consent, we may send marketing communications including:
+</p>
+
+<ul>
+  <li>Promotional offers and discounts</li>
+  <li>New feature announcements</li>
+  <li>Usage tips and best practices</li>
+  <li>User surveys and feedback requests</li>
+  <li>Newsletter content</li>
+  <li>Partner offers and collaborations (sent by us, not by partners)</li>
+</ul>
+
+<h3 id="section-21-3">21.3. Marketing Consent</h3>
+
+<p>
+Marketing consent is:
+</p>
+
+<ul>
+  <li><strong>Opt-in:</strong> You must actively agree to receive marketing (no pre-checked boxes)</li>
+  <li><strong>Separate:</strong> Marketing consent is separate from accepting these Terms</li>
+  <li><strong>Withdrawable:</strong> You can withdraw consent at any time without penalty</li>
+  <li><strong>Specific:</strong> You can choose which types of marketing to receive</li>
+</ul>
+
+<h3 id="section-21-4">21.4. Opt-Out Options</h3>
+
+<p>
+To stop receiving marketing emails:
+</p>
+
+<ul>
+  <li>Click "Unsubscribe" at the bottom of any marketing email</li>
+  <li>Update preferences in TipsyPal account settings</li>
+  <li>Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> with subject "Unsubscribe"</li>
+</ul>
+
+<p>We will process opt-out requests within 10 business days.</p>
+
+<h3 id="section-21-5">21.5. Partner and Sponsored Communications</h3>
+
+<p>
+We may occasionally send communications about partner offers or sponsored content:
+</p>
+
+<ul>
+  <li>All communications are sent directly by OakDev &amp; AI AB</li>
+  <li>We do NOT share your email address with partners</li>
+  <li>You must opt in separately to partner-related communications</li>
+  <li>You can opt out at any time</li>
+</ul>
+
+<p>
+OakDev &amp; AI AB may receive compensation for distributing partner offers, but this does not affect your privacy or the quality of our Service.
+</p>
+
+<h3 id="section-21-6">21.6. Push Notifications</h3>
+
+<p>
+If you enable push notifications, we may send:
+</p>
+
+<ul>
+  <li>Service updates and alerts</li>
+  <li>Credit balance notifications</li>
+  <li>Feature highlights</li>
+  <li>Promotional offers (if you opt in)</li>
+</ul>
+
+<p>You can disable push notifications in your device settings or app settings at any time.</p>
+
+<h2 id="section-22">22. Termination and Suspension</h2>
+
+<h3 id="section-22-1">22.1. Termination by You</h3>
+
+<p>
+You may terminate your relationship with TipsyPal at any time by:
+</p>
+
+<ul>
+  <li>Deleting your account through app settings</li>
+  <li>Uninstalling the App from your device</li>
+  <li>Contacting us to request account deletion</li>
+</ul>
+
+<p>
+Account deletion is permanent and cannot be reversed. See Section 23 for effects of termination.
+</p>
+
+<h3 id="section-22-2">22.2. Termination by Us</h3>
+
+<p>
+We may suspend or terminate your access to TipsyPal immediately and without prior notice if:
+</p>
+
+<ul>
+  <li>You violate these Terms or our policies</li>
+  <li>You engage in fraudulent, illegal, or abusive activity</li>
+  <li>You generate prohibited content</li>
+  <li>You attempt to circumvent security or payment systems</li>
+  <li>You use TipsyPal in a way that harms us or other users</li>
+  <li>You fail to pay for services (for subscriptions)</li>
+  <li>We are required to do so by law or legal process</li>
+  <li>You repeatedly request refunds or abuse app store policies</li>
+</ul>
+
+<h3 id="section-22-3">22.3. Temporary Suspension</h3>
+
+<p>
+We may temporarily suspend your account pending investigation of:
+</p>
+
+<ul>
+  <li>Suspected Terms violations</li>
+  <li>Unusual or suspicious activity</li>
+  <li>Security concerns</li>
+  <li>Payment disputes</li>
+</ul>
+
+<p>
+During suspension, you may not access AI features but can contact support to resolve the issue.
+</p>
+
+<h3 id="section-22-4">22.4. Notice of Termination</h3>
+
+<p>
+When we terminate your account:
+</p>
+
+<ul>
+  <li>We will notify you via email (when possible)</li>
+  <li>We will provide the reason for termination (unless legally prohibited)</li>
+  <li>You may appeal the decision (see Section 22.6)</li>
+  <li>Termination may be immediate for serious violations</li>
+</ul>
+
+<h3 id="section-22-5">22.5. No Obligation to Provide Notice</h3>
+
+<p>
+We reserve the right to terminate accounts without prior notice or opportunity to cure for:
+</p>
+
+<ul>
+  <li>Illegal activity</li>
+  <li>Severe abuse or harm to others</li>
+  <li>Fraudulent use of payment systems</li>
+  <li>Circumvention of security measures</li>
+  <li>Repeated violations after previous warnings</li>
+</ul>
+
+<h3 id="section-22-6">22.6. Appeals</h3>
+
+<p>
+If you believe your account was wrongly suspended or terminated:
+</p>
+
+<ul>
+  <li>Email <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> within 30 days</li>
+  <li>Subject: "Account Termination Appeal"</li>
+  <li>Provide your account details and explanation</li>
+  <li>We will review and respond within 14 business days</li>
+  <li>Our decision after review is final</li>
+</ul>
+
+<h2 id="section-23">23. Effect of Termination</h2>
+
+<h3 id="section-23-1">23.1. Immediate Effects</h3>
+
+<p>
+Upon termination of your account (by you or by us), the following occurs immediately:
+</p>
+
+<ul>
+  <li>Your access to TipsyPal is revoked</li>
+  <li>You can no longer log in or use any features</li>
+  <li>Your license to use the App terminates</li>
+  <li>You must cease all use of TipsyPal</li>
+  <li>You must uninstall the App from your devices</li>
+</ul>
+
+<h3 id="section-23-2">23.2. Data Deletion</h3>
+
+<p>
+Following account termination, we will delete or anonymize:
+</p>
+
+<ul>
+  <li>Your account information (email, profile)</li>
+  <li>Your User Content and conversation history</li>
+  <li>AI-generated content tied to your account</li>
+  <li>Device tokens and session data</li>
+  <li>Preferences and settings</li>
+</ul>
+
+<p>
+Data deletion occurs within 30 days of termination, except where longer retention is required by law (e.g., purchase records for tax purposes).
+</p>
+
+<p>See Privacy Policy, Section 18 (Account Deletion) for detailed information.</p>
+
+<h3 id="section-23-3">23.3. Data Retained After Termination</h3>
+
+<p>
+We may retain certain data after termination:
+</p>
+
+<ul>
+  <li><strong>Purchase and billing records:</strong> Retained up to 7 years for tax and accounting compliance</li>
+  <li><strong>Fraud prevention data:</strong> De-identified markers to prevent repeat violations</li>
+  <li><strong>Legal hold data:</strong> Data subject to legal disputes or investigations</li>
+  <li><strong>Backup copies:</strong> May persist in backups for up to 90 days</li>
+  <li><strong>Aggregated analytics:</strong> Anonymized data that cannot identify you</li>
+</ul>
+
+<h3 id="section-23-4">23.4. Loss of Access and Credits</h3>
+
+<p>
+Upon termination:
+</p>
+
+<ul>
+  <li>All unused credits are forfeited</li>
+  <li>You lose access to any tier benefits (Basic, Champion)</li>
+  <li>Conversation history becomes inaccessible</li>
+  <li>No refunds are provided for unused credits or time (except as legally required)</li>
+</ul>
+
+<h3 id="section-23-5">23.5. Subscription Cancellation</h3>
+
+<div class="warning-box">
+  <strong>Important:</strong> Deleting your TipsyPal account does NOT automatically cancel app store subscriptions. You must cancel subscriptions separately through your app store to avoid continued charges.
+</div>
+
+<p>To cancel subscriptions after deleting your account:</p>
+
+<ul>
+  <li><strong>iOS:</strong> Settings > [Your Name] > Subscriptions > TipsyPal > Cancel</li>
+  <li><strong>Android:</strong> Google Play Store > Menu > Subscriptions > TipsyPal > Cancel</li>
+</ul>
+
+<h3 id="section-23-6">23.6. Survival of Terms</h3>
+
+<p>
+The following provisions survive termination:
+</p>
+
+<ul>
+  <li>Section 14 (User Content – regarding license grants)</li>
+  <li>Section 15 (AI-Generated Content Disclaimers)</li>
+  <li>Section 17 (Intellectual Property Rights)</li>
+  <li>Section 24 (Disclaimers)</li>
+  <li>Section 25 (Limitation of Liability)</li>
+  <li>Section 26 (Indemnification)</li>
+  <li>Section 29 (Governing Law)</li>
+  <li>Any provisions that by their nature should survive</li>
+</ul>
+
+<h3 id="section-23-7">23.7. No Reinstatement</h3>
+
+<p>
+If your account is terminated for violations:
+</p>
+
+<ul>
+  <li>You may not create a new account without our express permission</li>
+  <li>Attempts to circumvent a ban by creating new accounts will result in further termination</li>
+  <li>Previous purchases and credits cannot be transferred to new accounts</li>
+</ul>
+
+<h2 id="section-24">24. Disclaimers and Warranty Exclusions</h2>
+
+<h3 id="section-24-1">24.1. "AS IS" and "AS AVAILABLE" Basis</h3>
+
+<p>
+TIPSYPAL IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE.
+</p>
+
+<h3 id="section-24-2">24.2. Disclaimer of Warranties</h3>
+
+<p>
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, OAKDEV &amp; AI AB DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:
+</p>
+
+<ul>
+  <li><strong>MERCHANTABILITY:</strong> We do not warrant that TipsyPal is merchantable or fit for commercial use</li>
+  <li><strong>FITNESS FOR A PARTICULAR PURPOSE:</strong> We do not warrant that TipsyPal will meet your specific needs or requirements</li>
+  <li><strong>NON-INFRINGEMENT:</strong> We do not warrant that use of TipsyPal will not infringe third-party rights</li>
+  <li><strong>ACCURACY:</strong> We do not warrant that AI-generated content is accurate, complete, or reliable</li>
+  <li><strong>AVAILABILITY:</strong> We do not warrant uninterrupted or error-free operation</li>
+  <li><strong>SECURITY:</strong> We do not warrant that TipsyPal is completely secure or free from vulnerabilities</li>
+  <li><strong>QUALITY:</strong> We do not warrant any specific level of quality or performance</li>
+  <li><strong>RESULTS:</strong> We do not warrant that use of TipsyPal will produce any particular results or outcomes</li>
+</ul>
+
+<h3 id="section-24-3">24.3. No Guarantee of Accuracy</h3>
+
+<p>
+AI-generated content may contain:
+</p>
+
+<ul>
+  <li>Factual errors or inaccuracies</li>
+  <li>Outdated information</li>
+  <li>Biased or inappropriate suggestions</li>
+  <li>Grammatical or stylistic inconsistencies</li>
+  <li>Misleading or false information</li>
+  <li>Offensive or harmful content</li>
+</ul>
+
+<p>
+You use AI-generated content entirely at your own risk.
+</p>
+
+<h3 id="section-24-4">24.4. No Guarantee of Availability</h3>
+
+<p>
+We do not guarantee:
+</p>
+
+<ul>
+  <li>That TipsyPal will be available at any particular time</li>
+  <li>Any specific uptime or service level</li>
+  <li>That service interruptions will not occur</li>
+  <li>That errors or bugs will be corrected</li>
+  <li>Compatibility with all devices or operating systems</li>
+  <li>That updates will not cause disruption</li>
+</ul>
+
+<h3 id="section-24-5">24.5. Third-Party Services Disclaimer</h3>
+
+<p>
+We are not responsible for:
+</p>
+
+<ul>
+  <li>Performance or availability of third-party services (Firebase, OpenAI, Apple, Google)</li>
+  <li>Changes to third-party terms or pricing</li>
+  <li>Security breaches or data losses by third parties</li>
+  <li>Actions or omissions of third-party providers</li>
+</ul>
+
+<h3 id="section-24-6">24.6. Internet and Technology Risks</h3>
+
+<p>
+You acknowledge that:
+</p>
+
+<ul>
+  <li>Internet transmissions are never completely private or secure</li>
+  <li>Data may be intercepted despite encryption</li>
+  <li>Your device may be compromised by malware or unauthorized access</li>
+  <li>Network failures may affect service availability</li>
+  <li>Technology is inherently imperfect and subject to failures</li>
+</ul>
+
+<h3 id="section-24-7">24.7. User Responsibility</h3>
+
+<p>
+You are solely responsible for:
+</p>
+
+<ul>
+  <li>Evaluating whether TipsyPal meets your needs</li>
+  <li>Backing up important data</li>
+  <li>Maintaining device security</li>
+  <li>Verifying AI-generated content before use</li>
+  <li>Compliance with applicable laws</li>
+  <li>Consequences of using AI output</li>
+</ul>
+
+<h3 id="section-24-8">24.8. Jurisdictional Limitations</h3>
+
+<p>
+Some jurisdictions do not allow exclusion of certain warranties. In such jurisdictions:
+</p>
+
+<ul>
+  <li>The above exclusions may not apply to you</li>
+  <li>Warranties are limited to the minimum extent required by law</li>
+  <li>Your statutory consumer rights remain unaffected</li>
+</ul>
+
+<h2 id="section-25">25. Limitation of Liability</h2>
+
+<h3 id="section-25-1">25.1. Exclusion of Consequential Damages</h3>
+
+<p>
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, OAKDEV &amp; AI AB, ITS AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, LICENSORS, AND SUPPLIERS SHALL NOT BE LIABLE FOR ANY:
+</p>
+
+<ul>
+  <li>INDIRECT DAMAGES</li>
+  <li>INCIDENTAL DAMAGES</li>
+  <li>SPECIAL DAMAGES</li>
+  <li>CONSEQUENTIAL DAMAGES</li>
+  <li>EXEMPLARY DAMAGES</li>
+  <li>PUNITIVE DAMAGES</li>
+</ul>
+
+<p>
+INCLUDING DAMAGES FOR:
+</p>
+
+<ul>
+  <li>Loss of profits or revenue</li>
+  <li>Loss of business or business opportunities</li>
+  <li>Loss of data or information</li>
+  <li>Loss of goodwill or reputation</li>
+  <li>Cost of substitute services</li>
+  <li>Lost savings or benefits</li>
+  <li>Wasted expenditure</li>
+</ul>
+
+<p>
+REGARDLESS OF WHETHER SUCH DAMAGES WERE FORESEEABLE AND WHETHER OR NOT WE WERE ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</p>
+
+<h3 id="section-25-2">25.2. Types of Excluded Liabilities</h3>
+
+<p>
+We are not liable for damages arising from or related to:
+</p>
+
+<ul>
+  <li>Your use or inability to use TipsyPal</li>
+  <li>AI-generated content or your reliance on it</li>
+  <li>Errors, inaccuracies, or omissions in AI output</li>
+  <li>Service interruptions, delays, or unavailability</li>
+  <li>Unauthorized access to your account or data</li>
+  <li>Security breaches or data losses</li>
+  <li>Viruses, malware, or harmful code</li>
+  <li>Third-party services or content</li>
+  <li>Changes to or termination of TipsyPal</li>
   <li>Your violation of these Terms</li>
-  <li>Your misuse of AI-generated content</li>
-  <li>Your interaction with third-party services</li>
+  <li>Claims by third parties</li>
 </ul>
 
-<h2>18. Marketing, Partner Offers &amp; Sponsored Communication</h2>
+<h3 id="section-25-3">25.3. Maximum Aggregate Liability</h3>
+
 <p>
-By creating an account, you may choose to opt-in to receive marketing emails, product updates, promotional offers, and
-messages containing third-party or partner-related content. All marketing communication is sent directly by OakDev &amp; AI AB.
-Your email address is not shared with external partners unless you explicitly consent.
-</p>
-<p>
-You may withdraw marketing consent at any time through in-app settings or by contacting us at
-<a href="mailto:hello@oakdev.app">hello@oakdev.app</a>.
-</p>
-<p>
-OakDev &amp; AI AB may monetize the distribution of sponsored messages or partner offers, provided such messages meet legal
-requirements and are sent only to users who have opted in to marketing.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATED TO TIPSYPAL OR THESE TERMS SHALL NOT EXCEED THE GREATER OF:
 </p>
 
-<h2>19. Governing Law</h2>
-<p>These Terms are governed by:</p>
 <ul>
-  <li>Swedish law</li>
-  <li>Applicable EU regulations</li>
-</ul>
-<p>Any disputes arising from these Terms shall be resolved through:</p>
-<ul>
-  <li>Negotiation</li>
-  <li>If unresolved, arbitration or competent Swedish courts</li>
+  <li>THE AMOUNT YOU PAID TO US (IF ANY) IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR</li>
+  <li>ONE HUNDRED EUROS (€100)</li>
 </ul>
 
-<h2>20. Changes to Terms</h2>
+<h3 id="section-25-4">25.4. Essential Basis of Bargain</h3>
+
 <p>
-We may modify these Terms at any time. Changes become effective when posted in the App or on our website. Continued use of
-the App constitutes acceptance of updated Terms.
+YOU ACKNOWLEDGE AND AGREE THAT:
 </p>
 
-<h2>21. Contact Information</h2>
-<p>For any questions regarding these Terms:</p>
+<ul>
+  <li>The disclaimers and limitations of liability are fundamental elements of the agreement between you and OakDev &amp; AI AB</li>
+  <li>We would not provide TipsyPal without these limitations</li>
+  <li>These limitations reflect an allocation of risk between the parties</li>
+  <li>The fees (if any) charged for TipsyPal reflect these risk allocations and limitations</li>
+</ul>
+
+<h3 id="section-25-5">25.5. Jurisdictional Variations</h3>
+
+<p>
+Some jurisdictions do not allow limitation or exclusion of certain liabilities. In such jurisdictions:
+</p>
+
+<ul>
+  <li>The above limitations may not apply to you</li>
+  <li>Our liability is limited to the maximum extent permitted by law</li>
+  <li>Your statutory consumer rights remain unaffected</li>
+  <li>Nothing in these Terms excludes liability that cannot legally be excluded (such as for fraud or willful misconduct)</li>
+</ul>
+
+<h3 id="section-25-6">25.6. Allocation Among Parties</h3>
+
+<p>
+The limitations apply to claims against:
+</p>
+
+<ul>
+  <li>OakDev &amp; AI AB</li>
+  <li>Our affiliates and subsidiaries</li>
+  <li>Our directors, officers, and employees</li>
+  <li>Our agents, licensors, and suppliers</li>
+</ul>
+
+<p>
+To the maximum extent permitted by law, all such parties are intended third-party beneficiaries of these limitations.
+</p>
+
+<h2 id="section-26">26. Indemnification</h2>
+
+<h3 id="section-26-1">26.1. Your Indemnification Obligation</h3>
+
+<p>
+You agree to indemnify, defend (at our option), and hold harmless OakDev &amp; AI AB, its affiliates, subsidiaries, and their respective officers, directors, employees, agents, licensors, suppliers, successors, and assigns (the "Indemnified Parties") from and against any and all:
+</p>
+
+<ul>
+  <li>Claims</li>
+  <li>Demands</li>
+  <li>Liabilities</li>
+  <li>Damages</li>
+  <li>Losses</li>
+  <li>Costs</li>
+  <li>Expenses (including reasonable attorneys' fees and court costs)</li>
+</ul>
+
+<h3 id="section-26-2">26.2. Indemnifiable Events</h3>
+
+<p>
+Your indemnification obligation applies to claims arising from or related to:
+</p>
+
+<ul>
+  <li><strong>Your Use of TipsyPal:</strong> Including misuse, negligent use, or use in violation of these Terms</li>
+  <li><strong>Your User Content:</strong> Including claims of infringement, defamation, privacy violation, or other harm caused by your content</li>
+  <li><strong>Your AI-Generated Content:</strong> Including your use, distribution, or reliance on AI output</li>
+  <li><strong>Violations of Terms:</strong> Any breach of these Terms or our policies</li>
+  <li><strong>Violations of Law:</strong> Your violation of any applicable laws or regulations</li>
+  <li><strong>Third-Party Rights:</strong> Your violation of rights of third parties (intellectual property, privacy, publicity, etc.)</li>
+  <li><strong>Your Conduct:</strong> Harmful, illegal, or wrongful conduct by you</li>
+  <li><strong>Your Account:</strong> Unauthorized use of your account or failure to maintain account security</li>
+  <li><strong>Your Representations:</strong> Breach of any representations or warranties you made</li>
+</ul>
+
+<h3 id="section-26-3">26.3. Indemnification Process</h3>
+
+<p>
+If a claim subject to indemnification arises:
+</p>
+
+<ol>
+  <li>We will promptly notify you of the claim (failure to notify does not relieve your obligation except to the extent you are prejudiced)</li>
+  <li>We may, at our option, assume exclusive control of the defense</li>
+  <li>You will cooperate fully with our defense</li>
+  <li>You will not settle any claim without our prior written consent</li>
+  <li>If we assume defense, you may participate at your own expense</li>
+</ol>
+
+<h3 id="section-26-4">26.4. Right to Control Defense</h3>
+
+<p>
+We reserve the right (but have no obligation) to:
+</p>
+
+<ul>
+  <li>Assume exclusive defense and control of any matter subject to indemnification</li>
+  <li>Select counsel of our choice</li>
+  <li>Settle claims at our discretion</li>
+  <li>Require you to participate in the defense</li>
+</ul>
+
+<h3 id="section-26-5">26.5. No Settlement Without Consent</h3>
+
+<p>
+You may not settle or compromise any claim subject to indemnification without our prior written consent, which we may withhold in our sole discretion.
+</p>
+
+<h3 id="section-26-6">26.6. Survival</h3>
+
+<p>
+This indemnification obligation survives:
+</p>
+
+<ul>
+  <li>Termination of your account</li>
+  <li>Termination of these Terms</li>
+  <li>Discontinuation of TipsyPal</li>
+  <li>Any other termination or expiration of your relationship with us</li>
+</ul>
+
+<h2 id="section-27">27. Dispute Resolution and Arbitration</h2>
+
+<h3 id="section-27-1">27.1. Informal Dispute Resolution</h3>
+
+<p>
+Before initiating any formal dispute resolution, you agree to first attempt to resolve disputes informally:
+</p>
+
+<ol>
+  <li>Send a detailed description of the dispute to <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+  <li>Include your account information and proposed resolution</li>
+  <li>Allow us 30 days to investigate and respond</li>
+  <li>Engage in good faith negotiations to resolve the matter</li>
+</ol>
+
+<p>
+Many disputes can be resolved quickly and amicably through this process.
+</p>
+
+<h3 id="section-27-2">27.2. Binding Arbitration (Where Applicable)</h3>
+
+<p>
+If informal resolution fails and you are not an EU consumer (who have additional rights), you agree that disputes will be resolved through binding arbitration rather than in court.
+</p>
+
+<h4>Arbitration Terms:</h4>
+
+<ul>
+  <li><strong>Governing Rules:</strong> Arbitration shall be conducted under the Arbitration Rules of the Arbitration Institute of the Stockholm Chamber of Commerce (SCC)</li>
+  <li><strong>Location:</strong> Arbitration shall take place in Stockholm, Sweden (or via online/video conference by mutual agreement)</li>
+  <li><strong>Language:</strong> English or Swedish</li>
+  <li><strong>Single Arbitrator:</strong> Disputes shall be decided by a single arbitrator</li>
+  <li><strong>Decision Final:</strong> The arbitrator's decision is final and binding</li>
+  <li><strong>Limited Discovery:</strong> Discovery is more limited than in litigation</li>
+</ul>
+
+<h3 id="section-27-3">27.3. Exceptions to Arbitration</h3>
+
+<p>
+The following disputes are NOT subject to arbitration:
+</p>
+
+<ul>
+  <li>Claims in small claims court (if within small claims court's jurisdiction)</li>
+  <li>Claims seeking injunctive or equitable relief for intellectual property infringement</li>
+  <li>Claims where EU consumer protection laws apply (EU consumers may bring claims in local courts)</li>
+</ul>
+
+<h3 id="section-27-4">27.4. Costs of Arbitration</h3>
+
+<ul>
+  <li>Each party bears their own attorneys' fees and costs</li>
+  <li>The arbitrator may award attorneys' fees to the prevailing party if permitted by applicable law</li>
+  <li>Filing fees and arbitrator costs are allocated according to SCC rules</li>
+</ul>
+
+<h3 id="section-27-5">27.5. No Class or Representative Actions</h3>
+
+<p>
+See Section 28 (Class Action Waiver) for limitations on class-wide dispute resolution.
+</p>
+
+<h3 id="section-27-6">27.6. EU Consumer Rights</h3>
+
+<p>
+If you are a consumer residing in the European Union:
+</p>
+
+<ul>
+  <li>This arbitration provision does not affect your right to bring claims in your local courts</li>
+  <li>You may also use the European Commission's Online Dispute Resolution platform: <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a></li>
+  <li>Your statutory consumer rights are not affected by these Terms</li>
+</ul>
+
+<h3 id="section-27-7">27.7. Severability of Arbitration Clause</h3>
+
+<p>
+If any portion of this arbitration provision is found to be unenforceable, the remainder shall remain in effect, except that if the Class Action Waiver (Section 28) is found unenforceable, the entire arbitration provision is void.
+</p>
+
+<h2 id="section-28">28. Class Action Waiver</h2>
+
+<h3 id="section-28-1">28.1. Individual Dispute Resolution Only</h3>
+
+<p>
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU AND OAKDEV &amp; AI AB AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR OUR INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, CONSOLIDATED, OR REPRESENTATIVE PROCEEDING.
+</p>
+
+<h3 id="section-28-2">28.2. No Class Arbitrations or Actions</h3>
+
+<p>
+Unless both you and we agree otherwise in writing:
+</p>
+
+<ul>
+  <li>No arbitrator or judge may consolidate more than one person's claims</li>
+  <li>No arbitrator or judge may preside over any form of representative or class proceeding</li>
+  <li>Claims may not be arbitrated or litigated on a class-wide basis</li>
+  <li>Claims may not be joined or consolidated with claims of other users</li>
+</ul>
+
+<h3 id="section-28-3">28.3. Opt-Out Right (Non-EU Users)</h3>
+
+<p>
+If you do not agree to the Class Action Waiver, you may opt out by:
+</p>
+
+<ul>
+  <li>Sending written notice to <a href="mailto:hello@oakdev.app">hello@oakdev.app</a> within 30 days of first accepting these Terms</li>
+  <li>Include "Class Action Waiver Opt-Out" in the subject</li>
+  <li>Provide your name, email, and account information</li>
+</ul>
+
+<p>
+Opting out of the Class Action Waiver does not affect any other provisions of these Terms.
+</p>
+
+<h3 id="section-28-4">28.4. EU Consumer Exception</h3>
+
+<p>
+If you are an EU consumer, this Class Action Waiver may not apply to you depending on the laws of your country. Your rights under EU consumer protection laws are not affected.
+</p>
+
+<h3 id="section-28-5">28.5. Severability</h3>
+
+<p>
+If this Class Action Waiver is found to be unenforceable, the arbitration provision in Section 27 is void (but other provisions of these Terms remain in effect).
+</p>
+
+<h2 id="section-29">29. Governing Law and Jurisdiction</h2>
+
+<h3 id="section-29-1">29.1. Governing Law</h3>
+
+<p>
+These Terms and any disputes arising out of or related to TipsyPal shall be governed by and construed in accordance with the substantive laws of <strong>Sweden</strong>, without regard to its conflict of law principles.
+</p>
+
+<p>
+The United Nations Convention on Contracts for the International Sale of Goods (CISG) does not apply.
+</p>
+
+<h3 id="section-29-2">29.2. Jurisdiction for Non-EU Users</h3>
+
+<p>
+If you are not a consumer in the European Union, you agree that:
+</p>
+
+<ul>
+  <li>Subject to Section 27 (Arbitration), any litigation shall be brought exclusively in the courts of Sweden</li>
+  <li>You consent to the personal jurisdiction of those courts</li>
+  <li>You waive any objections based on inconvenient forum</li>
+</ul>
+
+<h3 id="section-29-3">29.3. Jurisdiction for EU Consumers</h3>
+
+<p>
+If you are a consumer residing in the European Union:
+</p>
+
+<ul>
+  <li>You may bring legal proceedings in either the courts of Sweden OR the courts of your country of residence</li>
+  <li>We may only bring proceedings against you in the courts of your country of residence</li>
+  <li>Nothing in these Terms affects your rights under mandatory consumer protection laws</li>
+  <li>This choice of law does not deprive you of protection afforded by mandatory provisions of law in your country</li>
+</ul>
+
+<h3 id="section-29-4">29.4. Language</h3>
+
+<p>
+These Terms are provided in English. If we provide translations, the English version prevails in case of discrepancies or ambiguities.
+</p>
+
+<h2 id="section-30">30. International Use and Export Compliance</h2>
+
+<h3 id="section-30-1">30.1. International Availability</h3>
+
+<p>
+TipsyPal is available globally, subject to local laws and regulations. However:
+</p>
+
+<ul>
+  <li>We make no representation that TipsyPal is appropriate or available for use in all locations</li>
+  <li>Access may be illegal in certain jurisdictions</li>
+  <li>You are responsible for compliance with local laws</li>
+  <li>We may restrict availability in certain regions</li>
+</ul>
+
+<h3 id="section-30-2">30.2. Export Controls</h3>
+
+<p>
+TipsyPal may be subject to export control laws, including:
+</p>
+
+<ul>
+  <li>EU export regulations</li>
+  <li>U.S. export control laws (if applicable)</li>
+  <li>Other applicable international trade regulations</li>
+</ul>
+
+<p>You agree that you will not:</p>
+
+<ul>
+  <li>Export or re-export TipsyPal in violation of applicable laws</li>
+  <li>Use TipsyPal in countries subject to trade embargoes</li>
+  <li>Provide access to TipsyPal to prohibited persons or entities</li>
+</ul>
+
+<h3 id="section-30-3">30.3. Sanctions Compliance</h3>
+
+<p>
+You represent that you are not:
+</p>
+
+<ul>
+  <li>Located in a country subject to U.S. or EU sanctions or embargoes</li>
+  <li>Listed on any government list of prohibited or restricted parties</li>
+  <li>Owned or controlled by persons or entities subject to sanctions</li>
+</ul>
+
+<p>
+We may suspend or terminate access if you violate sanctions or export control laws.
+</p>
+
+<h3 id="section-30-4">30.4. Encryption and Technology</h3>
+
+<p>
+TipsyPal uses encryption and other technologies that may be subject to export controls. By using TipsyPal, you acknowledge and agree to comply with all applicable export control regulations.
+</p>
+
+<h2 id="section-31">31. Digital Millennium Copyright Act (DMCA)</h2>
+
+<h3 id="section-31-1">31.1. DMCA Compliance</h3>
+
+<p>
+We respect intellectual property rights and comply with the Digital Millennium Copyright Act (DMCA). If you believe your copyrighted work has been infringed through TipsyPal, you may submit a DMCA takedown notice.
+</p>
+
+<h3 id="section-31-2">31.2. Copyright Infringement Notification</h3>
+
+<p>
+To file a DMCA notice, provide the following information to our designated agent:
+</p>
+
+<ul>
+  <li>A physical or electronic signature of the copyright owner or authorized agent</li>
+  <li>Identification of the copyrighted work claimed to be infringed</li>
+  <li>Identification of the infringing material and information sufficient to locate it (e.g., account details, description of content)</li>
+  <li>Your contact information (name, address, telephone, email)</li>
+  <li>A statement that you have a good faith belief that the use is not authorized</li>
+  <li>A statement that the information is accurate and, under penalty of perjury, that you are authorized to act on behalf of the copyright owner</li>
+</ul>
+
+<h3 id="section-31-3">31.3. Designated Copyright Agent</h3>
+
+<p>
+Send DMCA notices to:
+</p>
+
 <p>
   <strong>OakDev &amp; AI AB</strong><br>
-  Sweden<br>
-  Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>
+  Attn: DMCA Agent<br>
+  Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a><br>
+  Subject: "DMCA Copyright Notice"
+</p>
+
+<h3 id="section-31-4">31.4. Counter-Notification</h3>
+
+<p>
+If you believe content was wrongly removed due to a DMCA notice, you may file a counter-notification including:
+</p>
+
+<ul>
+  <li>Your physical or electronic signature</li>
+  <li>Identification of the removed content and its location before removal</li>
+  <li>A statement under penalty of perjury that removal was a mistake or misidentification</li>
+  <li>Your contact information</li>
+  <li>Consent to jurisdiction of Swedish courts (or your local courts if you're an EU consumer)</li>
+</ul>
+
+<h3 id="section-31-5">31.5. Repeat Infringer Policy</h3>
+
+<p>
+We will terminate accounts of users who repeatedly infringe copyrights. Repeat infringement includes:
+</p>
+
+<ul>
+  <li>Multiple valid DMCA takedown notices</li>
+  <li>Confirmed copyright violations</li>
+  <li>Circumvention of copyright protections</li>
+</ul>
+
+<h2 id="section-32">32. Force Majeure</h2>
+
+<h3 id="section-32-1">32.1. Force Majeure Events</h3>
+
+<p>
+We are not liable for delays or failures in performance resulting from causes beyond our reasonable control, including:
+</p>
+
+<ul>
+  <li><strong>Natural disasters:</strong> Earthquakes, floods, fires, storms, pandemics, epidemics</li>
+  <li><strong>Acts of government:</strong> Laws, regulations, orders, embargoes, sanctions</li>
+  <li><strong>War and terrorism:</strong> War, terrorism, civil unrest, riots</li>
+  <li><strong>Labor disputes:</strong> Strikes, lockouts, labor shortages</li>
+  <li><strong>Infrastructure failures:</strong> Power outages, telecommunications failures, internet disruptions</li>
+  <li><strong>Third-party failures:</strong> Failures of hosting providers, API providers, app stores</li>
+  <li><strong>Cyberattacks:</strong> DDoS attacks, hacking attempts, data breaches by third parties</li>
+  <li><strong>Other events:</strong> Any other event beyond our reasonable control</li>
+</ul>
+
+<h3 id="section-32-2">32.2. Effect of Force Majeure</h3>
+
+<p>
+During force majeure events:
+</p>
+
+<ul>
+  <li>Our obligations under these Terms are suspended to the extent affected</li>
+  <li>We will make reasonable efforts to mitigate the impact</li>
+  <li>We will notify users when practicable</li>
+  <li>Service may be limited, degraded, or unavailable</li>
+  <li>No refunds or credits are guaranteed for force majeure events</li>
+</ul>
+
+<h3 id="section-32-3">32.3. Extended Force Majeure</h3>
+
+<p>
+If a force majeure event continues for more than 60 days:
+</p>
+
+<ul>
+  <li>Either party may terminate these Terms upon written notice</li>
+  <li>You may be eligible for pro-rated refunds for unused subscription time (as required by law)</li>
+  <li>No liability for termination due to extended force majeure</li>
+</ul>
+
+<h2 id="section-33">33. Assignment and Transfer</h2>
+
+<h3 id="section-33-1">33.1. Assignment by Us</h3>
+
+<p>
+We may assign, transfer, or delegate these Terms and our rights and obligations without your consent to:
+</p>
+
+<ul>
+  <li>An affiliate or subsidiary</li>
+  <li>An acquirer of our business or assets</li>
+  <li>A successor entity in a merger, reorganization, or restructuring</li>
+  <li>Any third party with reasonable notice to you</li>
+</ul>
+
+<h3 id="section-33-2">33.2. No Assignment by You</h3>
+
+<p>
+You may NOT assign, transfer, or delegate these Terms or your rights and obligations without our prior written consent. Any attempted assignment without consent is void.
+</p>
+
+<h3 id="section-33-3">33.3. Effect of Assignment</h3>
+
+<p>
+If we assign these Terms:
+</p>
+
+<ul>
+  <li>The assignee assumes our rights and obligations</li>
+  <li>You must accept the assignment or terminate your account</li>
+  <li>Your rights under these Terms continue with the assignee</li>
+</ul>
+
+<h2 id="section-34">34. Severability and Waiver</h2>
+
+<h3 id="section-34-1">34.1. Severability</h3>
+
+<p>
+If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court or arbitrator:
+</p>
+
+<ul>
+  <li>The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable</li>
+  <li>If modification is not possible, the provision shall be severed</li>
+  <li>The remaining provisions shall remain in full force and effect</li>
+  <li>The Terms shall be construed as if the invalid provision had never been included</li>
+</ul>
+
+<h3 id="section-34-2">34.2. Waiver</h3>
+
+<p>
+No waiver of any provision of these Terms shall be deemed a further or continuing waiver of that or any other provision. Our failure to enforce any right or provision does not constitute a waiver of that right or provision.
+</p>
+
+<p>
+Any waiver must be in writing and signed by an authorized representative of OakDev &amp; AI AB.
+</p>
+
+<h3 id="section-34-3">34.3. No Implied Waivers</h3>
+
+<ul>
+  <li>Our delay in enforcing these Terms does not waive our right to enforce them later</li>
+  <li>Our acceptance of partial performance does not waive our right to require full performance</li>
+  <li>Our waiver of one breach does not waive subsequent breaches</li>
+</ul>
+
+<h2 id="section-35">35. Entire Agreement</h2>
+
+<h3 id="section-35-1">35.1. Complete Agreement</h3>
+
+<p>
+These Terms, together with our Privacy Policy and any additional terms presented within the App, constitute the entire agreement between you and OakDev &amp; AI AB regarding TipsyPal and supersede all prior or contemporaneous:
+</p>
+
+<ul>
+  <li>Agreements</li>
+  <li>Understandings</li>
+  <li>Communications</li>
+  <li>Proposals</li>
+  <li>Representations</li>
+</ul>
+
+<h3 id="section-35-2">35.2. No Reliance</h3>
+
+<p>
+You acknowledge that you have not relied on any statements, representations, or promises not expressly set forth in these Terms.
+</p>
+
+<h3 id="section-35-3">35.3. No Oral Modifications</h3>
+
+<p>
+These Terms may not be modified orally. Any modifications must be in writing and posted within the App or on our website.
+</p>
+
+<h3 id="section-35-4">35.4. Incorporated Documents</h3>
+
+<p>
+The following documents are incorporated by reference and form part of these Terms:
+</p>
+
+<ul>
+  <li>TipsyPal Privacy Policy</li>
+  <li>Any feature-specific terms presented within the App</li>
+  <li>App store terms and policies (to the extent applicable)</li>
+</ul>
+
+<h2 id="section-36">36. Changes to These Terms</h2>
+
+<h3 id="section-36-1">36.1. Right to Modify</h3>
+
+<p>
+We reserve the right to modify, update, or replace these Terms at any time at our sole discretion. Changes may be made for various reasons, including:
+</p>
+
+<ul>
+  <li>Legal or regulatory compliance</li>
+  <li>New features or services</li>
+  <li>Changes to business practices</li>
+  <li>Security enhancements</li>
+  <li>Clarifications or corrections</li>
+  <li>User feedback or concerns</li>
+</ul>
+
+<h3 id="section-36-2">36.2. Notice of Material Changes</h3>
+
+<p>
+For material changes that significantly affect your rights or obligations, we will provide notice through one or more of the following methods:
+</p>
+
+<ul>
+  <li>Email to your registered email address (at least 30 days before changes take effect)</li>
+  <li>Prominent in-app notification</li>
+  <li>Notice on our website</li>
+  <li>Push notification (if enabled)</li>
+</ul>
+
+<h3 id="section-36-3">36.3. Notice of Minor Changes</h3>
+
+<p>
+For minor changes (such as clarifications, formatting, or non-material updates):
+</p>
+
+<ul>
+  <li>We will update the "Last Updated" date at the top</li>
+  <li>Notice may be provided within the App</li>
+  <li>Less prominent notification may be used</li>
+</ul>
+
+<h3 id="section-36-4">36.4. Acceptance of Changes</h3>
+
+<p>
+By continuing to access or use TipsyPal after changes take effect, you agree to be bound by the updated Terms. This constitutes your acceptance of the changes.
+</p>
+
+<h3 id="section-36-5">36.5. Right to Reject Changes</h3>
+
+<p>
+If you do not agree to updated Terms:
+</p>
+
+<ul>
+  <li>You must stop using TipsyPal before the changes take effect</li>
+  <li>You may delete your account</li>
+  <li>For subscription users, you may cancel your subscription (effective at the end of the current billing period)</li>
+  <li>Continued use after the effective date constitutes acceptance</li>
+</ul>
+
+<h3 id="section-36-6">36.6. Version Control</h3>
+
+<p>
+We maintain version history of these Terms:
+</p>
+
+<ul>
+  <li><strong>Version 3.0 – January 16, 2025:</strong> Comprehensive expansion and professional enhancement to match Privacy Policy standards</li>
+  <li><strong>Version 2.1 – December 16, 2024:</strong> Previous version (as provided)</li>
+</ul>
+
+<p>
+Previous versions are available upon request by emailing <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>.
+</p>
+
+<h2 id="section-37">37. Contact Information</h2>
+
+<h3 id="section-37-1">37.1. How to Reach Us</h3>
+
+<p>
+For questions, concerns, support requests, or other communications regarding these Terms or TipsyPal, please contact us:
+</p>
+
+<p>
+  <strong>OakDev &amp; AI AB</strong><br>
+  Swedish Organization Number: 5594316787<br>
+  Address: Sweden<br>
+  Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a><br>
+  Website: <a href="https://oakdev.app" target="_blank">https://oakdev.app</a>
+</p>
+
+<h3 id="section-37-2">37.2. Support Requests</h3>
+
+<p>
+For technical support, account issues, or feature questions:
+</p>
+
+<ul>
+  <li>Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+  <li>Subject: "TipsyPal Support Request"</li>
+  <li>Include your account email and description of the issue</li>
+  <li>We typically respond within 48 hours</li>
+</ul>
+
+<h3 id="section-37-3">37.3. Legal and Compliance Inquiries</h3>
+
+<p>
+For legal matters, DMCA notices, or compliance questions:
+</p>
+
+<ul>
+  <li>Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+  <li>Subject: "Legal Inquiry – TipsyPal"</li>
+  <li>Include relevant details and documentation</li>
+</ul>
+
+<h3 id="section-37-4">37.4. Business Development</h3>
+
+<p>
+For partnership inquiries, business opportunities, or commercial licensing:
+</p>
+
+<ul>
+  <li>Email: <a href="mailto:hello@oakdev.app">hello@oakdev.app</a></li>
+  <li>Subject: "Business Inquiry – TipsyPal"</li>
+  <li>Provide details about your inquiry or proposal</li>
+</ul>
+
+<h3 id="section-37-5">37.5. Response Times</h3>
+
+<p>
+We strive to respond to all inquiries promptly:
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Inquiry Type</th>
+      <th>Typical Response Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>General questions</td>
+      <td>2-3 business days</td>
+    </tr>
+    <tr>
+      <td>Technical support</td>
+      <td>1-2 business days</td>
+    </tr>
+    <tr>
+      <td>Account issues</td>
+      <td>1-2 business days</td>
+    </tr>
+    <tr>
+      <td>Billing questions</td>
+      <td>2-3 business days</td>
+    </tr>
+    <tr>
+      <td>Legal matters</td>
+      <td>5-7 business days</td>
+    </tr>
+    <tr>
+      <td>Privacy rights requests</td>
+      <td>Within 30 days (as required by GDPR)</td>
+    </tr>
+    <tr>
+      <td>Security issues</td>
+      <td>24-48 hours</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-37-6">37.6. Business Hours</h3>
+
+<p>
+Our primary business hours are based on Central European Time (CET/CEST). We review and respond to communications during standard Swedish business hours, Monday through Friday.
+</p>
+
+<h3 id="section-37-7">37.7. Languages</h3>
+
+<p>
+We primarily communicate in:
+</p>
+
+<ul>
+  <li>English (preferred for fastest response)</li>
+  <li>Swedish</li>
+</ul>
+
+<p>
+For other languages, we may use translation services which could result in longer response times.
+</p>
+
+<hr style="margin: 40px 0; border: none; border-top: 1px solid #e5e7eb;">
+
+<div class="info-box">
+  <strong>Thank you for using TipsyPal!</strong><br>
+  We appreciate your trust in our service. By using TipsyPal, you're agreeing to these Terms of Use. If you have any questions or concerns, please don't hesitate to contact us at <a href="mailto:hello@oakdev.app">hello@oakdev.app</a>.
+  <br><br>
+  These Terms work together with our Privacy Policy to protect both your rights and ours. We encourage you to read both documents carefully.
+</div>
+
+<p style="text-align: center; margin-top: 40px; color: #6b7280; font-size: 0.9rem;">
+  © 2025 OakDev &amp; AI AB. All rights reserved.<br>
+  Last Updated: January 16, 2025 | Version 3.0<br>
+  <a href="https://oakdev.app" target="_blank">https://oakdev.app</a>
 </p>
 
 </body>
